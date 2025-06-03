@@ -1,10 +1,11 @@
-import React from 'react'
-import NavBar from './Component/HomePage/NavBar'
+import React from "react";
+import HeroSection from "./Component/HomePage/HeroSection";
+// import HeroSection from "./Component/HomePage/HeroSection";
 
 export default function Home() {
   return (
-<main>
-  <NavBar/>
-</main>
-  )
+    <main>
+      <HeroSection />
+    </main>
+  );
 }
