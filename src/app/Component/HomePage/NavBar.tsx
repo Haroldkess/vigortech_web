@@ -75,7 +75,7 @@ export default function NavBar() {
       {/* mobile menu */}
 
       {showMenu && (
-        <section className=" md:w-[90vw] w-[95vw]  text-white/65 px-10 py-8 border shadow-2xl border-[#868686D9] rounded-2xl">
+        <section className="lg:hidden md:w-[90vw] w-[95vw]  text-white/65 px-10 py-8 border shadow-2xl border-[#868686D9] rounded-2xl">
           <section>
             <ul className="flex flex-col gap-y-10 text-xl ">
               <li>
