@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
-body{
-  @apply bg-[#171615] text-white 
+
+
+body {
+  @apply bg-[#171615] text-white
 }
