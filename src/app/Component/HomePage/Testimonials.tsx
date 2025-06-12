@@ -42,23 +42,23 @@ const Testimonials = () => {
             </div>
 
 
-                <div className="flex  w-[35vw] space-x-6 px-6" >
-                    {testimonials.map((testimonial, index) => (
-                        <article
-                            key={index}
-                            className="w-[30vw] bg-[#1a1919] rounded-lg border border-[#2A2A2A] p-10 flex-shrink-0"
-                            style={{ background: 'linear-gradient(rgba(23, 22, 21, 90), rgba(51, 51, 51, 0.40))', }}
-                        >
-                            <i className="fas fa-quote-left text-gray-600 text-4xl mb-4"></i>
-                            <p className="text-gray-300 mb-6 leading-relaxed">{testimonial.quote}</p>
-                            <hr className="border-gray-700 mb-4" />
-                            <p className="text-green-500 font-semibold">{testimonial.name}</p>
-                            <p className="text-gray-400 text-sm">{testimonial.role}</p>
-                        </article>
-                    ))}
-                </div>
-</section>
-      
+            <div className="flex  w-[35vw] space-x-6 px-6" >
+                {testimonials.map((testimonial, index) => (
+                    <article
+                        key={index}
+                        className="w-[30vw] bg-[#1a1919] rounded-lg border border-[#2A2A2A] p-10 flex-shrink-0 mx-2"
+                        style={{ background: 'linear-gradient(rgba(23, 22, 21, 0.90), rgba(51, 51, 51, 0.40))', }}
+                    >
+                        <i className="fas fa-quote-left text-gray-600 text-4xl mb-4"></i>
+                        <p className="text-gray-300 mb-6 leading-relaxed">{testimonial.quote}</p>
+                        <hr className="border-gray-700 mb-4" />
+                        <p className="text-green-500 font-semibold">{testimonial.name}</p>
+                        <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                    </article>
+                ))}
+            </div>
+        </section>
+
     );
 };
 

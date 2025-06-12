@@ -9,15 +9,15 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export default function HeroSection() {
 
   return (
-    <header>
+    <header className="mb-[40vh] ">
       <section className="relative -z-10 top-[10em] h-[50vh] w-full ">
-        <section className="flex items-center px-20 w-full">
+        <section className="flex items-center px-20 w-full ">
           <section className="z-20 w-[40vw] flex flex-col gap-10 absolute bottom-[-4em]">
             <section className="flex flex-col gap-6">
-              <h1 className="w-[40vw] text-5xl font-bold">
+              <h1 className="w-[45vw] text-5xl font-bold">
                 Empowering Africa with smart technology
               </h1>
-              <p className="w-[45vw] text-[#EAF5F4A6] text-xl">
+              <p className="w-[45vw] text-[#EAF5F4A6] text-md">
                 Innovative solutions that transform businesses through
                 cutting-edge technology, expert strategy, and seamless
                 integration.
@@ -53,22 +53,22 @@ export default function HeroSection() {
             </section>
           </section>
 
-          <section>
+          <section className="">
             <section className=" flex justify-center flex-col  ">
-              <Image
+              <img
                 src={"/Earth.png"}
                 alt="earth"
-                width={400}
-                height={400}
-                className="z-50  w-[60vw] object-cover absolute right-[2em] bottom-0 top-[-4em]"
+                width={1000}
+                height={1000}
+                className="z-50  w-[67vw] object-cover absolute right-[-5em] bottom-0 top-[-6em]"
               />
               <section className="">
-                <Image
+                <img
                   src={"/bgEarth.png"}
                   alt="earth"
                   width={200}
                   height={200}
-                  className=" w-[64vw] object-cover absolute blur-md right-[2em] bottom-[-10em]  "
+                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-[-20em] bottom-[-20em]  "
                 />
               </section>
             </section>
