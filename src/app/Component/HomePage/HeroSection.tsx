@@ -1,120 +1,18 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+
 import React, { useState } from "react";
-import { FaAngleDown } from "react-icons/fa";
-import { IoIosMenu, IoIosClose } from "react-icons/io";
+
+
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function HeroSection() {
-  const [showMenu, setMenu] = useState(false);
+
   return (
     <header>
-     
-     {/* navbar menu */}
-      <nav className="flex flex-col justify-center items-center w-full mt-10  gap-y-2">
-        <section className="bg-transparent lg:w-[85vw] md:w-[90vw] w-[95vw] text-white px-8 py-4 border shadow-2xl border-[#868686D9] rounded-2xl">
-          <section className="flex justify-between items-center">
-            <section>
-              <Image
-                src={"/logo.png"}
-                alt="logo"
-                width={200}
-                height={200}
-                className="lg:w-[150px] w-[100px] "
-              />
-            </section>
-
-            <section className="flex items-center gap-x-20 ">
-              <section>
-                <ul className="lg:flex gap-x-6 items-center hidden">
-                  <li>
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li>
-                    <section className="flex gap-1 items-center">
-                      Company <FaAngleDown />
-                    </section>
-                  </li>
-                  <li>
-                    <section className="flex gap-1 items-center">
-                      Products <FaAngleDown />
-                    </section>
-                  </li>
-                  <li>
-                    <Link href="/courses">Courses</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact</Link>
-                  </li>
-                </ul>
-              </section>
-
-              <section className="lg:flex hidden ">
-                <button className="bg-[#48B96B] px-8 py-2 font-semibold  text-[#171615] rounded-md">
-                  Explore our products
-                </button>
-              </section>
-
-              {/* mobile button*/}
-              <section className="lg:hidden flex">
-                {!showMenu ? (
-                  <IoIosMenu
-                    className="text-[25px]"
-                    onClick={() => setMenu(!showMenu)}
-                  />
-                ) : (
-                  <IoIosClose
-                    className="text-[30px]"
-                    onClick={() => setMenu(!showMenu)}
-                  />
-                )}
-              </section>
-            </section>
-          </section>
-        </section>
-
-        {/* mobile menu */}
-
-        {showMenu && (
-          <section className="lg:hidden md:w-[90vw] w-[95vw]  text-white/65 px-10 py-8 border shadow-2xl border-[#868686D9] rounded-2xl">
-            <section>
-              <ul className="flex flex-col gap-y-10 text-xl ">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <section className="flex gap-2 items-center justify-between w-full">
-                    Company <FaAngleDown />
-                  </section>
-                </li>
-                <li>
-                  <Link href="/contact">
-                    <section className="flex gap-2 items-center justify-between w-full">
-                      Products <FaAngleDown />
-                    </section>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/courses">Courses</Link>
-                </li>
-                <li>
-                  <Link href="/contact">Contact</Link>
-                </li>
-              </ul>
-            </section>
-
-            <section className=" mt-10 w-full ">
-              <button className="bg-[#48B96B] px-8 py-2 w-full font-semibold text-xl text-[#171615] rounded-md">
-                Explore our products
-              </button>
-            </section>
-          </section>
-        )}
-      </nav>
-      <section className="relative top-12 h-[50vh] w-full">
+      <section className="relative -z-10 top-[10em] h-[50vh] w-full ">
         <section className="flex items-center px-20 w-full">
-          <section className="z-50 w-[40vw] flex flex-col gap-10 absolute bottom-[-4em]">
+          <section className="z-20 w-[40vw] flex flex-col gap-10 absolute bottom-[-4em]">
             <section className="flex flex-col gap-6">
               <h1 className="w-[40vw] text-5xl font-bold">
                 Empowering Africa with smart technology
