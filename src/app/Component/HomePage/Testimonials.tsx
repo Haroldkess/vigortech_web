@@ -68,7 +68,7 @@ const Testimonials = () => {
 
                         <article
                             key={index}
-                            className="w-[80vw] md:w-[35vw] bg-[#1a1919] rounded-lg border border-[#2A2A2A] p-4 md:p-10 flex-shrink-0 mx-2"
+                            className="w-[80vw] md:w-[35vw]  rounded-lg border border-[#2A2A2A] p-4 md:p-10 flex-shrink-0 mx-2"
                             style={{ background: 'linear-gradient(rgba(23, 22, 21, 0.90), rgba(51, 51, 51, 0.24))', }}
                         >
                             <Image src={'/comma.svg'} alt={testimonial.name} className="md:w-14 md:h-14 w-8 h-8 rounded-md mb-4 relative bottom-[-2.5em]" width={10} height={10}/>
