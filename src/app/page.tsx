@@ -4,6 +4,7 @@ import AboutUs from "./Component/HomePage/AboutUs";
 import OurStat from "./Component/HomePage/OurStat";
 import Testimonials from "./Component/HomePage/Testimonials";
 import NavBar from "./Component/HomePage/NavBar";
+import Footer from "./Component/General/Footer";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <AboutUs />
         <OurStat />
         <Testimonials />
+        {/* <Footer /> */}
       </section>
     </main>
   );
