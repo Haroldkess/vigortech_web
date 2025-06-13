@@ -1,6 +1,15 @@
+"use client"
 import React from "react";
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 const OurStat = () => {
+
+    const { ref, inView } = useInView({
+        triggerOnce: true, 
+        threshold: 0.3,    
+      });
+
     return (
         <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row md:justify-between md:items-center gap-12 md:gap-0">
             {/* Left Side: Text Content */}
@@ -16,17 +25,23 @@ const OurStat = () => {
             </div>
 
             {/* Right Side: Stats */}
-            <div className="grid grid-cols-2 gap-x-20 gap-y-8 max-w-md w-full">
+            <div className="grid grid-cols-2 gap-x-20 gap-y-8 max-w-md w-full" ref={ref}>
                 <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">5+</h3>
+                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">
+                        {inView ? <CountUp start={0} end={5} duration={4} /> : '0'}+
+                    </h3>
                     <p className="text-gray-400 mt-1 text-sm">Projects</p>
                 </div>
                 <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">200+</h3>
+                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">
+                        {inView ? <CountUp start={0} end={200} duration={4} /> : '0'}+
+                    </h3>
                     <p className="text-gray-400 mt-1 text-sm">Learners trained</p>
                 </div>
                 <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">99.9%</h3>
+                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">
+                        {inView ? <CountUp start={0} end={99.9} duration={4} /> : '0'}%
+                    </h3>
                     <p className="text-gray-400 mt-1 text-sm">Satisfaction</p>
                 </div>
                 <div>
