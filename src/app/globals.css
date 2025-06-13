@@ -5,3 +5,68 @@
 body {
   @apply bg-[#171615] text-white
 }
+
+
+
+.custom-position {
+  position: absolute;
+  bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+  .custom-position {
+    top: 65%;
+    bottom: auto;
+    right: 30%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-position {
+    top: 60%;
+    right: 28%;
+
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .custom-position {
+    top: 44%;
+    right: 29%;
+  }
+}
+
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 3px #4CCC73, 0 0 5px #4CCC73, 0 0 7px #4CCC73;
+    border: 1px solid #4CCC73;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #4CCC73, 0 0 20px #4CCC73, 0 0 30px #4CCC73;
+    border: 1px solid #4CCC73;
+  }
+
+  70% {
+    box-shadow: 0 0 3px #ADFBC5, 0 0 5px #ADFBC5, 0 0 7px #ADFBC5;
+    border: 1px solid #4CCC73;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #4CCC73, 0 0 20px #4CCC73, 0 0 30px #4CCC73;
+    border: 1px solid #4CCC73;
+  }
+}
+
+.glow-bicon {
+  background: #ADFBC5;
+  color: #00ffcc;
+  padding: 2px 2px;
+  border: none;
+  border-radius: 50%;
+  animation: glow 4s infinite ease-in-out;
+}

@@ -55,6 +55,7 @@ export default function HeroSection() {
 
           <section className="">
             <section className=" flex justify-center flex-col  ">
+            
               <img
                 src={"/Earth.png"}
                 alt="earth"
@@ -62,6 +63,7 @@ export default function HeroSection() {
                 height={1000}
                 className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-5em] bottom-[-16em] md:bottom-0  md:top-[-6em]"
               />
+            
               <section className="">
                 <img
                   src={"/bgEarth.png"}
@@ -70,6 +72,10 @@ export default function HeroSection() {
                   height={200}
                   className=" w-[94vw] object-cover absolute blur-md -z-20 right-[-20em] bottom-[-20em]  "
                 />
+              </section>
+
+              <section className="absolute bottom-0 md:top-[65%] md:right-[30%] lg:top-[63%] lg:right-[30%]">
+                <div className='glow-bicon w-2 h-2 rounded-full'> </div>
               </section>
             </section>
           </section>

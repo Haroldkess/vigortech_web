@@ -29,6 +29,8 @@ const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
                 <p>Learn more </p>
                 <span><FaArrowRight className="text-[#fff]" /></span>
             </Link>
+
+           
         </article>
     );
 };
