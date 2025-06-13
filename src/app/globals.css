@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
-
+:root {
+  --font-inter: 'Inter', sans-serif;
+}
 
 body {
-  @apply bg-[#171615] text-white
+  @apply bg-[#171615] text-white;
+  font-family: var(--font-inter);
 }
 
 
@@ -40,33 +43,50 @@ body {
 }
 
 
+
 @keyframes glow {
   0% {
-    box-shadow: 0 0 3px #4CCC73, 0 0 5px #4CCC73, 0 0 7px #4CCC73;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 0 #4CCC73, 0 0 0 #4CCC73, 0 0 0 #4CCC73;
     border: 1px solid #4CCC73;
   }
 
+  25% {
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 2px #4CCC73, 0 0 5px #4CCC73, 0 0 10px #4CCC73;
+    border: 1px solid #4CCC73;
+  }
   50% {
-    box-shadow: 0 0 10px #4CCC73, 0 0 20px #4CCC73, 0 0 30px #4CCC73;
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 5px #4CCC73, 0 0 10px #4CCC73, 0 0 15px #4CCC73;
     border: 1px solid #4CCC73;
   }
-
-  70% {
-    box-shadow: 0 0 3px #ADFBC5, 0 0 5px #ADFBC5, 0 0 7px #ADFBC5;
+  75% {
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 10px #ADFBC5, 0 0 20px #ADFBC5, 0 0 30px #ADFBC5;
     border: 1px solid #4CCC73;
   }
 
   100% {
-    box-shadow: 0 0 10px #4CCC73, 0 0 20px #4CCC73, 0 0 30px #4CCC73;
-    border: 1px solid #4CCC73;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 0 #ADFBC5, 0 0 0 #ADFBC5, 0 0 0 #ADFBC5;
+    /* border: 1px solid #4CCC73; */
   }
 }
 
 .glow-bicon {
   background: #ADFBC5;
   color: #00ffcc;
-  padding: 2px 2px;
   border: none;
   border-radius: 50%;
-  animation: glow 4s infinite ease-in-out;
+  animation: glow 2s infinite ease-in-out;
+  display: inline-block;
+
+  min-width: 4px;
+  min-height: 4px;
 }
