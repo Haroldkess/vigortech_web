@@ -32,18 +32,7 @@ const testimonials = [
 ];
 
 
-function textColor({ text, index }: { text: string, index: number }) {
 
-    const name = testimonials[index].name.split(' ')[1];
-    const firstTwo = name.slice(0, 2);
-    const rest = name.slice(2);
-
-    return (
-        <span className="text-amber-300 font-semibold flex items-center gap-0">
-            {firstTwo} <span className="text-green-500">{rest}</span>
-        </span>
-    );
-}
 
 const Testimonials = () => {
     return (
@@ -73,9 +62,11 @@ const Testimonials = () => {
 
                                 <p className="text-[#EAF5F4A6] text-[16px] md:text-[18px] text-left  mb-6 md:leading-relaxed">{testimonial.quote}</p>
                                 <hr className="border-gray-700 mb-4" />
-                                <p className="text-green-500 font-semibold flex gap-0.5"><span>{testimonial.name.split(' ')[0]}</span>
-                                    {textColor({ text: testimonial.name, index })}
-                                </p>
+                               
+                                <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
+                                    {testimonial.name}
+                                </span>
+
                                 <p className="text-gray-400 text-sm">{testimonial.role}</p>
                             </article>
                         ))}
