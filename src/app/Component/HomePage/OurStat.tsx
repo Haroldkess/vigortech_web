@@ -24,26 +24,26 @@ const OurStat = () => {
 
             {/* Right Side: Stats */}
             <div className="grid grid-cols-2 gap-x-20 gap-y-8 max-w-md w-full" ref={ref}>
-                <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">
+                <div className="w-[4vw]">
+                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={5} duration={4} /> : '0'}+
                     </h3>
                     <p className="text-gray-400 mt-1 text-sm">Projects</p>
                 </div>
-                <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">
+                <div className="w-[8vw]">
+                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={200} duration={4} /> : '0'}+
                     </h3>
                     <p className="text-gray-400 mt-1 text-sm">Learners trained</p>
                 </div>
-                <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">
-                        {inView ? <CountUp start={0} end={99.9} duration={4} /> : '0'}%
+                <div className="w-[7.5vw]">
+                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
+                        {inView ? <CountUp start={0} end={99.9} duration={4} decimals={1} /> : '0'}%
                     </h3>
                     <p className="text-gray-400 mt-1 text-sm">Satisfaction</p>
                 </div>
-                <div>
-                    <h3 className="text-3xl font-extrabold border-b border-gray-600 pb-1">10+</h3>
+                <div className="w-[5.4vw]">
+                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">10+</h3>
                     <p className="text-gray-400 mt-1 text-sm">Integrations</p>
                 </div>
             </div>
