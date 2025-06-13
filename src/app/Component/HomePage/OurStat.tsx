@@ -2,22 +2,20 @@
 import React from "react";
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import SectionTitle from "../General/SectionTitle";
 
 const OurStat = () => {
 
     const { ref, inView } = useInView({
-        triggerOnce: true, 
-        threshold: 0.3,    
-      });
+        triggerOnce: true,
+        threshold: 0.3,
+    });
 
     return (
         <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row md:justify-between md:items-center gap-12 md:gap-0">
             {/* Left Side: Text Content */}
             <div className="md:max-w-lg space-y-4">
-                <span className="inline-flex items-center gap-2 text-xs font-normal bg-[#1F4F3D] rounded-full py-1 px-3 text-[#A7D7A9] w-max">
-                    <span className="w-3 h-3 rounded-full bg-[#A7D7A9] block"></span>
-                    Our track record
-                </span>
+                <SectionTitle title="Our track record" />
                 <h2 className="text-4xl font-bold leading-tight">Our stats</h2>
                 <p className="text-gray-400 max-w-md text-sm leading-relaxed">
                     We don’t just talk about change—we build it. These numbers show how far we’ve come, and where we’re headed.

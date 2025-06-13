@@ -11,9 +11,13 @@ export default function Home() {
     <main>
       <NavBar />
       <HeroSection />
-      <AboutUs />
-      <OurStat />
-      <Testimonials/>
+
+      <section className="shadow-2xl">
+
+        <AboutUs />
+        <OurStat />
+        <Testimonials />
+      </section>
     </main>
   );
 }

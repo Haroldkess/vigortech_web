@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutCard from './AboutCard'
+import SectionTitle from '../General/SectionTitle';
 
 
 export default function AboutUs() {
@@ -36,13 +37,10 @@ export default function AboutUs() {
 
 
     return (
-        <section className=" mx-auto px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  shadow-2xl">
+        <section className=" mx-auto px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
             <section className='max-w-7xl px-10'>
                 <div className="flex justify-center mb-6">
-                    <div className="flex items-center bg-[#2F5E3B] rounded-full px-4 py-1 gap-2 select-none">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#B7F2B0]"></div>
-                        <span className="text-white text-sm font-semibold leading-none">Focus</span>
-                    </div>
+                    <SectionTitle title="Focus" />
                 </div>
                 <h2 className="text-center text-white font-extrabold text-4xl mb-3 leading-tight">
                     Our Focus Area
