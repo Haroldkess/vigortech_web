@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 alt="earth"
                 width={1000}
                 height={1000}
-                className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-8%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
+                className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-9%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
               />
             
               <section className="">

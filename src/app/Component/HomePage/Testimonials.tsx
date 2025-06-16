@@ -41,7 +41,7 @@ const Testimonials = () => {
               <SectionTitle title="Testimonials" />
                 <h2 className="mt-6 md:text-4xl text-2xl font-bold leading-tight">What they say about us</h2>
                 <p className="mt-3 text-gray-400 max-w-xl mx-auto">
-                    Discover how we've helped businesses across different industries achieve their goals.
+                    Discover how we&apos;ve helped businesses across different industries achieve their goals.
                 </p>
             </div>
 

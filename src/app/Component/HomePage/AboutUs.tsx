@@ -46,7 +46,7 @@ export default function AboutUs() {
                     Our Focus Area
                 </h2>
                 <p className="text-center text-gray-400 max-w-xl mx-auto mb-12 text-sm leading-relaxed">
-                    We're committed to excellence in three key sectors that drive innovation and growth in today's digital
+                    We&apos;re committed to excellence in three key sectors that drive innovation and growth in today&apos;s digital
                     economy.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -20,7 +20,7 @@ export default function Home() {
         <OurStat />
         <Testimonials />
         <NewsLetter />
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </main>
   );

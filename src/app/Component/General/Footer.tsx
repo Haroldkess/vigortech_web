@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="max-w-7xl mx-auto px-6 py-12 relative overflow-hidden">
+        <footer className="max-w-7xl mx-auto px-6 py-12 relative overflow-hidden bg-[#171615A6]">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-0">
                 <div className="max-w-xs">
                     <img
@@ -10,7 +10,7 @@ const Footer = () => {
                         className="mb-4"
                         height="50"
                         width="150"
-                        src="https://storage.googleapis.com/a1aa/image/96922280-e6a0-4e63-0038-0bab1cf8d5b6.jpg"
+                        src="/logo.svg"
                     />
                     <p className="text-gray-300 text-sm leading-relaxed">
                         Empowering businesses through innovative technology solutions,
