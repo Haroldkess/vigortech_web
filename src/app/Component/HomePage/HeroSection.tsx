@@ -74,7 +74,7 @@ export default function HeroSection() {
                 />
               </section>
 
-              <section className="absolute bottom-0 md:top-[65%] md:right-[30%] lg:top-[65%] lg:right-[26%]">
+              <section className="absolute bottom-0 md:top-[65%] md:right-[32%] lg:top-[64%] lg:right-[25%]">
                 <div className='glow-bicon w-4 h-4 rounded-full'> </div>
               </section>
             </section>
