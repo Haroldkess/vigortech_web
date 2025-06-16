@@ -5,6 +5,7 @@ import OurStat from "./Component/HomePage/OurStat";
 import Testimonials from "./Component/HomePage/Testimonials";
 import NavBar from "./Component/HomePage/NavBar";
 import Footer from "./Component/General/Footer";
+import NewsLetter from "./Component/HomePage/NewsLetter";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutUs />
         <OurStat />
         <Testimonials />
+        <NewsLetter />
         {/* <Footer /> */}
       </section>
     </main>
