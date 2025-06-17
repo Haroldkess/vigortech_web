@@ -17,7 +17,7 @@ export default function HeroSection() {
               <h1 className="w-full md:w-[45vw] text-3xl md:text-5xl font-bold">
                 Empowering Africa with smart technology
               </h1>
-              <p className="md:w-[45vw] text-[#EAF5F4A6] text-md">
+              <p className="md:w-[45vw] w-[90vw] text-[#EAF5F4A6] text-md">
                 Innovative solutions that transform businesses through
                 cutting-edge technology, expert strategy, and seamless
                 integration.
@@ -35,7 +35,7 @@ export default function HeroSection() {
               </section>
             </section>
 
-            <section className="flex  gap-10 opacity-50 justify-center items-center ">
+            <section className="flex  gap-10 opacity-50 justify-between items-center ">
               <Image
                 src={"/adam.svg"}
                 alt="adam"
@@ -53,7 +53,7 @@ export default function HeroSection() {
             </section>
           </section>
 
-          <section className=" hidden">
+          <section className=" hidden md:block">
             <section className=" flex justify-center flex-col  ">
             
               <img
@@ -64,6 +64,36 @@ export default function HeroSection() {
                 className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-9%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
               />
             
+              <section className="">
+                <img
+                  src={"/bgEarth.png"}
+                  alt="earth"
+                  width={200}
+                  height={200}
+                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-[-20em] bottom-[-20em]  "
+                />
+              </section>
+
+              <section className="absolute bottom-0 md:top-[65%] md:right-[32%] lg:top-[64%] lg:right-[25%]">
+                <div className='glow-bicon w-4 h-4 rounded-full'> </div>
+              </section>
+            </section>
+          </section>
+
+
+
+
+          <section className="block md:hidden">
+            <section className=" flex justify-center flex-col  ">
+
+              <img
+                src={"/Earth.png"}
+                alt="earth"
+                width={1000}
+                height={1000}
+                className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-9%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
+              />
+
               <section className="">
                 <img
                   src={"/bgEarth.png"}
