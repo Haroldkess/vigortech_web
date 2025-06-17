@@ -29,31 +29,31 @@ export default function HeroSection() {
                 <button className="bg-[#48B96B] md:px-8 px-4 py-2 font-semibold text-[#171615] rounded-md">
                   Explore our products
                 </button>
-                <button className="border border-[#48B96B] px-8  py-2 font-semibold   rounded-md flex items-center gap-2">
+                <button className="border border-[#48B96B] px-8  py-2 font-semibold justify-center rounded-md flex items-center gap-2">
                   Get in touch <MdOutlineArrowOutward />
                 </button>
               </section>
             </section>
 
-            <section className="flex gap-10 opacity-50 ">
+            <section className="flex  gap-10 opacity-50 justify-center items-center ">
               <Image
                 src={"/adam.svg"}
                 alt="adam"
                 width={200}
                 height={200}
-                className="w-[100px] text-white/65"
+                className="w-[150px] md:w-[100px] text-white/65"
               />
               <Image
                 src={"/nervus.svg"}
                 alt="adam"
                 width={200}
                 height={200}
-                className="w-[100px] text-white/65"
+                className="w-[150px] md:w-[100px] text-white/65"
               />
             </section>
           </section>
 
-          <section className="">
+          <section className=" hidden">
             <section className=" flex justify-center flex-col  ">
             
               <img
