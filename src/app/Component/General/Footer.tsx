@@ -5,11 +5,11 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 // z - [-1]
 const Footer = () => {
     return (
-        <footer className="max-w-7xl  py-20 px-6  md:px-0 relative bg-[#171615A6]  overflow-hidden ">
+        <footer className="md:max-w-7xl w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-hidden ">
             <section className="absolute top-[-4em] left-[4em] w-full h-full z-[-1]  blur-3xl">
                 <Image src="/footer_bg.svg" alt="VigorTech logo" width={1000} height={1000} className="mb-4 object-cover w-[50vw] " />
             </section>
-            <div className="flex  flex-col md:flex-row md:justify-between md:items-start gap-12 md:gap-0  py-12 px-20  ">
+            <div className="flex  flex-col md:flex-row md:justify-between md:items-start gap-12 px-8 md:gap-0  py-12 md:px-20  ">
                 <div className="max-w-xs ">
                     <section className="">
                         <Image
@@ -26,7 +26,7 @@ const Footer = () => {
                     </section>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-24 gap-y-6 text-sm text-gray-300">
+                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
                     <div className="space-y-3">
                         <h3 className="text-[#EAF5F4A6]">Company</h3>
                         <ul className="space-y-5">
@@ -64,11 +64,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="px-20">
+            <div className="md:px-20 px-4">
                 <hr className="border-gray-700 my-8 " />
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-between items-center text-gray-400 text-sm gap-4 px-20">
+            <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-gray-400 text-sm px-10 gap-4 md:px-20">
                 <p>©2021 Vigortech, Inc. All rights reserved</p>
                 <div className="flex space-x-6 text-gray-400 text-lg">
                     <a aria-label="Facebook" className="hover:text-white" href="#">

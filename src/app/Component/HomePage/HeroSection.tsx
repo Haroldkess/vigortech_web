@@ -9,15 +9,15 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export default function HeroSection() {
 
   return (
-    <header className="mb-[40vh] font-inter ">
-      <section className="relative -z-10 top-[4em] md:top-[10em] h-[70vh] md:h-[50vh] w-full ">
+    <header className="mb-[40vh] font-inter pb-40 ">
+      <section className="relative -z-10 top-[2em] md:top-[10em] h-[70vh] md:h-[50vh] w-full ">
         <section className="flex items-center px-4 md:px-20 w-full ">
           <section className="z-20 w-full md:w-[40vw] flex flex-col gap-10 absolute bottom-[-4em]">
             <section className="flex flex-col gap-6">
-              <h1 className="w-full md:w-[45vw] text-3xl md:text-5xl font-bold">
+              <h1 className="w-full md:w-[45vw] text-2xl md:text-5xl font-bold">
                 Empowering Africa with smart technology
               </h1>
-              <p className="md:w-[45vw] w-[90vw] text-[#EAF5F4A6] text-md">
+              <p className="md:w-[45vw] w-[90vw] text-[#EAF5F4A6] text-sm md:text-md">
                 Innovative solutions that transform businesses through
                 cutting-edge technology, expert strategy, and seamless
                 integration.
@@ -35,7 +35,7 @@ export default function HeroSection() {
               </section>
             </section>
 
-            <section className="flex  gap-10 opacity-50 justify-between items-center ">
+            <section className="flex  gap-10 opacity-50 justify-center md:justify-start items-center ">
               <Image
                 src={"/adam.svg"}
                 alt="adam"
@@ -81,7 +81,7 @@ export default function HeroSection() {
           </section>
 
 
-
+{/* mobile image section */}
 
           <section className="block md:hidden">
             <section className=" flex justify-center flex-col  ">
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 alt="earth"
                 width={1000}
                 height={1000}
-                className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-9%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
+                className="z-50  w-[100vw] object-cover absolute right-0 left-0  top-[90vh]"
               />
 
               <section className="">
@@ -100,11 +100,11 @@ export default function HeroSection() {
                   alt="earth"
                   width={200}
                   height={200}
-                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-[-20em] bottom-[-20em]  "
+                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-0 top-[90vh]  "
                 />
               </section>
 
-              <section className="absolute bottom-0 md:top-[65%] md:right-[32%] lg:top-[64%] lg:right-[25%]">
+              <section className="absolute bottom-0 right-[50%] top-[105vh] ">
                 <div className='glow-bicon w-4 h-4 rounded-full'> </div>
               </section>
             </section>
