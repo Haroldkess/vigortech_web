@@ -11,16 +11,16 @@ export default function NewsLetter() {
             <section className='absolute top-0 left-0 w-full h-full flex items-center justify-center rounded-t-2xl'>
                 <section className='flex flex-col w-full justify-center items-center gap-10'>
                     <section className=' w-full'>     
-                          <h1 className='text-white text-xl md:text-4xl font-bold text-center'>Want product news and update?
+                          <h1 className='text-white text-lg md:text-4xl font-bold text-center'>Want product news and update?
                         <br />
                         Sign up for our newsletter.</h1>
 
-                        <section className='relative left-[56%] md:left-[59%] top-[-0.6rem] '><Image src="/newsLine.svg" alt="Newsletter Icon" width={100} height={100} /></section>
+                        <section className='relative left-[56%] md:left-[59%] top-[-0.6rem] '><Image src="/newsLine.svg" alt="Newsletter Icon" width={100} height={100} className='h-3 md:h-8' /></section>
                     </section>
 
                     <section>
                         <form className='flex justify-center items-center md:gap-4 w-full gap-2 '>
-                            <input type='email' placeholder='Enter your email' className='placeholder:text-[#EAF5F473] placeholder:font-inter placeholder:font-[400] outline-none px-4 py-2 w-[60vw] md:w-[30vw] rounded-md border border-[#48B96B59] bg-[#6CC7880D]' />
+                            <input type='email' placeholder='Enter your email' className='placeholder:text-[#EAF5F473] placeholder:font-inter placeholder:font-[400] outline-[#48B96B] px-4 py-2 w-[60vw] md:w-[30vw] rounded-md border border-[#48B96B59] bg-[#6CC7880D]' />
                             <button type='submit' className='bg-[#48B96B]  text-black font-medium px-4 py-2 rounded-md'>Subscribe</button>
                         </form>
                     </section>

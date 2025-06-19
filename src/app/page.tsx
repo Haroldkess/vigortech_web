@@ -20,13 +20,13 @@ export default function Home() {
         <AboutUs />
 
         <section className="flex justify-center items-center w-full py-20">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} />
+          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
         </section>
         
         <OurStat />
 
         <section className="flex justify-center items-center w-full py-20">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} />
+          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
         </section>
         <Testimonials />
         <NewsLetter />

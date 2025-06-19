@@ -26,7 +26,7 @@ const Footer = () => {
                     </section>
                 </div>
 
-                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
+                <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
                     <div className="space-y-3">
                         <h3 className="text-[#EAF5F4A6]">Company</h3>
                         <ul className="space-y-5">

@@ -42,7 +42,7 @@ export default function AboutUs() {
                 <div className="flex justify-center mb-6">
                     <SectionTitle title="Focus" />
                 </div>
-                <h2 className="text-center text-white font-extrabold text-4xl mb-3 leading-tight">
+                <h2 className="text-center text-white font-extrabold text-2xl md:text-4xl mb-3 leading-tight">
                     Our Focus Area
                 </h2>
                 <p className="text-center text-gray-400 max-w-xl mx-auto mb-12 text-sm leading-relaxed">

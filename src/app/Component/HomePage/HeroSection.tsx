@@ -11,10 +11,10 @@ export default function HeroSection() {
   return (
     <header className="mb-[40vh] font-inter pb-40 ">
       <section className="relative -z-10 top-[2em] md:top-[10em] h-[70vh] md:h-[50vh] w-full ">
-        <section className="flex items-center px-4 md:px-20 w-full ">
-          <section className="z-20 w-full md:w-[40vw] flex flex-col gap-10 absolute bottom-[-4em]">
+        <section className="flex items-center px-4 md:px-10 lg:px-20 w-full ">
+          <section className="z-20 w-full md:w-[50vw] lg:w-[40vw] flex flex-col gap-10 absolute md:top-10 lg:bottom-[-4em]">
             <section className="flex flex-col gap-6">
-              <h1 className="w-full md:w-[45vw] text-2xl md:text-5xl font-bold">
+              <h1 className="w-full lg:w-[45vw] text-2xl md:text-5xl font-bold">
                 Empowering Africa with smart technology
               </h1>
               <p className="md:w-[45vw] w-[90vw] text-[#EAF5F4A6] text-sm md:text-md">
@@ -53,17 +53,18 @@ export default function HeroSection() {
             </section>
           </section>
 
-          <section className=" hidden md:block">
+          {/* desktop image section */}
+          <section className=" hidden lg:block">
             <section className=" flex justify-center flex-col  ">
-            
+
               <img
                 src={"/Earth.png"}
                 alt="earth"
                 width={1000}
                 height={1000}
                 className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-9%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
-              />
-            
+              /> 
+
               <section className="">
                 <img
                   src={"/bgEarth.png"}
@@ -72,16 +73,47 @@ export default function HeroSection() {
                   height={200}
                   className=" w-[94vw] object-cover absolute blur-md -z-20 right-[-20em] bottom-[-20em]  "
                 />
-              </section>
+              </section> 
 
-              <section className="absolute bottom-0 md:top-[65%] md:right-[32%] lg:top-[64%] lg:right-[25%]">
+              <section className="absolute bottom-0 right-[25vw] top-[33vh] ">
                 <div className='glow-bicon w-4 h-4 rounded-full'> </div>
               </section>
             </section>
           </section>
 
 
-{/* mobile image section */}
+
+          {/* tablet mage section */}
+
+          <section className=" hidden max-w-md md:block">
+            <section className=" flex justify-center flex-col  ">
+
+              <img
+                src={"/Earth.png"}
+                alt="earth"
+                width={1000}
+                height={1000}
+                className="z-50  w-[80vw] object-cover absolute right-[-8em] top-[-8vh] lg:hidden "
+              />
+
+              <section className="">
+                <img
+                  src={"/bgEarth.png"}
+                  alt="earth"
+                  width={200}
+                  height={200}
+                  className=" w-[150vw] object-cover absolute blur-md -z-20 right-[-20em] lg:hidden  "
+                />
+              </section>
+
+              <section className="absolute bottom-0 top-[14vh] right-[26vw] lg:hidden">
+                <div className='glow-bicon w-4 h-4 rounded-full'> </div>
+              </section>
+            </section>
+          </section>
+
+
+          {/* mobile image section */}
 
           <section className="block md:hidden">
             <section className=" flex justify-center flex-col  ">
