@@ -9,10 +9,10 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export default function HeroSection() {
 
   return (
-    <header className="mb-[40vh] font-inter pb-40 ">
+    <header className=" lg:mb-[40vh] mb-40 font-inter pb-40 lg:pb-40  ">
       <section className="relative -z-10 top-[2em] md:top-[10em] h-[70vh] md:h-[50vh] w-full ">
         <section className="flex items-center px-4 md:px-10 lg:px-20 w-full ">
-          <section className="z-20 w-full md:w-[50vw] lg:w-[40vw] flex flex-col gap-10 absolute md:top-10 lg:bottom-[-4em]">
+          <section className="z-20 w-full md:w-[50vw] lg:w-[40vw] flex flex-col gap-10 absolute top-24 md:top-10 lg:bottom-[-4em]">
             <section className="flex flex-col gap-6">
               <h1 className="w-full lg:w-[45vw] text-2xl md:text-5xl font-bold">
                 Empowering Africa with smart technology
@@ -123,7 +123,7 @@ export default function HeroSection() {
                 alt="earth"
                 width={1000}
                 height={1000}
-                className="z-50  w-[100vw] object-cover absolute right-0 left-0  top-[90vh]"
+                className="z-50  w-[100vw] object-cover absolute right-0 left-0 top-[70vh]"
               />
 
               <section className="">
@@ -132,11 +132,11 @@ export default function HeroSection() {
                   alt="earth"
                   width={200}
                   height={200}
-                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-0 top-[90vh]  "
+                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-0 top-[70vh]  "
                 />
               </section>
 
-              <section className="absolute bottom-0 right-[50%] top-[105vh] ">
+              <section className="absolute bottom-0 right-[50%] top-[85vh] ">
                 <div className='glow-bicon w-4 h-4 rounded-full'> </div>
               </section>
             </section>

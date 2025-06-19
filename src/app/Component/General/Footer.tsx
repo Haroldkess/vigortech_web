@@ -5,11 +5,11 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 // z - [-1]
 const Footer = () => {
     return (
-        <footer className="md:max-w-7xl w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-hidden ">
+        <footer className="lg:max-w-7xl w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-hidden ">
             <section className="absolute top-[-4em] left-[4em] w-full h-full z-[-1]  blur-3xl">
                 <Image src="/footer_bg.svg" alt="VigorTech logo" width={1000} height={1000} className="mb-4 object-cover w-[50vw] " />
             </section>
-            <div className="flex  flex-col md:flex-row md:justify-between md:items-start gap-12 px-8 md:gap-0  py-12 md:px-20  ">
+            <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-8 md:gap-0  py-12 md:px-20  ">
                 <div className="max-w-xs ">
                     <section className="">
                         <Image

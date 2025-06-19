@@ -37,8 +37,8 @@ export default function AboutUs() {
 
 
     return (
-        <section className=" mx-auto md:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
-            <section className='max-w-7xl md:px-10 px-4'>
+        <section className=" lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+            <section className='lg:max-w-7xl md:px-10 px-4'>
                 <div className="flex justify-center mb-6">
                     <SectionTitle title="Focus" />
                 </div>
@@ -49,7 +49,7 @@ export default function AboutUs() {
                     We&apos;re committed to excellence in three key sectors that drive innovation and growth in today&apos;s digital
                     economy.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-8">
                     {contentCards.map((card, index) => (
                         <AboutCard
                             key={index}
