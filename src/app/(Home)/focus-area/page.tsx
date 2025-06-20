@@ -1,4 +1,6 @@
+import OurServices from '@/app/Component/FocusAreaPage/OurServices'
 import TechSection from '@/app/Component/FocusAreaPage/TechSection'
+import Footer from '@/app/Component/General/Footer'
 import HeroGeneral from '@/app/Component/General/HeroGeneral'
 import SectionTitle from '@/app/Component/General/SectionTitle'
 import NavBar from '@/app/Component/HomePage/NavBar'
@@ -32,6 +34,10 @@ export default function FocusArea() {
             </HeroGeneral>
             <section className="shadow-2xl bg-[#171615A6]">
             <TechSection/>
+
+                <OurServices/>
+
+            <Footer/>
             </section>
         </section>
     )
