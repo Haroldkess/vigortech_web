@@ -4,39 +4,7 @@ import Image from 'next/image';
 
 export default function Team() {
 
-    const teamMembers = [
-        {
-            user: "/Teams/co-founder.png",
-            title: "Purpose",
-            name: "John Doe",
 
-        },
-        {
-            user: "/Teams/cto.png",
-            title: "Integrity",
-            name: "John Doe",
-
-        },
-        {
-            user: "/Teams/PD.png",
-            title: "Excellence",
-            name: "John Doe",
-
-        },
-        {
-            user: "/Teams/QA.png",
-            title: "Collaboration",
-            name: "John Doe",
-
-        },
-        {
-            user: "/Teams/VA.png",
-            title: "Ethics",
-            name: "John Doe",
-
-        },
-
-    ];
 
     return (
         <div className=" text-white min-h-screen flex flex-col items-center justify-center px-4 py-12">
@@ -59,10 +27,10 @@ export default function Team() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
                     <Image src="/Teams/co-founder.png"
                         alt="Thoughtful man with glasses" className="rounded-xl w-full object-cover" height="350" width="300" />
-                    <Image src="/Teams/cto.png"
+                    <Image src="/Teams/VA.png"
                         alt="Smiling woman with braided hair" className="rounded-xl w-full object-cover" height="350"
                         width="300" />
-                    <Image src="/Teams/PD.png"
+                    <Image src="/Teams/cto.png"
                         alt="Man with afro hairstyle" className="rounded-xl w-full object-cover" height="350" width="300" />
                 </div>
 
@@ -71,7 +39,7 @@ export default function Team() {
                     <Image src="/Teams/QA.png"
                         alt="Man with glasses in plaid shirt" className="rounded-xl w-full object-cover" height="350"
                         width="300" />
-                    <Image src="/Teams/VA.png"
+                    <Image src="/Teams/PD.png"
                         alt="Man with beard and vest" className="rounded-xl w-full object-cover" height="350" width="300" />
                 </div>
 
