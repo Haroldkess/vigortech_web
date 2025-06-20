@@ -4,6 +4,7 @@ import Footer from '@/app/Component/General/Footer'
 import HeroGeneral from '@/app/Component/General/HeroGeneral'
 import SectionTitle from '@/app/Component/General/SectionTitle'
 import NavBar from '@/app/Component/HomePage/NavBar'
+import Image from 'next/image'
 
 import React from 'react'
 import { MdOutlineArrowOutward } from 'react-icons/md'
@@ -17,11 +18,11 @@ export default function FocusArea() {
                     <SectionTitle title='Our focus' />
 
                     <section className=' '>
-                        <h1 className='text-white text-lg md:text-5xl font-bold text-center'>Our Focus Area</h1>
+                        <h1 className='text-white text-lg md:text-4xl font-bold text-center'>Our Focus Area</h1>
 
 
                         <section className='flex flex-col items-center gap-4  justify-center w-full'>
-                            <p className='text-[#EAF5F4A6] text-sm md:text-md font-light text-center mt-4 w-[55vw]'>Our focus is to co-create accessible digital solutions with local partners across Africa, empowering businesses and communities to thrive in the digital economy</p>
+                            <p className='text-[#EAF5F4A6] text-sm md:text-lg font-light text-center mt-4 w-[50vw]'>Our focus is to co-create accessible digital solutions with local partners across Africa, empowering businesses and communities to thrive in the digital economy</p>
                             <section className=" flex flex-col md:flex-row gap-4 ">
 
                                 <button className="border border-[#48B96B] px-8  py-2 font-normal justify-center rounded-md flex items-center gap-2">
@@ -36,6 +37,10 @@ export default function FocusArea() {
             <TechSection/>
 
                 <OurServices/>
+
+                     <section className="flex justify-center items-center w-full py-20">
+                          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+                        </section>
 
             <Footer/>
             </section>
