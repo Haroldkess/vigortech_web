@@ -10,7 +10,7 @@ export default function OurStory() {
                     <section className='text-[#EAF5F4A6] text-md  font-light text-start flex flex-col gap-y-10  mt-4 max-w-xl'>
                         <p>After a generation defined by ingenuity and relentless perseverance in the structural and building sector, we were reborn with a promise on the Rock. Today, we are committed to delivering high-level applications, innovative ideas, and transformative ventures that empower, drive, and enhance the lives of Africans and people around the world.</p>
 
-                        <p>"VigorTech is more than a tech company; we're a catalyst for change. Across investments, education, agriculture, and clean water, we turn big challenges into bold opportunities. Because the future isn’t waiting — and neither are we."</p>
+                        <p>&quot;VigorTech is more than a tech company; we&apos;re a catalyst for change. Across investments, education, agriculture, and clean water, we turn big challenges into bold opportunities. Because the future isn’t waiting — and neither are we.&quot;</p>
                     </section>
                 </section>
 

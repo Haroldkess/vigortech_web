@@ -34,7 +34,7 @@ export default function HeroAbout() {
                     Explore our products
                   </button>
                   <button className="border border-[#48B96B] px-8  py-2 font-normal justify-center rounded-md flex items-center gap-2">
-                    We're Hiring <MdOutlineArrowOutward />
+                    We&apos;re Hiring <MdOutlineArrowOutward />
                   </button>
                 </section>
               </section>

@@ -2,7 +2,7 @@
 import React from "react";
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import SectionTitle from "../General/SectionTitle";
+// import SectionTitle from "../General/SectionTitle";
 
 const AboutStats = () => {
 
