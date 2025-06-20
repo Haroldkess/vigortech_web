@@ -4,6 +4,7 @@ import OurFocus from '@/app/Component/AboutUsPage/OurFocus'
 import OurMission from '@/app/Component/AboutUsPage/OurMission'
 import OurStory from '@/app/Component/AboutUsPage/OurStory'
 import OurValues from '@/app/Component/AboutUsPage/OurValues'
+import Team from '@/app/Component/AboutUsPage/Team'
 import Footer from '@/app/Component/General/Footer'
 import NavBar from '@/app/Component/HomePage/NavBar'
 import Image from 'next/image'
@@ -19,20 +20,22 @@ export default function AboutUs() {
         <OurStory />
         <OurFocus />
         <section className="flex justify-center items-center w-full py-4">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-4 w-[100vw]" />
+          <Image src={'/line.svg'} alt="line" width={100} height={10} className="h-4 w-[100vw]" />
         </section>
 
         <OurMission />
 
         <section className="flex justify-center items-center w-full py-4">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-4 w-[100vw]" />
+          <Image src={'/line.svg'} alt="line" width={100} height={10} className="h-4 w-[100vw]" />
         </section>
 
         <OurValues />
 
         <section className="flex justify-center items-center w-full py-4">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-4 w-[100vw]" />
+          <Image src={'/line.svg'} alt="line" width={100} height={10} className="h-4 w-[100vw]" />
         </section>
+
+        <Team/>
 
         <Footer />
       </section>
