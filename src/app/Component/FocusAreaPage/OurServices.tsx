@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionTitle from '../General/SectionTitle';
+
 import AboutCard from '../HomePage/AboutCard';
 import Image from 'next/image';
 
@@ -39,7 +39,7 @@ export default function OurServices() {
                         What we do
                     </h2>
 
-                         <section className='absolute left-[46%] top-7 '><Image src="/newsLine.svg" alt="Newsletter Icon" width={200} height={100} className='h-4  ' /></section>
+                    <section className='absolute left-[46%] top-7 '><Image src="/newsLine.svg" alt="Newsletter Icon" width={200} height={100} className='h-4  ' /></section>
                 </section>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-8">

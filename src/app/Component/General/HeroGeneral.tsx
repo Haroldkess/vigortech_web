@@ -4,7 +4,7 @@ import React from 'react'
 
 import { PropsWithChildren } from 'react'
 
-export default function HeroGeneral({ children }: PropsWithChildren<{}>) {
+export default function HeroGeneral({ children }: PropsWithChildren) {
     return (
         <header className=" lg:mb-[30vh] mb-40  font-inter pb-40 lg:pb-20  ">
             <section className="relative -z-10 top-[2em] md:top-[10em] h-[70vh] md:h-[50vh] w-full ">

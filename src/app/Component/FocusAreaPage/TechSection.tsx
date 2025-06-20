@@ -18,7 +18,7 @@ export default function TechSection() {
                 <section className='text-[#EAF5F4A6] text-md  font-light text-start flex flex-col gap-y-4  mt-4 max-w-lg'>
                         <p>At Vigor Tech, we don&apos;t build for the sake of building. Every tool, system, and platform we develop starts with a clear question: What real problem are we solving? We believe technology should be intentional, inclusive, and impactful.</p>
 
-                        <p>From the ground up, our solutions are designed to create access where there was none, streamline systems that were once broken, and empower users who&apos;ve often been overlooked. We're not in the business of trends—we&apos;re in the business of transformation.</p>
+                        <p>From the ground up, our solutions are designed to create access where there was none, streamline systems that were once broken, and empower users who&apos;ve often been overlooked. We&apos;re not in the business of trends—we&apos;re in the business of transformation.</p>
                 </section>
             </section>
 
