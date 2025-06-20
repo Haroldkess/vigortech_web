@@ -8,7 +8,7 @@ interface AboutCardProps {
     title: string;
     description: string;
     icon: React.ReactNode;
-    link: string;
+    link?: string;
 }
 
 const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
@@ -25,10 +25,12 @@ const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
                 {description}
             </p>
-            <Link href={link} className="text-white font-semibold text-sm flex items-center gap-1 justify-start hover:text-[#B7F2B0] transition-colors duration-300">
-                <p>Learn more </p>
-                <span><FaArrowRight className="text-[#fff]" /></span>
-            </Link>
+            {link && (
+                <Link href={link} className="text-white font-semibold text-sm flex items-center gap-1 justify-start hover:text-[#B7F2B0] transition-colors duration-300">
+                    <p>Learn more </p>
+                    <span><FaArrowRight className="text-[#fff]" /></span>
+                </Link>
+            )}
 
            
         </article>

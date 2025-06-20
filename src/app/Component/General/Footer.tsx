@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className="space-y-3">
                         <h3 className="text-[#EAF5F4A6]">Company</h3>
                         <ul className="space-y-5">
-                            <li><a className="hover:text-white" href="#">About us</a></li>
+                            <li><a className="hover:text-white" href="/about-us">About us</a></li>
                             <li><a className="hover:text-white" href="#">Blog</a></li>
                             <li><a className="hover:text-white" href="#">Career</a></li>
                         </ul>
