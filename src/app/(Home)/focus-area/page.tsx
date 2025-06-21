@@ -1,3 +1,5 @@
+import Finance from '@/app/Component/FocusAreaPage/Finance'
+import OurCourses from '@/app/Component/FocusAreaPage/OurCourses'
 import OurServices from '@/app/Component/FocusAreaPage/OurServices'
 import TechSection from '@/app/Component/FocusAreaPage/TechSection'
 import Footer from '@/app/Component/General/Footer'
@@ -34,15 +36,25 @@ export default function FocusArea() {
                 </section>
             </HeroGeneral>
             <section className="shadow-2xl bg-[#171615A6]">
-            <TechSection/>
+                <TechSection />
 
-                <OurServices/>
+                <OurServices />
 
-                     <section className="flex justify-center items-center w-full py-20">
-                          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
-                        </section>
+                <section className="flex justify-center items-center w-full py-20">
+                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+                </section>
 
-            <Footer/>
+                <OurCourses />
+
+
+                <section className="flex justify-center items-center w-full py-20">
+                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+                </section>
+
+
+                <Finance />
+
+                <Footer />
             </section>
         </section>
     )
