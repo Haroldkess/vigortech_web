@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+
 
 interface Card {
   imageUrl: string,
@@ -13,10 +13,6 @@ interface Card {
 
 export default function CourseCard({ imageUrl, cardTitle, description, studentLevel, isFlag }: Card) {
 
-  const [flag, setFlag] = useState<boolean>(isFlag)
-
-
- 
 
   return (
     <section className="rounded-xl font-Inter border  border-[#86868659] text-[#EAF5F4A6]" style={{ background: 'linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))', }}>
@@ -25,7 +21,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
       </section>
       <section className='px-4 py-6 flex flex-col gap-y-10 relative'>
         {
-          flag &&
+          isFlag &&
           <section className='absolute top-[-0.8rem] left-0'>
             <Image src={'/Institute/flagship.svg'} alt='calendar_today' width={150} height={150} className='' />
           </section>
