@@ -4,7 +4,7 @@ import React from 'react'
 export default function OurFocus() {
     return (
         <div className=" text-white min-h-screen ">
-            <div className="max-w-7xl px-20 py-12">
+            <div className="max-w-7xl px-10 md:px-20 py-12">
                 <h2 className="text-3xl font-semibold border-l-4 border-[#2ecc71] pl-3 mb-3">Our Focus</h2>
                 <p className="text-md text-gray-400 max-w-md mb-16">
                 &quot;Our focus is to co-create accessible digital solutions with local partners across Africa, empowering
@@ -15,18 +15,18 @@ export default function OurFocus() {
                     {/* Horizontal line top */}
                   
 
-                    <section className='flex justify-center items-center relative z-20 left-4'>
+                    <section className='md:flex justify-center hidden items-center relative z-20 md:left-4'>
                         <div
                             className=" rounded-full w-20 h-20 flex items-center justify-between  text-lg z-50 ">
                             <Image src="/tech_circle.svg" alt="Technology Icon" width={50} height={50} />
                         </div>
 
-                        <div className="w-[22vw] border-t border-[#2ecc71]"></div>
+                        <div className="w-[22vw]  border-t border-[#2ecc71]"></div>
                         <div
                             className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg relative z-50">
                             <Image src="/education_circle.svg" alt="Education Icon" width={50} height={50} />
                         </div>
-                        <div className="w-[22vw] border-t border-[#2ecc71]"></div>
+                        <div className="w-[22vw]  border-t border-[#2ecc71]"></div>
 
                         <div
                             className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg  z-50">
@@ -35,9 +35,13 @@ export default function OurFocus() {
                     </section>
 
 
-                    <div className="flex justify-between gap-10 items-center  z-10 w-full">
+                    <div className="grid grid-cols-1 justify-between gap-10 items-center  z-10 w-full">
                         {/* Technology */}
                         <div className="flex flex-col items-center ">
+                            <div
+                                className=" rounded-full w-20 h-20 flex items-center justify-between  text-lg z-50 ">
+                                <Image src="/tech_circle.svg" alt="Technology Icon" width={50} height={50} />
+                            </div>
 
                             <p className="mt-3 font-semibold text-sm">Technology</p>
                             <p className="mt-1 text-md px-10 text-[#EAF5F4A6] font-light text-center ">
@@ -48,7 +52,10 @@ export default function OurFocus() {
 
                         {/* Education */}
                         <div className="flex flex-col items-center  ">
-
+                            <div
+                                className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg relative z-50">
+                                <Image src="/education_circle.svg" alt="Education Icon" width={50} height={50} />
+                            </div>
 
                             <p className="mt-3 font-semibold text-sm">Education</p>
                             <p className="mt-1 text-md px-10 text-[#EAF5F4A6] font-light text-center ">
@@ -59,6 +66,10 @@ export default function OurFocus() {
 
                         {/* Finance */}
                         <div className="flex flex-col items-center ">
+                            <div
+                                className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg  z-50">
+                                <Image src="/finance_circle.svg" alt="Finance Icon" width={50} height={50} />
+                            </div>
 
                             <p className="mt-3 font-semibold text-sm">Finance</p>
                             <p className="mt-1 text-md px-10 text-[#EAF5F4A6] font-light text-center ">

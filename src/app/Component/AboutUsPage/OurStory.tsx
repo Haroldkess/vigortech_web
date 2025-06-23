@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function OurStory() {
     return (
-        <section className='mb-40'>
+        <section className='mb-40 md:mb-0'>
             <section className='flex flex-col md:flex-col  justify-between w-full py-20 px-10 md:px-20  gap-10'>
                 <section className='pt-10'>
                     <h2 className='border-s-2 px-4 border-[#48B96B] text-3xl'>Our Story</h2>
