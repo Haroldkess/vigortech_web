@@ -35,6 +35,10 @@ export default function Career() {
 
                 <Location/>
 
+                <section className="flex justify-center items-center w-full py-20">
+                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+                </section>
+                
                 <JobBoard />
 
                 <section className="flex justify-center items-center w-full py-20">
