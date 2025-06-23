@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 
 const ContactForm = () => {
     return (
-        <main className="max-w-6xl w-full rounded-2xl p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <main className="max-w-2xl w-full rounded-2xl p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Contact Info Section */}
             <section className="space-y-6 max-w-md">
                 <h2 className="text-2xl font-bold">Get in touch</h2>
@@ -13,7 +13,7 @@ const ContactForm = () => {
                     Fill out the form and our team will get back to you promptly.
                 </p>
                 <div className="flex items-center space-x-4">
-                    <Image src={'/ContactUs/vector.svg'} alt="" height={20} width={20} />
+                    <img src={'/ContactUs/vector.svg'} alt="" height={20} width={20} />
                     <div className="space-y-0.5">
                         <p className="font-semibold text-sm">Email</p>
                         <p className="text-gray-400 text-sm">vigortechapp@gmail.com</p>
@@ -22,7 +22,7 @@ const ContactForm = () => {
             </section>
 
             {/* Form Section */}
-            <section className="max-w-xl w-full">
+            <section className="max-w-2xl w-full">
                 <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
                 <form className="space-y-6">
                     {/* Name Fields */}
