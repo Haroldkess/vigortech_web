@@ -23,7 +23,9 @@ export default function ContactUs() {
             </HeroGeneral>
 
             < section className="shadow-2xl bg-[#171615A6]" >
-                <ContactForm/>
+                <section className='flex w-full justify-center items-center flex-col pt-20'>
+                    <ContactForm />
+                </section>
                 < Footer />
             </section>
 
