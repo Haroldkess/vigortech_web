@@ -29,8 +29,8 @@ export default function AboutUs() {
             <section className='relative left-[48%] md:left-[53%] top-[-1rem] '><Image src="/newsLine.svg" alt="Newsletter Icon" width={200} height={100} className='h-5 md:h-10' /></section>
 
             <section className='flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full'>
-              <p className='text-[#EAF5F4A6] text-sm md:text-lg font-normal text-center mt-4'>Where purpose meets real impact.</p>
-              <section className=" flex flex-col md:flex-row gap-4 w-[90vw] md:w-[60vw] md:justify-center md:items-center">
+              <p className='text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4'>Where purpose meets real impact.</p>
+              <section className=" flex flex-col md:flex-row gap-4 gap-y-8 w-[90vw] md:w-[60vw] md:justify-center md:items-center">
                 <button className="bg-[#48B96B] md:px-8 px-4 py-2 font-normal text-[#171615] rounded-md">
                   Explore our products
                 </button>

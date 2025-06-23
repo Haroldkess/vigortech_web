@@ -12,9 +12,9 @@ const AboutStats = () => {
     });
 
     return (
-        <section className="md:max-w-7xl w-full md:mx-auto px-6 py-16 flex flex-col  items-center md:flex-row md:justify-center md:items-center gap-12 md:gap-0">
+        <section className="md:max-w-7xl w-full px-4 md:mx-auto  md:px-6 md:py-16 flex flex-col  items-center md:flex-row md:justify-center md:items-center gap-12 md:gap-0">
          
-            <div className="grid grid-cols-4  md:gap-x-40 justify-center items-center gap-y-8 md:max-w-md gap-x-20" ref={ref}>
+            <div className="grid md:grid-cols-4 grid-cols-2  md:gap-x-40 justify-center items-center gap-y-8 md:max-w-md gap-x-20" ref={ref}>
                 <div className="md:w-[4vw] w-[12vw]">
                     <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={5} duration={4} /> : '0'}+
