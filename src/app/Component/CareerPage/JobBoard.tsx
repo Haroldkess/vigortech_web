@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import SectionTitle from "../General/SectionTitle";
 
 
 
@@ -40,11 +41,9 @@ const JobBoard = () => {
         <section className="px-20  py-12 sm:py-16">
      
             <div className="mb-8 max-w-3xl">
-                <span className="inline-flex items-center gap-2 text-sm font-medium bg-[#2f4f2f] rounded-full px-3 py-1 mb-4">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#4ade80] block" />
-                    Open positions
-                </span>
-                <h1 className="text-3xl font-semibold leading-tight mb-2">
+                <SectionTitle title='Open positions' />
+
+                <h1 className="text-3xl font-semibold py-4 leading-tight mb-2">
                     Want to join team Vigor?
                 </h1>
                 <p className="text-[#EAF5F4A6] text-sm max-w-xl">
