@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactForm = () => {
     return (
-        <main className="max-w-6xl w-full rounded-2xl p-20 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <main className="max-w-6xl w-full rounded-2xl p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Contact Info Section */}
             <section className="space-y-6 max-w-md">
                 <h2 className="text-2xl font-bold">Get in touch</h2>
