@@ -1,5 +1,6 @@
 import Benfits from '@/app/Component/CareerPage/Benfits'
 import JobBoard from '@/app/Component/CareerPage/JobBoard'
+import Location from '@/app/Component/CareerPage/Location'
 import Footer from '@/app/Component/General/Footer'
 import HeroGeneral from '@/app/Component/General/HeroGeneral'
 import SectionTitle from '@/app/Component/General/SectionTitle'
@@ -31,6 +32,8 @@ export default function Career() {
             </HeroGeneral>
 
             <section className="shadow-2xl bg-[#171615A6]">
+
+                <Location/>
 
                 <JobBoard />
 
