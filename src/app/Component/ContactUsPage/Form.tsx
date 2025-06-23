@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { FaEnvelope } from "react-icons/fa";
+
 
 
 const ContactForm = () => {
@@ -15,8 +15,8 @@ const ContactForm = () => {
                     Fill out the form and our team will get back to you promptly.
                 </p>
                 <div className="flex items-center space-x-4">
-                    {/* <Image src={'/ContactUs/vector.svg'} alt="" height={20} width={20} /> */}
-                    <FaEnvelope />
+                    <Image src={'/contactUs/mail.svg'} alt="" height={20} width={20} />
+                
                     <div className="space-y-0.5">
                         <p className="font-semibold text-sm">Email</p>
                         <p className="text-gray-400 text-sm">vigortechapp@gmail.com</p>
