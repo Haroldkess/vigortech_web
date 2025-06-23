@@ -1,21 +1,35 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-interface Card{
-  imageUrl:string,
-  cardTitle:string,
-  description:string,
-  studentLevel:string
+interface Card {
+  imageUrl: string,
+  cardTitle: string,
+  description: string,
+  studentLevel: string,
+  isFlag: boolean
 }
 
-// /Institute/img1.png
-export default function CourseCard({imageUrl,cardTitle,description,studentLevel}:Card) {
+
+export default function CourseCard({ imageUrl, cardTitle, description, studentLevel, isFlag }: Card) {
+
+  const [flag, setFlag] = useState<boolean>(isFlag)
+
+
+ 
+
   return (
-    <section className="rounded-xl font-Inter border border-[#86868659] text-[#EAF5F4A6]" style={{ background: 'linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))', }}>
+    <section className="rounded-xl font-Inter border  border-[#86868659] text-[#EAF5F4A6]" style={{ background: 'linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))', }}>
       <section>
         <Image src={imageUrl} alt='sise image 1' width={1000} height={1000} className='object-cover w-full' />
       </section>
-      <section className='px-4 py-6 flex flex-col gap-y-10'>
+      <section className='px-4 py-6 flex flex-col gap-y-10 relative'>
+        {
+          flag &&
+          <section className='absolute top-[-0.8rem] left-0'>
+            <Image src={'/Institute/flagship.svg'} alt='calendar_today' width={150} height={150} className='' />
+          </section>
+        }
         <section className='flex flex-col gap-2'>
           <h3 className='text-[#FFFFFF] font-medium text-[16px]'>{cardTitle}</h3>
           <p className='text-[12px]'>{description}</p>
