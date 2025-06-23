@@ -23,7 +23,7 @@ export default function Career() {
                             <Image src="/newsLine.svg" alt="Newsletter Icon" width={110} height={100} className='h-3 md:h-10' /></section>
 
                         <section className='flex flex-col items-center gap-4  justify-center w-full'>
-                            <p className='text-[#EAF5F4A6] text-sm md:text-lg font-light text-center mt-4 w-[50vw]'>Build your career at vigorTech and be part of a team that's shaping the future through innovation, education, and strategic investments.</p>
+                            <p className='text-[#EAF5F4A6] text-sm md:text-lg font-light text-center mt-4 w-[50vw]'>Build your career at vigorTech and be part of a team that&apos;s shaping the future through innovation, education, and strategic investments.</p>
 
                         </section>
                     </section>
