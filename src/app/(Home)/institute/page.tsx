@@ -25,7 +25,7 @@ export default function InstitutePage() {
 
                     <div className='px-4 py-2 w-[60vw] md:w-[40vw] rounded-full  gap-2 border border-[#86868673] bg-[#171615A6] outline-[#48B96B] flex items-center' >
                       <span><MdSearch className='text-[#EAF5F440]  ' /> </span>
-                        < input type='text' placeholder='Search for courses...' className = 'w-[60vw] md:w-[40vw] placeholder:text-[#EAF5F440] placeholder:text-md placeholder:font-inter placeholder:font-[400]  ' />
+                        < input type = 'text' placeholder = 'Search for courses...' className = 'w-[60vw] md:w-[40vw] placeholder:text-[#EAF5F440] placeholder:text-md placeholder:font-inter placeholder:font-[400]  ' />
                           </div>
                           </form>
                           </section>
