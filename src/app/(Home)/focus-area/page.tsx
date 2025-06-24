@@ -44,15 +44,15 @@ export default function FocusArea() {
 
                 <OurServices />
 
-                <section className="flex justify-center items-center w-full py-20">
-                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+                <section className="flex justify-center items-center w-full py-4 md:py-20">
+                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-20 md:h-10 w-[100vw]" />
                 </section>
 
                 <OurCourses />
 
 
-                <section className="flex justify-center items-center w-full py-20">
-                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+                <section className="flex justify-center items-center w-full py-4 md:py-20">
+                    <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-20 md:h-10 w-[100vw]" />
                 </section>
 
 
