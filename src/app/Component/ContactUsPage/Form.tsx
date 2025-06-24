@@ -6,7 +6,7 @@ import React from "react";
 
 const ContactForm = () => {
     return (
-        <main className="max-w-6xl w-full rounded-2xl p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <main className="max-w-6xl w-full rounded-2xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Contact Info Section */}
             <section className="space-y-6 max-w-md">
                 <h2 className="text-2xl font-bold">Get in touch</h2>
@@ -29,7 +29,7 @@ const ContactForm = () => {
                 <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
                 <form className="space-y-6">
                     {/* Name Fields */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4">
                         <div>
                             <label htmlFor="firstName" className="block text-sm font-medium mb-1">
                                 First name
@@ -105,7 +105,7 @@ const ContactForm = () => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="bg-[#48B96B] hover:bg-green-700 transition-colors rounded-md px-8 py-2 font-semibold text-black"
+                        className="bg-[#48B96B] hover:bg-green-700 transition-colors w-full md:w-1/2 rounded-md px-8 py-2 font-semibold text-black"
                     >
                         Submit
                     </button>
