@@ -20,16 +20,20 @@ export default function FocusArea() {
                     <SectionTitle title='Our focus' />
 
                     <section className=' '>
-                        <h1 className='text-white text-lg md:text-4xl font-bold text-center'>Our Focus Area</h1>
+                        <h1 className='text-white text-3xl md:text-5xl font-bold text-center'>Our Focus Area</h1>
 
 
-                        <section className='flex flex-col items-center gap-4  justify-center w-full'>
-                            <p className='text-[#EAF5F4A6] text-sm md:text-lg font-light text-center mt-4 w-[50vw]'>Our focus is to co-create accessible digital solutions with local partners across Africa, empowering businesses and communities to thrive in the digital economy</p>
+                        <section className='flex flex-col items-center gap-4  justify-center w-full md:w-[60vw] '>
+                            <p className='text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4'>Our focus is to co-create accessible digital solutions with local partners across Africa, empowering businesses and communities to thrive in the digital economy</p>
                             <section className=" flex flex-col md:flex-row gap-4 ">
 
-                                <button className="border border-[#48B96B] px-8  py-2 font-normal justify-center rounded-md flex items-center gap-2">
-                                    Get in touch <MdOutlineArrowOutward />
-                                </button>
+                    
+
+                                <section className=" flex flex-col md:flex-row gap-4 gap-y-8 w-[90vw] md:w-[60vw] md:justify-center md:items-center">
+                                    <button className="border border-[#48B96B]  px-8  py-2 font-normal justify-center rounded-md flex items-center gap-2">
+                                        Get in touch  <MdOutlineArrowOutward />
+                                    </button>
+                                </section>
                             </section>
                         </section>
                     </section>
