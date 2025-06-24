@@ -35,11 +35,13 @@ export default function OurServices() {
             <section className='lg:max-w-7xl md:px-10 px-4'>
 
                 <section className='relative'>
-                    <h2 className="text-center text-white font-semibold text-2xl md:text-4xl mb-3 pb-20 leading-tight">
+                    <h2 className="text-center text-white font-semibold text-3xl md:text-4xl mb-3 pb-20 leading-tight">
                         What we do
                     </h2>
 
-                    <section className='absolute left-[46%] top-7 '><Image src="/newsLine.svg" alt="Newsletter Icon" width={200} height={100} className='h-4  ' /></section>
+                    <section className='absolute left-[35%] md:left-[46%] top-7 '><Image src="/newsLine.svg" alt="Newsletter Icon" width={200} height={100} className=' h-4  ' /></section>
+
+                    
                 </section>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-8">
