@@ -19,7 +19,7 @@ export default function Career() {
                     <SectionTitle title='Career' />
 
                     <section className=' '>
-                        <h1 className='text-white text-lg md:text-4xl font-bold text-center'>Join our team</h1>
+                        <h1 className='text-white text-3xl md:text-5xl font-bold text-center'> Join our team</h1>
                         <section className='relative left-[56%] md:left-[53%] top-[-1.5rem] '>
                             <Image src="/newsLine.svg" alt="Newsletter Icon" width={110} height={100} className='h-3 md:h-10' /></section>
 
