@@ -38,12 +38,12 @@ const JobBoard = () => {
     ];
 
     return (
-        <section className="px-20  py-12 sm:py-16">
-     
+        <section className="md:px-20 px-6 md:py-12 sm:py-16">
+
             <div className="mb-8 max-w-3xl">
                 <SectionTitle title='Open positions' />
 
-                <h1 className="text-3xl font-semibold py-4 leading-tight mb-2">
+                <h1 className="text-xl md:text-3xl font-semibold py-4 leading-tight mb-2">
                     Want to join team Vigor?
                 </h1>
                 <p className="text-[#EAF5F4A6] text-sm max-w-xl">
@@ -52,11 +52,11 @@ const JobBoard = () => {
             </div>
 
             {/* Job Listings */}
-            <section className="space-y-8 w-full" >
+            <section className="md:space-y-8 space-y-10 w-full" >
                 {jobs.map((job) => (
                     <article
                         key={job.id}
-                        className=" rounded-xl p-8 border border-[#2A2A2A]  space-y-4" style={{ background: 'linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))', }}
+                        className=" rounded-xl p-8 border border-[#2A2A2A]  space-y-8" style={{ background: 'linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))', }}
                         aria-label={`${job.title} job listing`}
                     >
                         <div className="flex justify-between items-start">
@@ -72,14 +72,17 @@ const JobBoard = () => {
                             <span className="text-[#EAF5F4A6] text-xs whitespace-nowrap">{job.type}</span>
                         </div>
                         <p className="text-[#EAF5F4A6] text-sm max-w-5xl">{job.description}</p>
-                        <div className="flex flex-wrap items-center gap-2 text-[#EAF5F4A6] text-xs sm:text-sm">
-                            <span className="whitespace-nowrap">Remote</span>
-                            <span aria-hidden="true">|</span>
-                            <div className="flex items-center gap-2 whitespace-nowrap">
-                                <Image src={'/Career/calendar_today.svg'} alt={'calendar_today'} width={20} height={20} />
-                                <span>{job.date}</span>
-                            </div>
-                            <div className="ml-auto flex items-center gap-1 cursor-pointer text-[#EAF5F4A6] hover:text-white whitespace-nowrap">
+                        <div className="flex  flex-col md:flex-row  items-start md:items-center gap-2 text-[#EAF5F4A6] text-xs sm:text-sm">
+                            <div className="flex items-center gap-2">
+                                <span className="">Remote</span>
+                                <span aria-hidden="true">|</span>
+                                <div className="flex items-center gap-2 ">
+                                    <Image src={'/Career/calendar_today.svg'} alt={'calendar_today'} width={20} height={20} />
+                                    <span>{job.date}</span>
+                                </div>
+                                </div>
+
+                            <div className="md:ml-auto flex items-center gap-1 cursor-pointer text-[#EAF5F4A6] hover:text-white ">
                                 <span className="text-xs">View details</span>
                                 <Image src={'/Career/arrow_outward.svg'} alt={'arrow_outward'} width={15} height={15} />
                             </div>

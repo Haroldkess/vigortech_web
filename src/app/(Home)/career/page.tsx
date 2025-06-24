@@ -19,12 +19,12 @@ export default function Career() {
                     <SectionTitle title='Career' />
 
                     <section className=' '>
-                        <h1 className='text-white text-3xl md:text-5xl font-bold text-center'> Join our team</h1>
-                        <section className='relative left-[56%] md:left-[53%] top-[-1.5rem] '>
+                        <h1 className='text-white text-3xl md:text-5xl font-bold text-center'>  Join our team</h1>
+                        <section className='relative left-[54%] top-[-0.5em] md:left-[53%] md:top-[-1.5rem] '>
                             <Image src="/newsLine.svg" alt="Newsletter Icon" width={110} height={100} className='h-3 md:h-10' /></section>
 
-                        <section className='flex flex-col items-center gap-4  justify-center w-full'>
-                            <p className='text-[#EAF5F4A6] text-sm md:text-lg font-light text-center mt-4 w-[50vw]'>Build your career at vigorTech and be part of a team that
+                        <section className='flex flex-col items-center gap-4  justify-center w-full md:w-[60vw] '>
+                            <p className='text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4 md:w-[50vw]'>Build your career at vigorTech and be part of a team that
                                 &apos;s shaping the future through innovation, education, and strategic investments.</p>
 
                         </section>
@@ -36,13 +36,13 @@ export default function Career() {
 
                 <Location/>
 
-                <section className="flex justify-center items-center w-full py-20">
+                <section className="flex justify-center items-center w-full py-4 md:py-20">
                     <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
                 </section>
 
                 <JobBoard />
 
-                <section className="flex justify-center items-center w-full py-20">
+                <section className="flex justify-center items-center w-full py-4 md:py-20">
                     <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
                 </section>
                 <Benfits />
