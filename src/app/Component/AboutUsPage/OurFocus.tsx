@@ -35,11 +35,11 @@ export default function OurFocus() {
                     </section>
 
 
-                    <div className="grid grid-cols-1 justify-between gap-10 items-center  z-10 w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-10 items-center  z-10 w-full">
                         {/* Technology */}
                         <div className="flex flex-col items-center ">
                             <div
-                                className=" rounded-full w-20 h-20 flex items-center justify-between  text-lg z-50 ">
+                                className=" rounded-full w-20 h-20 md:hidden flex items-center justify-between  text-lg z-50 ">
                                 <Image src="/tech_circle.svg" alt="Technology Icon" width={50} height={50} />
                             </div>
 
@@ -53,7 +53,7 @@ export default function OurFocus() {
                         {/* Education */}
                         <div className="flex flex-col items-center  ">
                             <div
-                                className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg relative z-50">
+                                className=" rounded-full w-20 h-20 md:hidden flex items-center justify-center  text-lg relative z-50">
                                 <Image src="/education_circle.svg" alt="Education Icon" width={50} height={50} />
                             </div>
 
@@ -67,7 +67,7 @@ export default function OurFocus() {
                         {/* Finance */}
                         <div className="flex flex-col items-center ">
                             <div
-                                className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg  z-50">
+                                className=" rounded-full w-20 h-20 md:hidden flex items-center justify-center  text-lg  z-50">
                                 <Image src="/finance_circle.svg" alt="Finance Icon" width={50} height={50} />
                             </div>
 
