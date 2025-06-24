@@ -45,7 +45,7 @@ export default function OurValues() {
 
 
     return (
-        <section className=" lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+        <section className=" lg:mx-auto lg:px-6 px-2  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
             <section className='lg:max-w-7xl md:px-10 px-4'>
                 <div className="flex justify-center mb-6">
                     <SectionTitle title="Values" />
@@ -56,7 +56,7 @@ export default function OurValues() {
                 <p className="text-center text-gray-400 max-w-xl mx-auto mb-12 text-sm leading-relaxed">
                     The principles that guide our decisions and define our culture
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 lg:gap-8">
                     {valuesData.map((card, index) => (
                         <AboutCard
                             key={index}

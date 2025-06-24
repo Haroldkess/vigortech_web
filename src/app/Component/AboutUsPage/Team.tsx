@@ -7,7 +7,7 @@ export default function Team() {
 
 
     return (
-        <div className=" text-white min-h-screen flex flex-col items-center justify-center px-4 py-12">
+        <div className=" text-white min-h-screen flex flex-col items-center justify-center px-10 md:px-4 py-12">
             <div className="text-center max-w-4xl w-full">
 
                 <section>
