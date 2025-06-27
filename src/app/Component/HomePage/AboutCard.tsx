@@ -22,7 +22,7 @@ const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
                 )}
             </div>
             <h3 className="font-semibold text-white text-lg mb-2">{title}</h3>
-            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+            <p className="text-[#EAF5F4A6] text-sm mb-6 leading-relaxed ">
                 {description}
             </p>
             {link && (

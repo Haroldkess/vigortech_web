@@ -12,7 +12,7 @@ export default function NavBar() {
    <>
          
           <nav className="flex fixed flex-col justify-center items-center w-full mt-10  gap-y-2 z-50 ">
-              <section className="bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl lg:w-[90vw] md:w-[90vw] w-[95vw] backdrop-blur-sm z-50 rounded-xl text-white  px-8 py-4 border shadow-2xl border-[#868686D9] ">
+              <section className="bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl lg:w-[1272px] md:w-[90vw] w-[95vw] backdrop-blur-sm z-50 rounded-xl text-white  p-[16px]  border shadow-2xl border-[#868686D9] h-[88px]">
                   <section className="flex justify-between items-center bg-[rgba(23, 22, 21, 0.80)] backdrop-blur-md  py-2">
                       <section>
                           <Image
@@ -50,7 +50,7 @@ export default function NavBar() {
                           </section>
 
                           <section className="lg:flex hidden ">
-                              <button className="bg-[#48B96B] px-8 py-2 font-semibold  text-[#171615] rounded-md">
+                              <button className=" h-[40px] w-[200px] px-[20px] py-[10px] text-[16px] font-[500] flex justify-center items-center text-[#171615] rounded-md bg-[#48B96B] hover:bg-[#6CC788]">
                                   Explore our products
                               </button>
                           </section>
