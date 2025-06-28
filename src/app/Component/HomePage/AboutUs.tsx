@@ -37,7 +37,7 @@ export default function AboutUs() {
 
 
     return (
-        <section className=" lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+        <section className=" flex justify-center items-center w-full lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
             <section className='lg:max-w-7xl md:px-10 px-4'>
                 <div className="flex justify-center mb-6">
                     <SectionTitle title="Focus" />
