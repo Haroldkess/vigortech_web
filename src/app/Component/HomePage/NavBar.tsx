@@ -1,5 +1,5 @@
 "use client";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +8,8 @@ import React, { useState } from "react";
 
 export default function NavBar() {
   const [showMenu, setMenu] = useState(false);
+  const [dropCompany, setDropCompany] = useState(false);
+  const [dropProduct, setDropProduct] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<
     "company" | "products" | null
   >(null);
@@ -15,7 +17,7 @@ export default function NavBar() {
   return (
     <>
       <nav className="flex fixed flex-col justify-center items-center w-full mt-10  gap-y-2 z-50 ">
-        <section className="bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl lg:w-[1272px] md:w-[90vw] w-[95vw] backdrop-blur-sm z-50 rounded-xl text-white  p-[16px]  border shadow-2xl border-[#868686D9] h-[88px]">
+        <section className="bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl lg:w-[1272px] md:w-[90vw] w-[95vw]  backdrop-blur-sm z-50 rounded-xl text-white  p-[16px]  border shadow-2xl border-[#868686D9] h-[64px] lg:h-[88px]">
           <section className="flex justify-between items-center bg-[rgba(23, 22, 21, 0.80)] backdrop-blur-md  py-2">
             <section>
               <Image
@@ -87,15 +89,37 @@ export default function NavBar() {
                 </li>
                 <li>
                   <section className="flex gap-2 items-center justify-between w-full">
-                    Company <FaAngleDown />
+                    Company{" "}
+                    {dropCompany ? (
+                      <FaAngleUp onClick={() => setDropCompany(false)} />
+                    ) : (
+                      <FaAngleDown onClick={() => setDropCompany(true)} />
+                    )}
                   </section>
+                  {dropCompany && (
+                    <section className="flex flex-col gap-4 mt-2 text-white">
+                      <p>About Us</p>
+                      <p>Blog</p>
+                      <p>Career</p>
+                    </section>
+                  )}
                 </li>
                 <li>
-                  <Link href="/contact">
                     <section className="flex gap-2 items-center justify-between w-full">
-                      Products <FaAngleDown />
+                      Products{" "}
+                      {dropProduct ? (
+                        <FaAngleUp onClick={() => setDropProduct(false)} />
+                      ) : (
+                        <FaAngleDown onClick={() => setDropProduct(true)} />
+                      )}
                     </section>
-                  </Link>
+                  {dropProduct && (
+                    <section className="flex flex-col gap-4 mt-2 text-white">
+                      <p>Technology</p>
+                      <p>Education</p>
+                      <p>Finance</p>
+                    </section>
+                  )}
                 </li>
                 <li>
                   <Link href="/courses">Courses</Link>
