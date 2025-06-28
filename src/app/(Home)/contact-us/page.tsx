@@ -13,7 +13,7 @@ export default function ContactUs() {
         <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20">
           <SectionTitle title="Contact us" />
           <section className=" ">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+            <h1 className="text-center justify-center flex text-white text-3xl font-semibold leading-10 md:text-6xl md:font-bold md:leading-[64px] lg:text-center lg:font-semibold lg:leading-[64px]">
               {" "}
               Contact Vigortech{" "}
             </h1>
@@ -28,7 +28,7 @@ export default function ContactUs() {
         </section>
       </HeroGeneral>
 
-      <section className="shadow-2xl bg-[#171615A6]">
+      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20 border-t border-[#262020a6]">
         <section className="flex w-full justify-center items-center flex-col pt-10 md:pt-20">
           <ContactForm />
         </section>
