@@ -5,84 +5,136 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 // z - [-1]
 const Footer = () => {
     return (
-        <footer className="lg:max-w-7xl w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-hidden ">
-            <section className="absolute top-[-4em] left-[4em] w-full h-full z-[-1]  blur-3xl">
-                <Image src="/footer_bg.svg" alt="VigorTech logo" width={1000} height={1000} className="mb-4 object-cover w-[50vw] " />
-            </section>
-            <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-8 md:gap-0  py-12 md:px-20  ">
-                <div className="max-w-xs ">
-                    <section className="">
-                        <Image
-                            alt="VigorTech logo with green checkmark and text"
-                            className="mb-4"
-                            height={50}
-                            width={150}
-                            src="/logo.svg"
-                        />
-                        <p className="text-[#EAF5F4A6] text-sm leading-relaxed">
-                            Empowering businesses through innovative technology solutions,
-                            educational resources, and strategic investments
-                        </p>
-                    </section>
-                </div>
-
-                <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
-                    <div className="space-y-3">
-                        <h3 className="text-[#EAF5F4A6]">Company</h3>
-                        <ul className="space-y-5">
-                            <li><a className="hover:text-white" href="/about-us">About us</a></li>
-                            <li><a className="hover:text-white" href="#">Blog</a></li>
-                            <li><a className="hover:text-white" href="#">Career</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                        <h3 className="text-[#EAF5F4A6]">Products</h3>
-                        <ul className="space-y-5">
-                            <li><a className="hover:text-white" href="#">Technology</a></li>
-                            <li><a className="hover:text-white" href="#">Education</a></li>
-                            <li><a className="hover:text-white" href="#">Finance</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                        <h3 className="text-[#EAF5F4A6]">Social media</h3>
-                        <ul className="space-y-5">
-                            <li><a className="hover:text-white" href="#">X (Twitter)</a></li>
-                            <li><a className="hover:text-white" href="#">Instagram</a></li>
-                            <li><a className="hover:text-white" href="#">Facebook</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="space-y-3">
-                        <h3 className="text-[#EAF5F4A6]">Support</h3>
-                        <ul className="space-y-5">
-                            <li><a className="hover:text-white" href="#">Contact us</a></li>
-                            <li><a className="hover:text-white" href="#">Community</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <section className="relative  overflow-hidden ">
+        <section className=" absolute top-0 left-0 w-full h-[50vh] z-20">
+          <Image
+            src="/footer_bg.svg"
+            alt="VigorTech logo"
+            width={200}
+            height={200}
+            className="mb-4 object-cover w-[100vw] md:w-[40vw] "
+          />
+        </section>
+        <footer className="lg:max-w-7xl w-full  py-20 px-0  md:px-0 relative bg-[#171615A6] ">
+          <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-8 md:gap-0  py-12 md:px-20  ">
+            <div className="max-w-xs ">
+              <section className="">
+                <Image
+                  alt="VigorTech logo with green checkmark and text"
+                  className="mb-4"
+                  height={50}
+                  width={150}
+                  src="/logo.svg"
+                />
+                <p className="text-[#EAF5F4A6] text-sm leading-relaxed">
+                  Empowering businesses through innovative technology solutions,
+                  educational resources, and strategic investments
+                </p>
+              </section>
             </div>
 
-            <div className="md:px-20 px-4">
-                <hr className="border-gray-700 my-8 " />
-            </div>
+            <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
+              <div className="space-y-3">
+                <h3 className="text-[#EAF5F4A6]">Company</h3>
+                <ul className="space-y-5">
+                  <li>
+                    <a className="hover:text-white" href="/about-us">
+                      About us
+                    </a>
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Career
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-gray-400 text-sm px-10 gap-4 md:px-20">
-                <p>©2021 Vigortech, Inc. All rights reserved</p>
-                <div className="flex space-x-6 text-gray-400 text-lg">
-                    <a aria-label="Facebook" className="hover:text-white" href="#">
-                        <FaFacebookF />
+              <div className="space-y-3">
+                <h3 className="text-[#EAF5F4A6]">Products</h3>
+                <ul className="space-y-5">
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Technology
                     </a>
-                    <a aria-label="Instagram" className="hover:text-white" href="#">
-                        <FaInstagram />
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Education
                     </a>
-                    <a aria-label="X Twitter" className="hover:text-white" href="#">
-                        <FaTwitter />
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Finance
                     </a>
-                </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="text-[#EAF5F4A6]">Social media</h3>
+                <ul className="space-y-5">
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      X (Twitter)
+                    </a>
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Facebook
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="text-[#EAF5F4A6]">Support</h3>
+                <ul className="space-y-5">
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Contact us
+                    </a>
+                  </li>
+                  <li>
+                    <a className="hover:text-white" href="#">
+                      Community
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div className="md:px-20 px-4">
+            <hr className="border-gray-700 my-8 " />
+          </div>
+
+          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-gray-400 text-sm px-10 gap-4 md:px-20">
+            <p>©2021 Vigortech, Inc. All rights reserved</p>
+            <div className="flex space-x-6 text-gray-400 text-lg">
+              <a aria-label="Facebook" className="hover:text-white" href="#">
+                <FaFacebookF />
+              </a>
+              <a aria-label="Instagram" className="hover:text-white" href="#">
+                <FaInstagram />
+              </a>
+              <a aria-label="X Twitter" className="hover:text-white" href="#">
+                <FaTwitter />
+              </a>
+            </div>
+          </div>
         </footer>
+      </section>
     );
 };
 
