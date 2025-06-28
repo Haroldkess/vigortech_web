@@ -14,7 +14,7 @@ interface AboutCardProps {
 const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
     return (
       <article
-        className="rounded-xl p-8 border border-[#2A2A2A]"
+        className="rounded-xl p-8 border border-[#2A2A2A] "
         style={{
           background:
             "linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))",
@@ -34,7 +34,7 @@ const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
         {link && (
           <Link
             href={link}
-            className="group text-white font-semibold text-sm flex items-center gap-1 justify-start hover:text-[#48B96B] transition-colors duration-100"
+            className="group text-white font-semibold text-sm flex items-center gap-1 justify-start hover:text-[#48B96B] transition-colors duration-100 "
           >
             <p>Learn more </p>
             <span>
