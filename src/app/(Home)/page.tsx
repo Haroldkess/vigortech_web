@@ -16,17 +16,28 @@ export default function Home() {
       <HeroSection />
 
       <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl border-t border-[#171615A6] ">
-
         <AboutUs />
 
-        <section className="flex justify-center items-center w-full py-20">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+        <section className="flex justify-center items-center w-full ">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={200}
+            height={10}
+            className="h-10 w-[100vw]"
+          />
         </section>
 
         <OurStat />
 
-        <section className="flex justify-center items-center w-full py-20">
-          <Image src={'/line.svg'} alt="line" width={1000} height={10} className="h-10 w-[100vw]" />
+        <section className="flex justify-center items-center w-full ">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={200}
+            height={10}
+            className="h-10 w-[100vw]"
+          />
         </section>
         <Testimonials />
         <NewsLetter />
