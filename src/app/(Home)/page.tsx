@@ -15,7 +15,7 @@ export default function Home() {
       <NavBar />
       <HeroSection />
 
-      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl border-t border-[#171615A6]">
+      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl border-t border-[#171615A6] ">
 
         <AboutUs />
 

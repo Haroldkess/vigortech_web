@@ -9,7 +9,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export default function HeroSection() {
 
   return (
-    <header className=" lg:mb-[30vh] mb-40  font-inter pb-40 lg:pb-20  ">
+    <header className=" lg:mb-[30vh] mb-40  font-inter pb-40 lg:pb-40  ">
       <section className="relative z-10 top-[2em] md:top-[10em] h-[70vh] md:h-[50vh] w-full">
 
         <section className="flex items-center px-4 md:px-10 lg:px-10 w-full ">

@@ -38,7 +38,7 @@ const Testimonials = () => {
     return (
         <section className=" px-6 py-16">
             <div className="text-center mb-12">
-              <SectionTitle title="Testimonials" />
+                <SectionTitle title="Testimonials" />
                 <h2 className="mt-6 md:text-4xl text-2xl font-bold leading-tight">What they say about us</h2>
                 <p className="mt-3 text-gray-400 max-w-xl mx-auto">
                     Discover how we&apos;ve helped businesses across different industries achieve their goals.
@@ -46,32 +46,40 @@ const Testimonials = () => {
             </div>
 
 
-            <Marquee
-                className="flex items-center justify-center space-x-6  w-full  " >
-                <section>
-                    <div className=" grid grid-cols-4 gap-4 px-6  " >
+            <Marquee className="flex items-center w-full space-x-4">
+                {testimonials.map((testimonial, index) => (
+                    <article
+                        key={index}
+                        className="border border-[#86868640] rounded-[10.75px]  w-[306.39px] mx-4
+        md:rounded-[14px] md:w-[433px] p-4  md:px-[20px] md:border
+        lg:rounded-[14px] lg:w-[433px] lg:h-[342.48px] lg:max-h-[342.48px] lg:border
+        shrink-0"
+                        style={{
+                            background: 'linear-gradient(rgba(23, 22, 21, 0.8), rgba(51, 51, 51, 0.2))',
+                        }}
+                    >
+                        <Image
+                            src="/comma.svg"
+                            alt={testimonial.name}
+                            className="md:w-14 md:h-14 w-8 h-8 rounded-md mb-4 relative bottom-[-2.5em]"
+                            width={10}
+                            height={10}
+                        />
 
-                        {testimonials.map((testimonial, index) => (
+                        <p className="text-[#EAF5F4A6] text-[16px] md:text-[18px] text-left mb-6 md:leading-relaxed">
+                            {testimonial.quote}
+                        </p>
+                        <hr className="border-gray-700 mb-4" />
 
-                            <article
-                                key={index}
-                                className="w-[80vw] md:w-[50vw] lg:w-[35vw] rounded-lg border border-[#2A2A2A] p-4 md:p-10 flex-shrink-0 mx-2"
-                                style={{ background: 'linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))', }}
-                            >
-                                <Image src={'/comma.svg'} alt={testimonial.name} className="md:w-14 md:h-14 w-8 h-8 rounded-md mb-4 relative bottom-[-2.5em]" width={10} height={10} />
+                        <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
+                            {testimonial.name}
+                        </span>
 
-                                <p className="text-[#EAF5F4A6] text-[16px] md:text-[18px] text-left  mb-6 md:leading-relaxed">{testimonial.quote}</p>
-                                <hr className="border-gray-700 mb-4" />
-                               
-                                <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
-                                    {testimonial.name}
-                                </span>
-
-                                <p className="text-gray-400 text-sm">{testimonial.role}</p>
-                            </article>
-                        ))}
-                    </div></section>
+                        <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                    </article>
+                ))}
             </Marquee>
+
 
         </section>
 
