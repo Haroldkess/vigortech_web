@@ -52,7 +52,7 @@ export default function HeroSection() {
             </section>
 
             <section className="relative">
-              <section className="flex  absolute top-20 gap-10 opacity-50 justify-center md:justify-start items-center ">
+              <section className="flex  absolute md:top-20 gap-10 opacity-50 justify-center md:justify-start items-center ">
                 <Image
                   src={"/adam.svg"}
                   alt="adam"
