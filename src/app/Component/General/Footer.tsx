@@ -24,7 +24,7 @@ const Footer = () => {
                   className="mb-4"
                   height={50}
                   width={150}
-                  src="/logo.svg"
+                  src="/logo.png"
                 />
                 <p className="text-[#EAF5F4A6] text-sm leading-relaxed">
                   Empowering businesses through innovative technology solutions,
@@ -134,7 +134,7 @@ const Footer = () => {
           </div>
 
           <div className="md:px-20 px-4">
-            <hr className="border-gray-700 my-8 " />
+            <hr className="border border-[#868686A6] my-8 " />
           </div>
 
           <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-gray-400 text-sm px-10 gap-4 md:px-20">
