@@ -32,24 +32,19 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className=" px-6 py-16">
+    <section className="w-full py-16">
       <div className="text-center mb-12">
         <SectionTitle title="Testimonials" />
-        <h2 className="text-white text-center font-inter text-[32px] font-[800] leading-[40px] md:text-[57px] md:font-[600] md:leading-[64px] md:tracking-[-0.142px] lg:text-[57px] lg:font-[600] lg:leading-[64px] lg:tracking-[-0.142px] pt-10">
+        <h2 className="text-white text-center font-inter text-[32px] font-[800] leading-[40px] md:text-[57px] md:font-[600] md:leading-[64px] md:tracking-[-0.142px] lg:text-[57px] lg:font-semibold lg:leading-[64px] lg:tracking-[-0.142px] pt-10">
           What they say about us
         </h2>
-        <p
-          className="mt-3 text-[#EAF5F4A6] max-w-xl mx-auto text-base
-lg:font-normal
-lg:leading-normal
-lg:tracking-tight"
-        >
+        <p className="mt-3 text-[#EAF5F4A6] max-w-xl mx-auto text-base lg:font-normal lg:leading-normal lg:tracking-tight">
           Discover how we&apos;ve helped businesses across different industries
           achieve their goals.
         </p>
       </div>
 
-      <Marquee className="flex items-center w-full space-x-4">
+      <Marquee className="flex items-center w-full ">
         {testimonials.map((testimonial, index) => (
           <article
             key={index}
@@ -70,10 +65,14 @@ lg:tracking-tight"
               height={10}
             />
 
-            <p className="text-[#EAF5F4A6] text-[16px] md:text-[18px] text-left mb-6 md:leading-relaxed">
+            <p className="text-[#EAF5F4A6] text-base  font-normal md:text-[18px] text-left mb-6 md:leading-relaxed">
               {testimonial.quote}
             </p>
-            <hr className="border-gray-700 mb-4" />
+            {testimonial.name.includes("Adaobi") ? (
+              <hr className=" border-[#868686A6]  mt-13 pb-4 " />
+            ) : (
+              <hr className=" border-[#868686A6] my-4 " />
+            )}
 
             <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
               {testimonial.name}

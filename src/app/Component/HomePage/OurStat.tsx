@@ -12,11 +12,11 @@ const OurStat = () => {
     });
 
     return (
-        <section className="md:max-w-7xl w-full md:mx-auto px-6 py-16 flex flex-col  items-center md:flex-row md:justify-between md:items-center gap-12 md:gap-0">
+        <section className=" w-full  px-7 py-16 flex flex-col  items-center md:flex-row md:justify-between md:items-center gap-12 md:gap-0">
             {/* Left Side: Text Content */}
             <div className="md:max-w-lg space-y-4">
                 <SectionTitle title="Our track record" />
-                <h2 className="md:text-4xl text-2xl font-bold leading-tight">Our stats</h2>
+                <h2 className="md:text-4xl text-2xl font-semibold leading-tight">Our stats</h2>
                 <p className="text-[#EAF5F4A6] max-w-md text-sm leading-relaxed">
                     We don’t just talk about change—we build it. These numbers show how far we’ve come, and where we’re headed.
                 </p>

@@ -31,12 +31,12 @@ export default function AboutUs() {
   ];
 
   return (
-    <section className=" flex justify-center items-center w-full lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
-      <section className="lg:max-w-7xl md:px-10 px-4">
+    <section className=" flex justify-center items-center w-full  lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+      <section className=" ">
         <div className="flex justify-center mb-6">
           <SectionTitle title="Focus" />
         </div>
-        <h2 className="text-center text-white font-extrabold text-2xl md:text-4xl mb-3 leading-tight">
+        <h2 className="text-center text-white font-semibold text-2xl md:text-4xl mb-3 leading-tight">
           Our Focus Area
         </h2>
         <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
