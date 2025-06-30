@@ -96,9 +96,7 @@ export default function HeroSection() {
                 />
               </section>
 
-              <section className="absolute bottom-0 right-[24vw] top-[32vh] ">
-                {/* <div className='glow-bicon w-4 h-4 rounded-full'> </div> */}
-
+              <section className="absolute bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5.3em] lg:right-[24.3vw]">
                 <div className="pulse-animation">
                   <div className="layer blur"></div>
                   <div className="layer outer"></div>
