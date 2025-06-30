@@ -79,7 +79,7 @@ lg:tracking-tight"
               {testimonial.name}
             </span>
 
-            <p className="text-gray-400 text-sm">{testimonial.role}</p>
+            <p className="text-[#EAF5F4A6] text-sm">{testimonial.role}</p>
           </article>
         ))}
       </Marquee>

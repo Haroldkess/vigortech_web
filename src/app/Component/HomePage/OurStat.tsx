@@ -17,7 +17,7 @@ const OurStat = () => {
             <div className="md:max-w-lg space-y-4">
                 <SectionTitle title="Our track record" />
                 <h2 className="md:text-4xl text-2xl font-bold leading-tight">Our stats</h2>
-                <p className="text-gray-400 max-w-md text-sm leading-relaxed">
+                <p className="text-[#EAF5F4A6] max-w-md text-sm leading-relaxed">
                     We don’t just talk about change—we build it. These numbers show how far we’ve come, and where we’re headed.
                 </p>
             </div>
@@ -28,23 +28,23 @@ const OurStat = () => {
                     <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={5} duration={4} /> : '0'}+
                     </h3>
-                    <p className="text-gray-400 mt-1 text-sm">Projects</p>
+                    <p className="text-[#EAF5F4A6] mt-1 text-sm">Projects</p>
                 </div>
                 <div className="md:w-[8vw] w-[26vw]">
                     <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={200} duration={4} /> : '0'}+
                     </h3>
-                    <p className="text-gray-400 mt-1  md:text-[12px] text-sm">Learners trained</p>
+                    <p className="text-[#EAF5F4A6] mt-1  md:text-[12px] text-sm">Learners trained</p>
                 </div>
                 <div className="md:w-[7.5vw] w-[25vw]">
                     <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={99.9} duration={4} decimals={1} /> : '0'}%
                     </h3>
-                    <p className="text-gray-400 mt-1 text-sm">Satisfaction</p>
+                    <p className="text-[#EAF5F4A6] mt-1 text-sm">Satisfaction</p>
                 </div>
                 <div className="md:w-[5.4vw] w-[16vw]">
                     <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">10+</h3>
-                    <p className="text-gray-400 mt-1 text-sm">Integrations</p>
+                    <p className="text-[#EAF5F4A6] mt-1 text-sm">Integrations</p>
                 </div>
             </div>
         </section>

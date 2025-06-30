@@ -134,12 +134,12 @@ const Footer = () => {
           </div>
 
           <div className="md:px-20 px-4">
-            <hr className="border border-[#868686A6] my-8 " />
+            <hr className=" border-[#868686A6] my-8 " />
           </div>
 
-          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-gray-400 text-sm px-10 gap-4 md:px-20">
+          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-10 gap-4 md:px-20">
             <p>©2021 Vigortech, Inc. All rights reserved</p>
-            <div className="flex space-x-6 text-gray-400 text-lg">
+            <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
               <a aria-label="Facebook" className="hover:text-white" href="#">
                 <FaFacebookF />
               </a>
