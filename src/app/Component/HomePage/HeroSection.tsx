@@ -96,7 +96,7 @@ export default function HeroSection() {
                 />
               </section>
 
-              <section className="absolute bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5.3em] lg:right-[24.3vw]">
+              <section className="map-pulse ">
                 <div className="pulse-animation">
                   <div className="layer blur"></div>
                   <div className="layer outer"></div>
