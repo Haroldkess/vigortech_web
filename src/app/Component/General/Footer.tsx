@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 // z - [-1]
 const Footer = () => {
     return (
-      <section className="relative  overflow-hidden ">
+      <section className="relative  overflow-x-hidden overflow-y-hidden">
         <section className=" absolute top-0 left-0 w-full h-[50vh] z-20">
           <Image
             src="/footer_bg.svg"
@@ -15,7 +15,7 @@ const Footer = () => {
             className="mb-4 object-cover w-[100vw] md:w-[40vw] "
           />
         </section>
-        <footer className="lg:max-w-7xl w-full  py-20 px-0  md:px-0 relative bg-[#171615A6] ">
+        <footer className=" w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-x-hidden  ">
           <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-8 md:gap-0  py-12 md:px-20  ">
             <div className="max-w-xs ">
               <section className="">
@@ -36,19 +36,28 @@ const Footer = () => {
             <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
               <div className="space-y-3">
                 <h3 className="text-[#EAF5F4A6]">Company</h3>
-                <ul className="space-y-5">
+                <ul className="space-y-5 text-white">
                   <li>
-                    <a className="hover:text-white" href="/about-us">
+                    <a
+                      className="hover:text-white hover:border-b border-white"
+                      href="/about-us"
+                    >
                       About us
                     </a>
                   </li>
                   <li>
-                    <a className="hover:text-white" href="#">
+                    <a
+                      className="hover:text-white hover:border-b border-white"
+                      href="#"
+                    >
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a className="hover:text-white" href="#">
+                    <a
+                      className="hover:text-white hover:border-b border-white"
+                      href="#"
+                    >
                       Career
                     </a>
                   </li>
@@ -57,19 +66,28 @@ const Footer = () => {
 
               <div className="space-y-3">
                 <h3 className="text-[#EAF5F4A6]">Products</h3>
-                <ul className="space-y-5">
+                <ul className="space-y-5 text-white">
                   <li>
-                    <a className="hover:text-white" href="#">
+                    <a
+                      className="hover:text-white hover:border-b border-white"
+                      href="#"
+                    >
                       Technology
                     </a>
                   </li>
                   <li>
-                    <a className="hover:text-white" href="#">
+                    <a
+                      className="hover:text-white hover:border-b border-white"
+                      href="#"
+                    >
                       Education
                     </a>
                   </li>
                   <li>
-                    <a className="hover:text-white" href="#">
+                    <a
+                      className="hover:text-white hover:border-b border-white"
+                      href="#"
+                    >
                       Finance
                     </a>
                   </li>
@@ -78,7 +96,7 @@ const Footer = () => {
 
               <div className="space-y-3">
                 <h3 className="text-[#EAF5F4A6]">Social media</h3>
-                <ul className="space-y-5">
+                <ul className="space-y-5 text-white">
                   <li>
                     <a className="hover:text-white" href="#">
                       X (Twitter)
@@ -99,7 +117,7 @@ const Footer = () => {
 
               <div className="space-y-3">
                 <h3 className="text-[#EAF5F4A6]">Support</h3>
-                <ul className="space-y-5">
+                <ul className="space-y-5 text-white">
                   <li>
                     <a className="hover:text-white" href="#">
                       Contact us

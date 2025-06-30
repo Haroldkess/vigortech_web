@@ -15,7 +15,7 @@ export default function NewsLetter() {
                         <br />
                         Sign up for our newsletter.</h1>
 
-                        <section className='relative left-[56%] md:left-[59%] top-[-0.6rem] '><Image src="/newsLine.svg" alt="Newsletter Icon" width={100} height={100} className='h-3 md:h-8' /></section>
+                        <section className='relative left-[28%] md:left-[48%] top-[-0.6rem] '><Image src="/newsLine.svg" alt="Newsletter Icon" width={300} height={100} className='h-4 md:h-8' /></section>
                     </section>
 
                     <section>

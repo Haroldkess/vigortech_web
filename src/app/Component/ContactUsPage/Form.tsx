@@ -106,11 +106,11 @@ const ContactForm = () => {
               <div className="flex flex-col">
                 <label
                   htmlFor="subscribe"
-                  className=" text-white text-lg font-medium leading-tight"
+                  className=" text-white text-base md:text-lg font-medium leading-tight"
                 >
                   Subscribe to newsletter
                 </label>
-                <p className="text-emerald-50/60 text-base font-normal leading-normal tracking-tight">
+                <p className="text-emerald-50/60 text-sm md:text-base font-normal leading-normal tracking-tight">
                   Receive updates about our latest tech innovations and events.
                 </p>
               </div>
