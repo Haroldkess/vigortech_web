@@ -29,7 +29,11 @@ body {
   }
 }
 
-
+@media (min-width: 1366px) and (max-height: 768px){
+  .map-pulse {
+      @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5.7em] lg:right-[24.5vw]
+    }
+}
 
 
 
