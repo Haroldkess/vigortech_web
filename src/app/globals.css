@@ -1,26 +1,155 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-inter: 'Inter', sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[#171615] text-white;
+  font-family: var(--font-inter);
+}
+
+
+
+.map-pulse {
+  position: absolute;
+
+}
+
+@media (min-width: 1280px) and (max-width: 1359px) {
+  .map-pulse {
+   @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
+  }
+}
+
+@media (min-width: 1360px)  {
+  .map-pulse {
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
+  }
+}
+
+@media (min-width: 1366px){
+  .map-pulse {
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
+    }
+}
+
+
+
+
+.pulse-animation {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  animation: pulseContainer 4s ease-in-out infinite;
+}
+
+.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.blur {
+  width: 14px;
+  height: 14px;
+  background-color: #60DA86;
+  filter: blur(4px);
+  opacity: 0;
+  animation: blurLayer 4s ease-in-out infinite;
+}
+
+.outer {
+  width: 12px;
+  height: 12px;
+  background-color: #4CCC73;
+  animation: outerLayer 4s ease-in-out infinite;
+}
+
+.middle {
+  width: 8px;
+  height: 8px;
+  background-color: #ADFBC5;
+  animation: middleLayer 4s ease-in-out infinite;
+}
+
+.inner {
+  width: 4px;
+  height: 4px;
+  background-color: #EAF5F4;
+  animation: innerLayer 4s ease-in-out infinite;
+}
+
+/* Animations */
+
+@keyframes pulseContainer {
+
+  0%,
+  100% {
+    transform: scale(0.45);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blurLayer {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes outerLayer {
+
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes middleLayer {
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(0.25);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes innerLayer {
+
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
