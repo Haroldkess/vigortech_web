@@ -19,20 +19,20 @@ body {
 
 @media (min-width: 1280px) and (max-width: 1359px) {
   .map-pulse {
-   @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
-  }
-}
-
-@media (min-width: 1360px)  {
-  .map-pulse {
     @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
   }
 }
 
-@media (min-width: 1366px){
+@media (min-width: 1360px) {
+  .map-pulse {
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5em] lg:right-[24.4vw]
+  }
+}
+
+@media (min-width: 1366px) {
   .map-pulse {
     @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
-    }
+  }
 }
 
 
