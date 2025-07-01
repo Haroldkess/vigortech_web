@@ -25,13 +25,13 @@ body {
 
 @media (min-width: 1360px)  {
   .map-pulse {
-    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5.3em] lg:right-[24.3vw]
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
   }
 }
 
 @media (min-width: 1366px){
   .map-pulse {
-      @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5.7em] lg:right-[24.5vw]
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[11em] lg:right-[24.4vw]
     }
 }
 
