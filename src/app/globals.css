@@ -23,9 +23,9 @@ body {
   }
 }
 
-@media (min-width: 1360px) {
+@media  (max-width: 1360px){
   .map-pulse {
-    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5em] lg:right-[24.4vw]
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[5em] lg:right-[24.5vw]
   }
 }
 
