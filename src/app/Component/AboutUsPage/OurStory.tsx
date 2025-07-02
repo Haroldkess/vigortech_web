@@ -6,12 +6,12 @@ export default function OurStory() {
       <section className="mb-40 md:mb-0">
         <section className="flex flex-col md:flex-row  justify-between w-full py-20 px-4 md:px-6 gap-10">
           <section className="pt-10">
-            <section className="flex  gap-x-4 mb-4">
-              <span className="border-s-2 px-4 border-[#48B96B] "></span>
+            <section className="flex md:gap-x-4 mb-4">
+              <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
               <h2 className="text-3xl font-semibold">Our Story</h2>
             </section>
-            <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 max-w-2xl">
-              <p className=" px-8">
+            <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-2xl">
+              <p className="px-4 md:px-8">
                 After a generation defined by ingenuity and relentless
                 perseverance in the structural and building sector, we were
                 reborn with a promise on the Rock. Today, we are committed to
@@ -20,7 +20,7 @@ export default function OurStory() {
                 lives of Africans and people around the world.
               </p>
 
-              <p className=" px-8">
+              <p className="px-4 md:px-8">
                 &quot;VigorTech is more than a tech company; we&apos;re a
                 catalyst for change. Across investments, education, agriculture,
                 and clean water, we turn big challenges into bold opportunities.
