@@ -4,20 +4,23 @@ import React from "react";
 export default function OurFocus() {
   return (
     <div className=" text-white min-h-screen ">
-      <div className="max-w-7xl px-10 md:px-20 py-12">
-        <h2 className="text-3xl font-semibold border-l-4 border-[#2ecc71] pl-3 mb-3">
-          Our Focus
-        </h2>
-        <p className="text-md text-[#EAF5F4A6] max-w-md mb-16">
-          &quot;Our focus is to co-create accessible digital solutions with
-          local partners across Africa, empowering businesses and communities to
-          thrive in the digital economy.&quot;
-        </p>
+      <div className="w-full px-4 md:px-6 py-12">
+        <section className="flex md:gap-x-4 mb-4">
+          <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
+          <h2 className="text-3xl font-semibold"> Our Focus</h2>
+        </section>
+        <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-xl">
+          <p className="px-4 md:px-8">
+            &quot;Our focus is to co-create accessible digital solutions with
+            local partners across Africa, empowering businesses and communities
+            to thrive in the digital economy.&quot;
+          </p>
+        </section>
 
-        <div className="flex flex-col items-center justify-center z-10">
+        <div className="flex flex-col w-full md:px-6 items-center justify-center z-10 md:mt-20 mt-10">
           {/* Horizontal line top */}
 
-          <section className="md:flex justify-center hidden items-center relative z-20 md:left-4">
+          <section className="md:flex justify-center hidden items-center w-full relative z-20 ">
             <div className=" rounded-full w-20 h-20 flex items-center justify-between  text-lg z-50 ">
               <Image
                 src="/tech_circle.svg"
@@ -27,8 +30,8 @@ export default function OurFocus() {
               />
             </div>
 
-            <div className="w-[22vw]  border-t border-[#2ecc71]"></div>
-            <div className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg relative z-50">
+            <div className="w-[30%]  border-t border-[#2ecc71]"></div>
+            <div className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg relative">
               <Image
                 src="/education_circle.svg"
                 alt="Education Icon"
@@ -36,9 +39,9 @@ export default function OurFocus() {
                 height={50}
               />
             </div>
-            <div className="w-[22vw]  border-t border-[#2ecc71]"></div>
+            <div className="w-[30%]  border-t border-[#2ecc71]"></div>
 
-            <div className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg  z-50">
+            <div className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg ">
               <Image
                 src="/finance_circle.svg"
                 alt="Finance Icon"
@@ -48,10 +51,10 @@ export default function OurFocus() {
             </div>
           </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-10 items-center  z-10 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:justify-between md:space-x-10  gap-y-10 items-center relative  w-full">
             {/* Technology */}
             <div className="flex flex-col items-center ">
-              <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-between  text-lg z-50 ">
+              <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-between  text-lg pl-4 md:pl-0 ">
                 <Image
                   src="/tech_circle.svg"
                   alt="Technology Icon"
@@ -60,17 +63,21 @@ export default function OurFocus() {
                 />
               </div>
 
-              <p className="mt-3 font-semibold text-sm">Technology</p>
-              <p className="mt-1 text-md px-10 text-[#EAF5F4A6] font-light text-center ">
-                We don&apos;t just build tech for the sake of it; everything we
-                make is intentional. From platforms to tools, we focus on
-                solving real problems.
-              </p>
+              <section className="flex flex-col items-center md:items-start w-full  ">
+                <p className="mt-3 font-semibold text-sm  md:pr-0 md:pl-[9vw]">
+                  Technology
+                </p>
+                <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
+                  We don&apos;t just build tech for the sake of it; everything
+                  we make is intentional. From platforms to tools, we focus on
+                  solving real problems.
+                </p>
+              </section>
             </div>
 
             {/* Education */}
             <div className="flex flex-col items-center  ">
-              <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-center  text-lg relative z-50">
+              <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-center  text-lg relative ">
                 <Image
                   src="/education_circle.svg"
                   alt="Education Icon"
@@ -79,17 +86,19 @@ export default function OurFocus() {
                 />
               </div>
 
-              <p className="mt-3 font-semibold text-sm">Education</p>
-              <p className="mt-1 text-md px-10 text-[#EAF5F4A6] font-light text-center ">
-                Knowledge is power, and access matters. We&apos;re helping
-                people and orgs not just keep up, but lead in today&apos;s
-                fast-moving digital world.
-              </p>
+              <section className="flex flex-col items-center w-full  ">
+                <p className="mt-3 font-semibold text-sm md:pl-[2vw]">Education</p>
+                <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
+                  Knowledge is power, and access matters. We&apos;re helping
+                  people and orgs not just keep up, but lead in today&apos;s
+                  fast-moving digital world.
+                </p>
+              </section>
             </div>
 
             {/* Finance */}
             <div className="flex flex-col items-center ">
-              <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-center  text-lg  z-50">
+              <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-center  text-lg  ">
                 <Image
                   src="/finance_circle.svg"
                   alt="Finance Icon"
@@ -98,11 +107,13 @@ export default function OurFocus() {
                 />
               </div>
 
-              <p className="mt-3 font-semibold text-sm">Finance</p>
-              <p className="mt-1 text-md px-10 text-[#EAF5F4A6] font-light text-center ">
+              <section className="flex flex-col items-center md:items-end w-full  ">
+              <p className="mt-3 font-semibold text-sm pr-2 md:pr-[11vw]">Finance</p>
+              <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
                 At Vigor Tech, finance is not just about numbers—it&apos;s about
                 empowering people to take control of their financial futures
               </p>
+              </section>
             </div>
           </div>
         </div>
