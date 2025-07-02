@@ -18,7 +18,7 @@ export default function NavBar() {
     <>
       <nav className="flex fixed flex-col md:justify-center md:items-center w-full mt-10  gap-y-2 z-50 px-4 md:px-6">
         <section className="bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl w-full max-lg:w-[1272px] max-md:w-[90vw] max-w-full lg:mx-auto backdrop-blur-md z-50 rounded-xl text-white p-4 border shadow-2xl border-[#868686D9] h-[64px] lg:h-[88px]">
-          <section className="flex justify-between items-center bg-[rgba(23, 22, 21, 0.80)] backdrop-blur-md  py-2">
+          <section className="flex justify-between items-center bg-[rgba(23, 22, 21, 0.80)] backdrop-blur-md  md:py-2">
             <section>
               <Image
                 src={"/logo.png"}
