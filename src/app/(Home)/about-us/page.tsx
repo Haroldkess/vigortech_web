@@ -11,7 +11,6 @@ import SectionTitle from "@/app/Component/General/SectionTitle";
 import NavBar from "@/app/Component/General/NavBar";
 import Image from "next/image";
 import React from "react";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import GetInTouch from "@/app/Component/AboutUsPage/GetInTouch";
 
 export default function AboutUs() {
@@ -39,11 +38,11 @@ export default function AboutUs() {
               />
             </section>
 
-            <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full">
-              <p className="text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4">
+            <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full ">
+              <p className="text-[#EAF5F4A6] text-md py-2 md:text-lg font-medium text-center ">
                 Where purpose meets real impact.
               </p>
-          <GetInTouch/>
+              <GetInTouch />
             </section>
           </section>
         </section>

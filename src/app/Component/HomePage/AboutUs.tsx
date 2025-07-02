@@ -10,7 +10,7 @@ export default function AboutUs() {
       title: "Technology",
       description:
         "We don’t just build tech for the sake of it; everything we make is intentional. From platforms to tools, we focus on solving real problems",
-      link: "#",
+      link: "/focus-area",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function AboutUs() {
       title: "Education",
       description:
         "We provide comprehensive training programs and resources to help individuals and organizations stay ahead in the tech landscape",
-      link: "#",
+      link: "/focus-area",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function AboutUs() {
       title: "Finance",
       description:
         "We’re making finance more fair and accessible. Simple tools built for everyday people so they can take control and build for the long run.",
-      link: "#",
+      link: "/focus-area",
     },
   ];
 

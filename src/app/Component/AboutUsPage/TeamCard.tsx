@@ -14,8 +14,8 @@ export default function TeamCard({ imageSrc, name, role }: TeamCardProps) {
           src={imageSrc}
           alt={name}
           className="rounded-xl w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          height={350}
-          width={300}
+          height={1000}
+          width={1000}
         />
 
         <section className="absolute bottom-10 lg:bottom-0 left-[-6em] text-start right-0 p-4 bg-black/15 rounded-b-xl opacity-100 lg:opacity-0 translate-y-10 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-500 ease-out">

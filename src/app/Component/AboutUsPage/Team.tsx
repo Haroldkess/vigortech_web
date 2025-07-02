@@ -1,10 +1,18 @@
+'use client';
 import React from "react";
 import SectionTitle from "../General/SectionTitle";
 import TeamCard from "./TeamCard";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
 export default function Team() {
+
+ const  router = useRouter();
+  const handleJoinTeam = () => {
+    router.push("/career");
+  };
   return (
-    <div className=" text-white min-h-screen flex flex-col items-center justify-center px-10 md:px-4 py-12">
+    <div className=" text-white min-h-screen flex flex-col items-center justify-center px-8 md:px-6 py-12">
       <div className="text-center max-w-4xl w-full">
         <section>
           <div className="flex justify-center mb-6">
@@ -18,7 +26,7 @@ export default function Team() {
           </p>
         </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12 ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl md:mx-auto mb-12 ">
           <TeamCard
             imageSrc="/Teams/co-founder.png"
             name="Harold Osuji"
@@ -50,12 +58,10 @@ export default function Team() {
         </div>
 
         <div className="flex justify-center">
-          <button
-            type="button"
-            className="inline-flex items-center gap-2 border border-[#1f4f2e] rounded px-5 py-2 text-white text-sm font-medium hover:bg-[#1f4f2e] transition"
-          >
-            Join the team
-          </button>
+         <button onClick={()=> handleJoinTeam()} className="group border border-[#48B96B] lg:w-[357px] py-[12px] md:w-[185px] md:h-[48px] font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
+                        Join the team
+                        <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
+                      </button>
         </div>
       </div>
     </div>

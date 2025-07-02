@@ -54,7 +54,7 @@ export default function OurValues() {
         <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
           The principles that guide our decisions and define our culture
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-y-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-y-4 lg:gap-8">
           {valuesData.map((card, index) => (
             <AboutCard
               key={index}
