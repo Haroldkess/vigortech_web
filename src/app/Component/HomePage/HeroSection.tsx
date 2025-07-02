@@ -59,7 +59,7 @@ export default function HeroSection() {
                   width={200}
                   height={200}
                   className=" w-[120.02px] h-[36.23px]
-              md:w-[103.94px] md:h-[26.33px]
+               md:w-[103.94px] md:h-[26.33px]
               lg:w-[124.16px] lg:h-[31.45px]text-white/65"
                 />
                 <Image

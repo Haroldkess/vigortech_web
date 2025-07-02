@@ -6,8 +6,8 @@ import { PropsWithChildren } from 'react'
 
 export default function HeroGeneral({ children }: PropsWithChildren) {
     return (
-        <header className=" lg:mb-[30vh] md:mb-40 mb-20  font-inter pb-20 lg:pb-40  ">
-            <section className="relative -z-10 top-[5em] md:top-[10em] h-[70vh] md:h-[50vh] w-full ">
+        <header className="mb-20  font-inter pb-20 lg:pb-40  overflow-hidden ">
+            <section className="relative -z-10 top-[5em] md:top-[10em] h-[70vh] md:h-[70vh] w-full ">
                 <section className="flex items-center px-4 md:px-10 lg:px-20 w-full  justify-evenly">
 
                     {/* bg image 1 */}
