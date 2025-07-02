@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </section>
         <footer className=" w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-x-hidden  ">
-          <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-8 md:gap-0  py-12   ">
+          <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-4 md:px-8 md:gap-0  py-12   ">
             <div className="max-w-xs ">
               <section className="">
                 <Image
@@ -137,7 +137,7 @@ const Footer = () => {
             <hr className=" border-[#868686A6] my-8 " />
           </div>
 
-          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-10 gap-4 ">
+          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 ">
             <p>©2021 Vigortech, Inc. All rights reserved</p>
             <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
               <a aria-label="Facebook" className="hover:text-white" href="#">

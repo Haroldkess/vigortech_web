@@ -28,7 +28,7 @@ export default function HeroSection() {
 
               {/* <p className="md:w-[45vw] w-[90vw] text-[#EAF5F4A6] text-sm md:text-md"> */}
               <p
-                className="font-inter text-[16px] leading-[20px] tracking-[0.1%]
+                className="font-inter text-[16px] font-inter leading-[20px] tracking-[0.1%]
               font-normal text-[#EAF5F4A6]
               md:font-medium md:bg-transparent
               lg:font-medium md:w-[45vw] w-[90vw]"
@@ -51,14 +51,14 @@ export default function HeroSection() {
               </section>
             </section>
 
-            <section className="relative">
+            <section className="relative ">
               <section className="flex  absolute md:top-20 gap-10 opacity-50 justify-center md:justify-start items-center ">
                 <Image
                   src={"/adam.svg"}
                   alt="adam"
                   width={200}
                   height={200}
-                  className=" w-[143.02px] h-[36.23px]
+                  className=" w-[120.02px] h-[36.23px]
               md:w-[103.94px] md:h-[26.33px]
               lg:w-[124.16px] lg:h-[31.45px]text-white/65"
                 />
@@ -67,7 +67,7 @@ export default function HeroSection() {
                   alt="adam"
                   width={200}
                   height={200}
-                  className=" w-[178.76px] h-[32.85px]
+                  className=" w-[150.76px] h-[32.85px]
               md:w-[129.92px] md:h-[23.87px]
               lg:w-[155.19px] lg:h-[28.52px] text-white/65"
                 />
@@ -143,14 +143,14 @@ export default function HeroSection() {
 
           {/* mobile image section */}
 
-          <section className="block md:hidden">
+          <section className="block md:hidden ">
             <section className=" flex justify-center flex-col  ">
               <img
                 src={"/Earth.png"}
                 alt="earth"
                 width={1000}
                 height={1000}
-                className="z-50  w-[100vw] object-cover absolute right-0 left-0 top-[70vh]"
+                className="z-50  w-[100vw] object-cover absolute right-0 left-0 top-[80vh]"
               />
 
               <section className="">
@@ -159,12 +159,11 @@ export default function HeroSection() {
                   alt="earth"
                   width={200}
                   height={200}
-                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-0 top-[70vh]  "
+                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-0 top-[80vh]  "
                 />
               </section>
 
-              <section className="absolute bottom-0 right-[48%] top-[85vh] ">
-                {/* <div className='glow-bicon w-4 h-4 rounded-full'> </div> */}
+              <section className="absolute bottom-0 right-[48%] top-[95vh] ">
                 <div className="pulse-animation">
                   <div className="layer blur"></div>
                   <div className="layer outer"></div>

@@ -81,9 +81,9 @@ export default function NavBar() {
         {/* mobile menu */}
 
         {showMenu && (
-          <section className="lg:hidden md:w-[90vw] w-[95vw]  text-white/65 px-10 py-8 border shadow-2xl border-[#868686D9] rounded-2xl z-50 bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl  backdrop-blur-sm z-50 rounded-xl text-white  px-8 py-4 border shadow-2xl border-[#868686D9]  ">
+          <section className="lg:hidden md:w-[90vw] w-[90vw] px-4  text-[#EAF5F4A6]  py-8 border shadow-2xl border-[#868686D9] rounded-2xl z-50 bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl  backdrop-blur-sm z-50 rounded-xl text-white  px-8 py-4 border shadow-2xl border-[#868686D9]  ">
             <section>
-              <ul className="flex flex-col gap-y-10 text-xl ">
+              <ul className="flex flex-col gap-y-10 text-md ">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -131,7 +131,7 @@ export default function NavBar() {
             </section>
 
             <section className=" mt-10 w-full ">
-              <button className="bg-[#48B96B] px-8 py-2 w-full font-semibold text-xl text-[#171615] rounded-md">
+              <button className="bg-[#48B96B] px-8 py-2 w-full font-normal text-md text-[#171615] rounded-md">
                 Explore our products
               </button>
             </section>

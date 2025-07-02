@@ -33,7 +33,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="w-full py-16">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 px-4">
         <SectionTitle title="Testimonials" />
         <h2 className="text-white text-center font-inter text-[32px] font-[800] leading-[40px] md:text-[57px] md:font-[600] md:leading-[64px] md:tracking-[-0.142px] lg:text-[57px] lg:font-semibold lg:leading-[64px] lg:tracking-[-0.142px] pt-10">
           What they say about us
