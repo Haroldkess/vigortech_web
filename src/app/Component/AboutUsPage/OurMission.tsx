@@ -3,19 +3,23 @@ import React from "react";
 
 export default function OurMission() {
   return (
-    <section className="text-white min-h-screen">
-      <section className="max-w-7xl px-10 md:px-20 py-12 flex flex-col md:flex-row justify-between ">
+    <section className="text-white min-h-[70vh] ">
+      <section className="w-full px-4 md:px-6 py-12 flex flex-col md:flex-row justify-between ">
         <section>
-          <h2 className="text-3xl font-semibold border-l-4 border-[#2ecc71] pl-3 mb-3">
-            Our Mission
-          </h2>
-          <p className="text-md text-[#EAF5F4A6] max-w-md mb-16">
-            Our mission is to help everyday people take control, grow with
-            confidence, and lead the future—whether in tech, learning, or
-            finance. Through innovation, collaboration, and a commitment to
-            excellence, Vigor Tech transforms challenges into opportunities,
-            building a brighter future for Africa
-          </p>
+          <section className="flex md:gap-x-4 mb-4">
+            <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
+            <h2 className="text-3xl font-semibold"> Our Mission</h2>
+          </section>
+
+          <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-2xl">
+            <p className="px-4 md:px-8 md:w-[614px]">
+              Our mission is to help everyday people take control, grow with
+              confidence, and lead the future—whether in tech, learning, or
+              finance. Through innovation, collaboration, and a commitment to
+              excellence, Vigor Tech transforms challenges into opportunities,
+              building a brighter future for Africa
+            </p>
+          </section>
         </section>
 
         <section>
@@ -24,7 +28,7 @@ export default function OurMission() {
             alt="Our Mission Image"
             width={800}
             height={400}
-            className="w-full h-auto object-cover mt-10"
+            className="w-[500px] h-auto object-cover mt-10"
           />
         </section>
       </section>

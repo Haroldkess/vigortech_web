@@ -67,7 +67,7 @@ export default function OurStory() {
               alt="Our Story Image"
               width={350}
               height={350}
-              className="w-[400px] h-auto object-cover mt-10"
+              className="w-[500px] h-auto object-cover mt-10"
             />
           </section>
         </section>

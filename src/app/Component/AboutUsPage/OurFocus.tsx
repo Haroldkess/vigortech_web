@@ -3,7 +3,7 @@ import React from "react";
 
 export default function OurFocus() {
   return (
-    <div className=" text-white min-h-screen ">
+    <div className=" text-white min-h-[70vh] ">
       <div className="w-full px-4 md:px-6 py-12">
         <section className="flex md:gap-x-4 mb-4">
           <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
