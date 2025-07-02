@@ -16,9 +16,8 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="flex fixed flex-col justify-center items-center w-full mt-10  gap-y-2 z-50 ">
-        {/* <section className="bg-transparent bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl w-full max-w-[1272px] lg:w-[1272px] md:w-[90vw] w-[95vw]  backdrop-blur-sm z-50 rounded-xl text-white  p-[16px]  border shadow-2xl border-[#868686D9] h-[64px] lg:h-[88px]"> */}
-        <section className="bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl w-full max-lg:w-[1272px] max-md:w-[90vw] max-w-[95vw] mx-auto backdrop-blur-sm z-50 rounded-xl text-white p-4 border shadow-2xl border-[#868686D9] h-[64px] lg:h-[88px]">
+      <nav className="flex fixed flex-col md:justify-center md:items-center w-full mt-10  gap-y-2 z-50 px-4 md:px-6">
+        <section className="bg-[rgba(23, 22, 21, 0.20)] drop-shadow-xl w-full max-lg:w-[1272px] max-md:w-[90vw] max-w-full lg:mx-auto backdrop-blur-md z-50 rounded-xl text-white p-4 border shadow-2xl border-[#868686D9] h-[64px] lg:h-[88px]">
           <section className="flex justify-between items-center bg-[rgba(23, 22, 21, 0.80)] backdrop-blur-md  py-2">
             <section>
               <Image
@@ -201,7 +200,7 @@ export default function NavBar() {
         {/* products */}
         {activeDropdown === "products" && (
           <section
-            className="relative left-48 top-[-0.5em]  "
+            className="relative left-48 top-[-0.5em] z-50 "
             onMouseLeave={() => setActiveDropdown(null)}
           >
             <section className="hidden lg:block w-[35vw] text-white/65 px-6 py-4 border shadow-2xl border-[#868686D9] rounded-2xl z-50 bg-transparent bg-[rgba(23, 22, 21, 0.50)] drop-shadow-xl  backdrop-blur-sm z-50 rounded-xl  border shadow-2xl border-[#868686D9]  ">
@@ -271,7 +270,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                   {/* Education */}
-                  <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl">
+                  <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl z-50">
                     <Link href="/career">
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <section className="w-[24px] h-[24px]">
@@ -337,7 +336,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                   {/* Finance */}
-                  <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl">
+                  <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl z-50">
                     <Link href="/career">
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <section className="w-[24px] h-[24px]">
