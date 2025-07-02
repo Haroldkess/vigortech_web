@@ -25,25 +25,25 @@ const OurStat = () => {
             {/* Right Side: Stats */}
             <div className="grid grid-cols-2  md:gap-x-20 justify-center items-center gap-y-8 md:max-w-md gap-x-20" ref={ref}>
                 <div className="md:w-[4vw] w-[12vw]">
-                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
+                    <h3 className="text-4xl font-semibold border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={5} duration={4} /> : '0'}+
                     </h3>
                     <p className="text-[#EAF5F4A6] mt-1 text-sm">Projects</p>
                 </div>
-                <div className="md:w-[8vw] w-[26vw]">
-                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
+                <div className="md:w-[8vw]">
+                    <h3 className="text-4xl font-semibold border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={200} duration={4} /> : '0'}+
                     </h3>
                     <p className="text-[#EAF5F4A6] mt-1  md:text-[12px] text-sm">Learners trained</p>
                 </div>
                 <div className="md:w-[7.5vw] w-[25vw]">
-                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">
+                    <h3 className="text-4xl font-semibold border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={99.9} duration={4} decimals={1} /> : '0'}%
                     </h3>
                     <p className="text-[#EAF5F4A6] mt-1 text-sm">Satisfaction</p>
                 </div>
                 <div className="md:w-[5.4vw] w-[16vw]">
-                    <h3 className="text-4xl font-semiborder border-b border-gray-600 pb-1">10+</h3>
+                    <h3 className="text-4xl font-semibold border-b border-gray-600 pb-1">10+</h3>
                     <p className="text-[#EAF5F4A6] mt-1 text-sm">Integrations</p>
                 </div>
             </div>

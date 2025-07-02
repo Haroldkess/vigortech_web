@@ -4,7 +4,7 @@ import SectionTitle from '../General/SectionTitle'
 
 export default function TechSection() {
     return (
-        <section>
+        <section id='tech'>
             <section className='grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-6 md:px-20 relative gap-10'>
                 <section className='md:pt-10'>
                     <section className='flex flex-col justify-start items-start'>

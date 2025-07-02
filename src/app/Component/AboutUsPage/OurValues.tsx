@@ -43,18 +43,18 @@ export default function OurValues() {
   ];
 
   return (
-    <section className=" lg:mx-auto lg:px-6 px-2  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
-      <section className="lg:max-w-7xl md:px-10 px-4">
+    <section className=" px-4 md:px-6 lg:py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+      <section className=" ">
         <div className="flex justify-center mb-6">
           <SectionTitle title="Values" />
         </div>
-        <h2 className="text-center text-white font-extrabold text-2xl md:text-4xl mb-3 leading-tight">
+        <h2 className="text-center text-white font-semibold text-2xl md:text-4xl mb-3 leading-tight">
           Our Values
         </h2>
         <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
           The principles that guide our decisions and define our culture
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-y-4 lg:gap-8">
           {valuesData.map((card, index) => (
             <AboutCard
               key={index}

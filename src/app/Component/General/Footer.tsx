@@ -1,9 +1,33 @@
 import Image from "next/image";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import FooterLink from "./FooterLinks";
 
-// z - [-1]
 const Footer = () => {
+
+  const footerLinks = {
+    Company: [
+      { label: "About us", href: "/about-us" },
+      { label: "Blog", href: "#" },
+      { label: "Career", href: "career" },
+    ],
+    Products: [
+      { label: "Technology", href: "/focus-area#tech" },
+      { label: "Education", href: "#" },
+      { label: "Finance", href: "#" },
+    ],
+    "Social Media": [
+      { label: "X (Twitter)", href: "#" },
+      { label: "Instagram", href: "#" },
+      { label: "Facebook", href: "#" },
+    ],
+    Support: [
+      { label: "Contact us", href: "contact-us" },
+      { label: "Community", href: "#" },
+    ],
+  };
+  
+
     return (
       <section className="relative  overflow-x-hidden overflow-y-hidden">
         <section className=" absolute top-0 left-0 w-full h-[50vh] z-20">
@@ -33,103 +57,19 @@ const Footer = () => {
               </section>
             </div>
 
-            <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300">
-              <div className="space-y-3">
-                <h3 className="text-[#EAF5F4A6]">Company</h3>
-                <ul className="space-y-5 text-white">
-                  <li>
-                    <a
-                      className="hover:text-white hover:border-b border-white"
-                      href="/about-us"
-                    >
-                      About us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-white hover:border-b border-white"
-                      href="#"
-                    >
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-white hover:border-b border-white"
-                      href="#"
-                    >
-                      Career
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
-                <h3 className="text-[#EAF5F4A6]">Products</h3>
-                <ul className="space-y-5 text-white">
-                  <li>
-                    <a
-                      className="hover:text-white hover:border-b border-white"
-                      href="#"
-                    >
-                      Technology
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-white hover:border-b border-white"
-                      href="#"
-                    >
-                      Education
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-white hover:border-b border-white"
-                      href="#"
-                    >
-                      Finance
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
-                <h3 className="text-[#EAF5F4A6]">Social media</h3>
-                <ul className="space-y-5 text-white">
-                  <li>
-                    <a className="hover:text-white" href="#">
-                      X (Twitter)
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:text-white" href="#">
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:text-white" href="#">
-                      Facebook
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
-                <h3 className="text-[#EAF5F4A6]">Support</h3>
-                <ul className="space-y-5 text-white">
-                  <li>
-                    <a className="hover:text-white" href="#">
-                      Contact us
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:text-white" href="#">
-                      Community
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300 z-50">
+              {Object.entries(footerLinks).map(([section, links]) => (
+                <div key={section} className="space-y-3">
+                  <h3 className="text-[#EAF5F4A6]">{section}</h3>
+                  <ul className="space-y-5 text-white">
+                    {links.map((link) => (
+                      <li key={link.label}>
+                        <FooterLink href={link.href}>{link.label}</FooterLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -137,7 +77,7 @@ const Footer = () => {
             <hr className=" border-[#868686A6] my-8 " />
           </div>
 
-          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 ">
+          <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-50">
             <p>©2021 Vigortech, Inc. All rights reserved</p>
             <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
               <a aria-label="Facebook" className="hover:text-white" href="#">
