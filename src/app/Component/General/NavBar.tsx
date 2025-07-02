@@ -46,10 +46,10 @@ export default function NavBar() {
                     </section>
                   </li>
                   <li>
-                    <Link href="/courses">Courses</Link>
+                    <Link href="/institue">Courses</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/contact-us">Contact</Link>
                   </li>
                 </ul>
               </section>
@@ -97,11 +97,21 @@ export default function NavBar() {
                     )}
                   </section>
                   {dropCompany && (
-                    <section className="flex flex-col gap-4 mt-2 text-white">
-                      <p>About Us</p>
-                      <p>Blog</p>
-                      <p>Career</p>
-                    </section>
+                    <ul className="flex flex-col gap-4 mt-2 text-white">
+                      <li>
+                        <Link href="/about-us">About Us</Link>
+                      </li>
+
+                  {/* link not done yet */}
+                      <li>
+                        <Link href="/about-us">Blog</Link>
+                      </li>
+
+                      <li>
+                        <Link href="/career">Career</Link>  
+                        </li>
+                      
+                    </ul>
                   )}
                 </li>
                 <li>
