@@ -33,9 +33,9 @@ export default function FocusArea() {
                 communities to thrive in the digital economy
               </p>
               <section className=" flex flex-col md:flex-row gap-4 ">
-                <section className=" flex w-[90vw] md:w-[20vw] justify-center items-center">
+                <section className=" flex w-[90vw] md:w-[15vw]  justify-center items-center">
                   <Link href={"/contact-us"} className="w-full">
-                    <button className=" group border border-[#48B96B]  px-8 w-full py-2 font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
+                    <button className=" group border border-[#48B96B]  px-8 w-full md:py-4 font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
                       Get in touch{" "}
                       <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
                     </button>

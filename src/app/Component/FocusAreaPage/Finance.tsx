@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Finance() {
   return (
        <section>
-              <section className='grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-6 md:px-20 relative gap-10'>
+              <section className='grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-4 md:px-6 relative gap-10'>
                 <section className='pt-10'>
                     <section className='flex flex-col justify-start items-start'>
                       <SectionTitle title="Finance" />

@@ -41,7 +41,7 @@ export default function OurCourses() {
 
     return (
       <section>
-        <section className="grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-6 md:px-20 relative gap-10">
+        <section className="grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-4 md:px-6 relative gap-10">
           <section className="pt-10">
             <section className="flex flex-col justify-start items-start">
               <SectionTitle title="Education" />
@@ -57,9 +57,7 @@ export default function OurCourses() {
                 Education shouldn&apos;t be a privilege—it should be a pathway
                 that&apos;s open to everyone.
               </p>
-              {/* <button className="border border-[#48B96B] text-white px-4 w-[10em]  py-2 font-normal justify-center rounded-md flex items-center gap-2">
-                View courses <MdOutlineArrowOutward />
-              </button> */}
+           
 
               <Link
                 href={"/institute"}
@@ -84,7 +82,7 @@ export default function OurCourses() {
           </section>
         </section>
 
-        <section className=" md:px-20 px-4">
+        <section className=" md:px-6 px-4">
           <section className="relative">
             <h2 className="text-center text-white font-semibold text-2xl md:text-4xl mb-3 pb-20 leading-tight">
               How we make this happen
@@ -101,7 +99,7 @@ export default function OurCourses() {
             </section>
           </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
             {services.map((card, index) => (
               <AboutCard
                 key={index}
