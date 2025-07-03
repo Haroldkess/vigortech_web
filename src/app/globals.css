@@ -31,7 +31,7 @@ body {
 
 @media (min-width: 1366px){
   .map-pulse {
-    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[10.3em] lg:right-[24.2vw]
+    @apply bottom-[calc(20vh)] right-[calc(20vw)] lg:bottom-[9em] lg:right-[24.2vw]
     }
 }
 

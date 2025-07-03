@@ -36,7 +36,7 @@ export default function AboutUs() {
         <div className="flex justify-center mb-6">
           <SectionTitle title="Focus" />
         </div>
-        <h2 className="text-center text-white font-semibold text-2xl md:text-4xl mb-3 leading-tight">
+        <h2 className="text-center text-white font-semibold text-3xl md:text-6xl mb-3 leading-tight">
           Our Focus Area
         </h2>
         <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">

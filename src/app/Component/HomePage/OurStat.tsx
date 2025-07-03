@@ -16,7 +16,7 @@ const OurStat = () => {
             {/* Left Side: Text Content */}
             <div className="md:max-w-lg space-y-4">
                 <SectionTitle title="Our track record" />
-                <h2 className="md:text-4xl text-2xl font-semibold leading-tight">Our stats</h2>
+                <h2 className="md:text-6xl text-3xl font-semibold leading-tight">Our stats</h2>
                 <p className="text-[#EAF5F4A6] max-w-md text-sm leading-relaxed">
                     We don’t just talk about change—we build it. These numbers show how far we’ve come, and where we’re headed.
                 </p>
