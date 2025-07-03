@@ -27,14 +27,14 @@ export default function InstitutePage() {
               <section className=" flex flex-col md:flex-row gap-4 ">
                 <section className="pt-10">
                   <form className="flex justify-center items-center md:gap-4 w-full  ">
-                    <div className="px-4 py-2 w-[60vw] md:w-[40vw] rounded-full  gap-2 border border-[#86868673] bg-[#171615A6] outline-[#48B96B] flex items-center">
+                    <div className="px-4 py-2 w-[90vw] md:w-[40vw] rounded-full gap-2 border border-[#86868673] bg-[#171615A6] focus-within:border-[#48B96B] flex items-center">
                       <span>
-                        <MdSearch className="text-[#EAF5F440]  " />{" "}
+                        <MdSearch className="text-[#EAF5F440]" />
                       </span>
                       <input
                         type="text"
                         placeholder="Search for courses..."
-                        className="w-[60vw] md:w-[40vw] placeholder:text-[#EAF5F440] placeholder:text-md placeholder:font-inter placeholder:font-[400]  "
+                        className="w-[60vw] md:w-[40vw] placeholder:text-[#EAF5F440] placeholder:text-md placeholder:font-inter placeholder:font-[400] outline-none bg-transparent text-white text-md font-inter font-[400]"
                       />
                     </div>
                   </form>
