@@ -31,8 +31,8 @@ export default function OurServices() {
     ];
 
     return (
-        <section className=" lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
-            <section className='lg:max-w-7xl md:px-10 px-4'>
+        <section className="   py-16 rounded-t-3xl  bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+            <section className=' md:px-6 px-4'>
 
                 <section className='relative'>
                     <h2 className="text-center text-white font-semibold text-3xl md:text-4xl mb-3 pb-20 leading-tight">
