@@ -5,21 +5,24 @@ import { FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
   return (
-    <main className="max-w-6xl w-full rounded-2xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-16">
+    <main className=" w-full rounded-2xl p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 md:gap-16">
       {/* Contact Info Section */}
       <section className="space-y-6 max-w-md">
-        <h2 className="text-2xl font-bold">Get in touch</h2>
-        <p className="text-[#EAF5F4A6] leading-relaxed">
+        <h2 className="text-xl md:text-3xl font-semibold">Get in touch</h2>
+        <p
+          className="text-[#EAF5F4A6] font-normal text-base leading-normal
+tracking-tight"
+        >
           Have a question, need a consultation, or want to learn more about our
           services? Fill out the form and our team will get back to you
           promptly.
         </p>
         <div className="flex items-center space-x-4">
-          <Image src={"/contactUs/mail.svg"} alt="" height={20} width={20} />
+          <Image src={"/contactUs/mail.svg"} alt="" height={20} width={20} className="h-6 w-6" />
 
           <div className="space-y-0.5">
-            <p className="font-semibold text-sm">Email</p>
-            <p className="text-[#EAF5F4A6] text-sm">vigortechapp@gmail.com</p>
+            <p className="font-normal text-whte text-base ">Email</p>
+            <p className="text-[#EAF5F4A6] text-base">vigortechapp@gmail.com</p>
           </div>
         </div>
       </section>
