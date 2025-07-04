@@ -17,8 +17,16 @@ const Footer = () => {
       { label: "Finance", href: "/focus-area#finance", isReady: true },
     ],
     "Social Media": [
-      { label: "X (Twitter)", href: "#", isReady: false },
-      { label: "Instagram", href: "#", isReady: false },
+      {
+        label: "X (Twitter)",
+        href: "https://x.com/vigortech?s=21",
+        isReady: true,
+      },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/vigortechofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        isReady: true,
+      },
       { label: "Facebook", href: "#", isReady: false },
     ],
     Support: [
@@ -63,7 +71,9 @@ const Footer = () => {
                 <ul className="space-y-5 text-white">
                   {links.map((link) => (
                     <li key={link.label}>
-                      <FooterLink href={link.href} isReady={link.isReady}>{link.label}</FooterLink>
+                      <FooterLink href={link.href} isReady={link.isReady}>
+                        {link.label}
+                      </FooterLink>
                     </li>
                   ))}
                 </ul>
@@ -82,10 +92,18 @@ const Footer = () => {
             <a aria-label="Facebook" className="hover:text-white" href="#">
               <FaFacebookF />
             </a>
-            <a aria-label="Instagram" className="hover:text-white" href="#">
+            <a
+              aria-label="Instagram"
+              className="hover:text-white"
+              href="https://www.instagram.com/vigortechofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
               <FaInstagram />
             </a>
-            <a aria-label="X Twitter" className="hover:text-white" href="#">
+            <a
+              aria-label="X Twitter"
+              className="hover:text-white"
+              href="https://x.com/vigortech?s=21"
+            >
               <FaXTwitter />
             </a>
           </div>
