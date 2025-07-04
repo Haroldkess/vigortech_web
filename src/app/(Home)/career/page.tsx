@@ -43,7 +43,7 @@ export default function Career() {
         </section>
       </HeroGeneral>
 
-      <section className="shadow-2xl bg-[#171615A6]">
+      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20  border-[#262020a6] w-full">
         <Location />
 
         <section className="flex justify-center items-center w-full py-4 md:py-20">

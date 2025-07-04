@@ -18,7 +18,13 @@ tracking-tight"
           promptly.
         </p>
         <div className="flex items-center space-x-4">
-          <Image src={"/contactUs/mail.svg"} alt="" height={20} width={20} className="h-6 w-6" />
+          <Image
+            src={"/contactUs/mail.svg"}
+            alt=""
+            height={20}
+            width={20}
+            className="h-6 w-6"
+          />
 
           <div className="space-y-0.5">
             <p className="font-normal text-whte text-base ">Email</p>
@@ -28,15 +34,17 @@ tracking-tight"
       </section>
 
       {/* Form Section */}
-      <section className="max-w-2xl w-full">
-        <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
-        <form className="space-y-6">
+      <section className="pt-20 md:pt-0 w-full ">
+        <h2 className="md:text-3xl text-xl font-semibold mb-6">
+          Send us a message
+        </h2>
+        <form className="md:space-y-6 space-y-8">
           {/* Name Fields */}
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label
                 htmlFor="firstName"
-                className="block text-sm font-medium mb-1"
+                className="block text-base font-medium mb-1"
               >
                 First name
               </label>
@@ -51,7 +59,7 @@ tracking-tight"
             <div>
               <label
                 htmlFor="lastName"
-                className="block text-sm font-medium mb-1"
+                className="block text-base font-medium mb-1"
               >
                 Last name
               </label>
@@ -67,7 +75,7 @@ tracking-tight"
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
+            <label htmlFor="email" className="block text-base font-medium mb-1">
               Email
             </label>
             <input
@@ -81,7 +89,10 @@ tracking-tight"
 
           {/* Message */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-1">
+            <label
+              htmlFor="message"
+              className="block text-base font-medium mb-1"
+            >
               Message
             </label>
             <textarea
@@ -102,9 +113,9 @@ tracking-tight"
                 name="subscribe"
                 className="peer hidden"
               />
-              <span className="mt-1 inline-block w-6 h-6 relative rounded-md border border-white  peer-checked:bg-[#48B96B] peer-checked:border-green-500"></span>
+              <span className="mt-1 inline-block w-6 h-5 md:w-6 md:h-6 relative rounded-md border border-white  peer-checked:bg-[#48B96B] peer-checked:border-green-500"></span>
 
-              <FaCheck className="hidden peer-checked:block absolute left-[5px] top-[10px] text-white text-sm pointer-events-none" />
+              <FaCheck className="hidden peer-checked:block absolute left-[4px] top-[8px] text-white text-[12px] md:text-base pointer-events-none" />
 
               <div className="flex flex-col">
                 <label
@@ -123,7 +134,7 @@ tracking-tight"
           {/* Submit Button */}
           <button
             type="submit"
-            className="bg-[#48B96B] hover:bg-[#6CC788] transition-colors w-full md:w-1/2 rounded-md px-8 py-2 font-semibold text-black"
+            className="bg-[#48B96B] hover:bg-[#6CC788] transition-colors w-full md:w-52 rounded-md px-8 py-2 font-semibold text-black"
           >
             Submit
           </button>
