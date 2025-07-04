@@ -7,7 +7,7 @@ export default function OurFocus() {
       <div className="w-full px-4 md:px-6 py-12">
         <section className="flex md:gap-x-4 mb-4">
           <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
-          <h2 className="text-3xl font-semibold"> Our Focus</h2>
+          <h2 className="text-3xl md:text-6xl font-semibold"> Our Focus</h2>
         </section>
         <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-xl">
           <p className="px-4 md:px-8">

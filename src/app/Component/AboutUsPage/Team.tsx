@@ -18,27 +18,27 @@ export default function Team() {
           <div className="flex justify-center mb-6">
             <SectionTitle title="The team" />
           </div>
-          <h2 className="text-center text-white font-semibold text-2xl md:text-4xl mb-3 leading-tight">
+          <h2 className="text-center text-white font-semibold text-3xl md:text-6xl mb-3 leading-tight">
             Meet the team
           </h2>
-          <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
+          <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-base leading-relaxed">
             The experts driving our vision forward
           </p>
         </section>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl md:mx-auto mb-12 ">
           <TeamCard
-            imageSrc="/Teams/co-founder.png"
+            imageSrc="/Teams/co-founder.svg"
             name="Harold Osuji"
             role="Co-Founder"
           />
           <TeamCard
-            imageSrc="/Teams/VA.png"
+            imageSrc="/Teams/VA.svg"
             name="Agu Precious"
             role="Virtual Assistant"
           />
           <TeamCard
-            imageSrc="/Teams/cto.png"
+            imageSrc="/Teams/cto.svg"
             name="Onomuefor Nelson"
             role="CTO"
           />
@@ -46,12 +46,12 @@ export default function Team() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-xl mx-auto mb-12">
           <TeamCard
-            imageSrc="/Teams/QA.png"
+            imageSrc="/Teams/QA.svg"
             name="Boi Uche"
             role="QA Engineer"
           />
           <TeamCard
-            imageSrc="/Teams/PD.png"
+            imageSrc="/Teams/PD.svg"
             name="Coleman Osuji"
             role="Product Designer"
           />

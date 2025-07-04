@@ -18,13 +18,13 @@ export default function TeamCard({ imageSrc, name, role }: TeamCardProps) {
           width={1000}
         />
 
-        <section className="absolute bottom-10 lg:bottom-0 left-[-6em] text-start right-0 p-4 bg-black/15 rounded-b-xl opacity-100 lg:opacity-0 translate-y-10 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-500 ease-out">
+        <section className="absolute bottom-10 lg:bottom-0 left-[-6em] text-start right-0 p-4 bg-black/15 rounded-b-xl opacity-100 lg:opacity-0 translate-y-10 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-500 ease-out group-hover:drop-shadow-2xl group-hover:rounded-t-3xl">
           <h3 className="text-center text-lg font-semibold mt-4 text-white">
             {name}
           </h3>
           <p
-            className={`bg-clip-text text-transparent font-semibold text-center w-full ${
-              role === "CTO" && " relative left-[-4em]" 
+            className={`bg-clip-text text-transparent font-semibold  text-center w-full ${
+              role === "CTO" && " relative left-[-4em]"
             }`}
             style={{
               backgroundImage:

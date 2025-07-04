@@ -21,7 +21,7 @@ export default function HeroAbout() {
             <SectionTitle title='About us' />
 
             <section className=' '>
-              <h1 className='text-white text-lg md:text-5xl font-bold text-center'>We’re Building Africa’s
+              <h1 className='text-white text-3xl md:text-6xl font-bold text-center'>We’re Building Africa’s
                 <br />
                 tomorrow, today!</h1>
 

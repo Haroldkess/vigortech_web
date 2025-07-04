@@ -61,7 +61,7 @@ export default function Courses() {
         </section>
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-8 gap-y-10">
-                  {contentCards.map((card, index) => (
+                  {contentCards.map((card) => (
                       <CourseCard
                           key={card.id}
                           cardTitle={card.title}
