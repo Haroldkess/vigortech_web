@@ -34,10 +34,11 @@ export default function TechSection() {
 
           <section>
             <Image
-              src="/Tech_opportunities.png"
+              src="/Tech_opportunities.svg"
               alt="Our Story Image"
               width={500}
               height={500}
+              quality={100}
               className="w-full h-auto object-cover md:mt-10"
             />
           </section>

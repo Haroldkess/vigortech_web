@@ -1,28 +1,29 @@
 import Image from "next/image";
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import FooterLink from "./FooterLinks";
 
 const Footer = () => {
   const footerLinks = {
     Company: [
-      { label: "About us", href: "/about-us" },
-      { label: "Blog", href: "#" },
-      { label: "Career", href: "career" },
+      { label: "About us", href: "/about-us", isReady: true },
+      { label: "Blog", href: "#", isReady: false },
+      { label: "Career", href: "/career", isReady: true },
     ],
     Products: [
-      { label: "Technology", href: "/focus-area#tech" },
-      { label: "Education", href: "#" },
-      { label: "Finance", href: "#" },
+      { label: "Technology", href: "/focus-area#tech", isReady: true },
+      { label: "Education", href: "/focus-area#education", isReady: true },
+      { label: "Finance", href: "/focus-area#finance", isReady: true },
     ],
     "Social Media": [
-      { label: "X (Twitter)", href: "#" },
-      { label: "Instagram", href: "#" },
-      { label: "Facebook", href: "#" },
+      { label: "X (Twitter)", href: "#", isReady: false },
+      { label: "Instagram", href: "#", isReady: false },
+      { label: "Facebook", href: "#", isReady: false },
     ],
     Support: [
-      { label: "Contact us", href: "contact-us" },
-      { label: "Community", href: "#" },
+      { label: "Contact us", href: "/contact-us", isReady: true },
+      { label: "Community", href: "#", isReady: false },
     ],
   };
 
@@ -62,7 +63,7 @@ const Footer = () => {
                 <ul className="space-y-5 text-white">
                   {links.map((link) => (
                     <li key={link.label}>
-                      <FooterLink href={link.href}>{link.label}</FooterLink>
+                      <FooterLink href={link.href} isReady={link.isReady}>{link.label}</FooterLink>
                     </li>
                   ))}
                 </ul>
@@ -71,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="md:px-20 px-4">
+        <div className="md:px-8 px-4">
           <hr className=" border-[#868686A6] my-8 " />
         </div>
 
@@ -85,7 +86,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a aria-label="X Twitter" className="hover:text-white" href="#">
-              <FaTwitter />
+              <FaXTwitter />
             </a>
           </div>
         </div>

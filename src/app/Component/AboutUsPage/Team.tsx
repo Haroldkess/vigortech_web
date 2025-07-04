@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import SectionTitle from "../General/SectionTitle";
 import TeamCard from "./TeamCard";
@@ -6,8 +6,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { useRouter } from "next/navigation";
 
 export default function Team() {
-
- const  router = useRouter();
+  const router = useRouter();
   const handleJoinTeam = () => {
     router.push("/career");
   };
@@ -58,10 +57,13 @@ export default function Team() {
         </div>
 
         <div className="flex justify-center">
-         <button onClick={()=> handleJoinTeam()} className="group border border-[#48B96B] lg:w-[357px] py-[12px] md:w-[185px] md:h-[48px] font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
-                        Join the team
-                        <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
-                      </button>
+          <button
+            onClick={() => handleJoinTeam()}
+            className="group border border-[#48B96B] lg:w-[357px] w-full py-[12px] md:w-[185px] md:h-[48px] font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white"
+          >
+            Join the team
+            <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
+          </button>
         </div>
       </div>
     </div>

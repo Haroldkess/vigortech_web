@@ -40,7 +40,7 @@ export default function OurCourses() {
     ];
 
     return (
-      <section>
+      <section id="education">
         <section className="grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-4 md:px-6 relative gap-10">
           <section className="pt-10">
             <section className="flex flex-col justify-start items-start">
@@ -57,12 +57,8 @@ export default function OurCourses() {
                 Education shouldn&apos;t be a privilege—it should be a pathway
                 that&apos;s open to everyone.
               </p>
-           
 
-              <Link
-                href={"/institute"}
-                className=" w-[90vw] md:w-[20vw] "
-              >
+              <Link href={"/institute"} className=" w-[90vw] md:w-[20vw] ">
                 <button className=" group border border-[#48B96B]  px-8 w-full py-2 font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
                   View courses
                   <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
@@ -73,10 +69,11 @@ export default function OurCourses() {
 
           <section>
             <Image
-              src="/talent.png"
+              src="/talent.svg"
               alt="Our Story Image"
               width={500}
               height={500}
+              quality={100}
               className="w-full h-auto object-cover mt-10"
             />
           </section>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 // import React, { useState } from "react";
 
@@ -42,11 +43,13 @@ export default function HeroSection() {
             <section>
               <section className=" flex flex-col md:flex-row gap-4 w-[90vw]">
                 <button className=" md:h-[48px] md:w-[228px] px-[20px] py-[10px] text-[16px] font-[500] flex justify-center items-center text-[#171615] rounded-md bg-[#48B96B] hover:bg-[#6CC788]">
-                  Explore our products
+                  <Link href="/about-us">Explore our products</Link>
                 </button>
-                <button className="group border border-[#48B96B] lg:w-[357px] py-[12px] md:w-[185px] md:h-[48px] font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
-                  Get in touch
-                  <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
+                <button className="group border border-[#48B96B]  py-[12px] md:w-[185px]  md:h-[48px] font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
+                  <Link href={"/contact-us"} className="flex items-center gap-2">
+                    Get in touch
+                    <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
+                  </Link>
                 </button>
               </section>
             </section>
