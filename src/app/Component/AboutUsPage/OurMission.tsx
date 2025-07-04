@@ -28,6 +28,7 @@ export default function OurMission() {
             alt="Our Mission Image"
             width={800}
             height={400}
+            quality={100}
             className="w-[500px] h-auto object-cover mt-10"
           />
         </section>

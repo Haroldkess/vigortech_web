@@ -56,7 +56,7 @@ export default function NavBar() {
 
               <section className="lg:flex hidden ">
                 <button className=" h-[40px] w-[200px] px-[20px] py-[10px] text-[16px] font-[500] flex justify-center items-center text-[#171615] rounded-md bg-[#48B96B] hover:bg-[#6CC788]">
-                  Explore our products
+                  <Link href={"/focus-area"}> Explore our products</Link>
                 </button>
               </section>
 
@@ -102,15 +102,21 @@ export default function NavBar() {
                         <Link href="/about-us">About Us</Link>
                       </li>
 
-                  {/* link not done yet */}
                       <li>
-                        <Link href="/about-us">Blog</Link>
+                        <Link
+                          href="/#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            alert("Coming soon!");
+                          }}
+                        >
+                          Blog
+                        </Link>
                       </li>
 
                       <li>
-                        <Link href="/career">Career</Link>  
-                        </li>
-                      
+                        <Link href="/career">Career</Link>
+                      </li>
                     </ul>
                   )}
                 </li>
@@ -158,7 +164,7 @@ export default function NavBar() {
               <section>
                 <ul className="flex flex-col gap-y-4 text-base text-white">
                   <li className="hover:outline hover:bg-green-600/5  hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl">
-                    <Link href="/career">
+                    <Link href="/about-us">
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <div className=" inline-flex flex-col justify-start items-start gap-1">
                           <div className="  text-white font-inter text-[16px] font-[600] leading-[24px] tracking-[0.08px]">
@@ -173,7 +179,13 @@ export default function NavBar() {
                   </li>
 
                   <li className="hover:outline hover:bg-green-600/5  hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl">
-                    <Link href="/career">
+                    <Link
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        alert("Coming soon!");
+                      }}
+                    >
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <div className=" inline-flex flex-col justify-start items-start gap-1">
                           <div className="  text-white font-inter text-[16px] font-[600] leading-[24px] tracking-[0.08px]">
@@ -218,7 +230,7 @@ export default function NavBar() {
                 <ul className="flex flex-col gap-y-4 text-base text-white">
                   {/* Technology */}
                   <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl">
-                    <Link href="/career">
+                    <Link href="/focus-area#tech">
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <section className="w-[26px] h-[26px]">
                           <svg
@@ -281,7 +293,7 @@ export default function NavBar() {
                   </li>
                   {/* Education */}
                   <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl z-50">
-                    <Link href="/career">
+                    <Link href="/focus-area#education">
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <section className="w-[24px] h-[24px]">
                           <svg
@@ -347,7 +359,7 @@ export default function NavBar() {
                   </li>
                   {/* Finance */}
                   <li className="group hover:outline hover:bg-green-600/5 hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl z-50">
-                    <Link href="/career">
+                    <Link href="/focus-area#finance">
                       <div className="h-24 px-3 py-4 inline-flex justify-start items-center gap-4">
                         <section className="w-[24px] h-[24px]">
                           <svg

@@ -25,8 +25,8 @@ export default function OurFocus() {
               <Image
                 src="/tech_circle.svg"
                 alt="Technology Icon"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
               />
             </div>
 
@@ -35,8 +35,8 @@ export default function OurFocus() {
               <Image
                 src="/education_circle.svg"
                 alt="Education Icon"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
               />
             </div>
             <div className="w-[30%]  border-t border-[#2ecc71]"></div>
@@ -45,13 +45,13 @@ export default function OurFocus() {
               <Image
                 src="/finance_circle.svg"
                 alt="Finance Icon"
-                width={50}
-                height={50}
+                width={70}
+                height={70}
               />
             </div>
           </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 md:justify-between md:space-x-10  gap-y-10 items-center relative  w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:justify-between md:space-x-10  gap-y-10 items-center relative md:pt-5  w-full">
             {/* Technology */}
             <div className="flex flex-col items-center ">
               <div className=" rounded-full w-20 h-20 md:hidden flex items-center justify-between  text-lg pl-4 md:pl-0 ">
