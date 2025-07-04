@@ -46,7 +46,7 @@ export default function NavBar() {
                     </section>
                   </li>
                   <li>
-                    <Link href="/institue">Courses</Link>
+                    <Link href="/institute">Courses</Link>
                   </li>
                   <li>
                     <Link href="/contact-us">Contact</Link>

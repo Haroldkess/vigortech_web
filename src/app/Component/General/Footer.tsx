@@ -27,7 +27,11 @@ const Footer = () => {
         href: "https://www.instagram.com/vigortechofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
         isReady: true,
       },
-      { label: "Facebook", href: "#", isReady: false },
+      {
+        label: "Facebook",
+        href: "https://www.facebook.com/share/15kqtd4Kyc/?mibextid=wwXIfr",
+        isReady: true,
+      },
     ],
     Support: [
       { label: "Contact us", href: "/contact-us", isReady: true },
@@ -89,7 +93,11 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-50">
           <p>©2021 Vigortech, Inc. All rights reserved</p>
           <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
-            <a aria-label="Facebook" className="hover:text-white" href="#">
+            <a
+              aria-label="Facebook"
+              className="hover:text-white"
+              href="https://www.facebook.com/share/15kqtd4Kyc/?mibextid=wwXIfr"
+            >
               <FaFacebookF />
             </a>
             <a
