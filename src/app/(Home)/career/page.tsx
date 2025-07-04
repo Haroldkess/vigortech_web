@@ -18,7 +18,7 @@ export default function Career() {
           <SectionTitle title="Career" />
 
           <section className=" ">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+            <h1 className="text-white text-3xl md:text-6xl font-semibold text-center">
               {" "}
               Join our team
             </h1>
@@ -33,7 +33,7 @@ export default function Career() {
             </section>
 
             <section className="flex flex-col items-center gap-4  justify-center w-full md:w-[60vw] ">
-              <p className="text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4 md:w-[50vw]">
+              <p className="text-[#EAF5F4A6] text-md py-4 md:text-lg font-base text-center mt-4 md:w-[50vw]">
                 Build your career at vigorTech and be part of a team that
                 &apos;s shaping the future through innovation, education, and
                 strategic investments.
@@ -46,25 +46,25 @@ export default function Career() {
       <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20  border-[#262020a6] w-full">
         <Location />
 
-        <section className="flex justify-center items-center w-full py-4 md:py-20">
+         <section className="flex justify-center items-center w-full py-4">
           <Image
             src={"/line.svg"}
             alt="line"
-            width={1000}
+            width={100}
             height={10}
-            className="h-10 w-[100vw]"
+            className="h-4 w-[100vw]"
           />
         </section>
 
         <JobBoard />
 
-        <section className="flex justify-center items-center w-full py-4 md:py-20">
+         <section className="flex justify-center items-center w-full py-4">
           <Image
             src={"/line.svg"}
             alt="line"
-            width={1000}
+            width={100}
             height={10}
-            className="h-10 w-[100vw]"
+            className="h-4 w-[100vw]"
           />
         </section>
         <Benfits />

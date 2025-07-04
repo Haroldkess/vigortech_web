@@ -35,7 +35,7 @@ const JobBoard = () => {
   ];
 
   return (
-    <section className="md:px-20 px-6 md:py-12 sm:py-16">
+    <section className="md:px-6 px-4 md:py-12 sm:py-16">
       <div className="mb-8 max-w-3xl">
         <SectionTitle title="Open positions" />
 
