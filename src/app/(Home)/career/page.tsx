@@ -22,13 +22,13 @@ export default function Career() {
               {" "}
               Join our team
             </h1>
-            <section className="relative left-[54%] top-[-0.5em] md:left-[53%] md:top-[-1.5rem] ">
+            <section className="relative left-[54%] top-[-0.5em] md:left-[55%] md:top-[-1.5rem] ">
               <Image
                 src="/newsLine.svg"
                 alt="Newsletter Icon"
                 width={110}
                 height={100}
-                className="h-3 md:h-10"
+                className="h-3 md:w-[12em] md:h-10"
               />
             </section>
 
@@ -46,30 +46,32 @@ export default function Career() {
       <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20  border-[#262020a6] w-full">
         <Location />
 
-         <section className="flex justify-center items-center w-full py-4">
-          <Image
-            src={"/line.svg"}
-            alt="line"
-            width={100}
-            height={10}
-            className="h-4 w-[100vw]"
-          />
+        <section className="relative top-[-10em] md:top-0 w-full ">
+          <section className="flex justify-center items-center w-full py-4">
+            <Image
+              src={"/line.svg"}
+              alt="line"
+              width={100}
+              height={10}
+              className="h-6 md:h-4 w-[100vw]"
+            />
+          </section>
+
+          <JobBoard />
+
+          <section className="flex justify-center items-center w-full py-4">
+            <Image
+              src={"/line.svg"}
+              alt="line"
+              width={100}
+              height={10}
+              className="h-6 md:h-4 w-[100vw]"
+            />
+          </section>
+          <Benfits />
+
         </section>
-
-        <JobBoard />
-
-         <section className="flex justify-center items-center w-full py-4">
-          <Image
-            src={"/line.svg"}
-            alt="line"
-            width={100}
-            height={10}
-            className="h-4 w-[100vw]"
-          />
-        </section>
-        <Benfits />
-
-        <Footer />
+          <Footer />
       </section>
     </section>
   );

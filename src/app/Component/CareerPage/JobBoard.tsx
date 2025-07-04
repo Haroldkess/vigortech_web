@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import SectionTitle from "../General/SectionTitle";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const JobBoard = () => {
   const jobs = [
@@ -39,10 +40,10 @@ const JobBoard = () => {
       <div className="mb-8 max-w-3xl">
         <SectionTitle title="Open positions" />
 
-        <h1 className="text-xl md:text-3xl font-semibold py-4 leading-tight mb-2">
+        <h1 className="text-3xl md:text-5xl font-semibold py-4 leading-tight mb-2">
           Want to join team Vigor?
         </h1>
-        <p className="text-[#EAF5F4A6] text-sm max-w-xl">
+        <p className="text-[#EAF5F4A6] text-base font-normal max-w-xl">
           Check out our open form below and fill application form by clicking on
           it
         </p>
@@ -62,10 +63,12 @@ const JobBoard = () => {
           >
             <div className="flex justify-between items-start">
               <div>
-                <h2 className="text-white font-semibold text-lg leading-tight">
+                <h2
+                  className="text-white font-medium leading-normal tracking-tight  md:text-xl md:leading-tight"
+                >
                   {job.title}
                 </h2>
-                <div className="flex items-center gap-2 mt-1 text-[#EAF5F4A6] text-sm">
+                <div className="flex items-center gap-2 mt-1 text-[#EAF5F4A6] font-medium text-sm">
                   <Image
                     src={"/Career/work.svg"}
                     alt={"work"}
@@ -79,10 +82,10 @@ const JobBoard = () => {
                 {job.type}
               </span>
             </div>
-            <p className="text-[#EAF5F4A6] text-sm max-w-5xl">
+            <p className="text-[#EAF5F4A6] text-base font-normal leading-relaxed">
               {job.description}
             </p>
-            <div className="flex  flex-col md:flex-row  items-start md:items-center gap-2 text-[#EAF5F4A6] text-xs sm:text-sm">
+            <div className="flex  flex-col md:flex-row  items-start md:items-center gap-2 text-[#EAF5F4A6] font-medium text-sm">
               <div className="flex items-center gap-2">
                 <span className="">Remote</span>
                 <span aria-hidden="true">|</span>
@@ -97,14 +100,9 @@ const JobBoard = () => {
                 </div>
               </div>
 
-              <div className="md:ml-auto flex items-center gap-1 cursor-pointer text-[#EAF5F4A6] hover:text-white ">
-                <span className="text-xs">View details</span>
-                <Image
-                  src={"/Career/arrow_outward.svg"}
-                  alt={"arrow_outward"}
-                  width={15}
-                  height={15}
-                />
+              <div className="group md:ml-auto flex items-center gap-1 cursor-pointer text-[#EAF5F4A6] hover:text-white ">
+                <span className="text-xs font-medium">View details</span>
+                <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 " />
               </div>
             </div>
           </article>

@@ -49,12 +49,12 @@ export default function Benfits() {
   ];
 
   return (
-    <section className=" lg:mx-auto lg:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
-      <section className="lg:max-w-7xl md:px-10 px-4">
+    <section className=" px-4 md:px-6  py-16 rounded-t-3xl z-50 bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl hidden md:block ">
+      <section className=" ">
         <div className="flex justify-center mb-6">
           <SectionTitle title="Benefits" />
         </div>
-        <h2 className="text-center text-white font-extrabold text-2xl md:text-4xl mb-3 leading-tight">
+        <h2 className="text-center text-white font-extrabold text-3xl md:text-6xl mb-3 leading-tight">
           Why work with us?
         </h2>
         <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
