@@ -24,7 +24,7 @@ export default function TeamCard({ imageSrc, name, role }: TeamCardProps) {
             background: "linear-gradient(to top, #000000 0%, #00000000 100%)",
           }}
         >
-          <section className={`${role === "CTO" && " relative left-[1em]"}`}>
+          <section className={`${role === "CTO" && "relative left-[1em]"}`}>
             <h3 className="text-center text-lg font-semibold mt-4 text-white">
               {name}
             </h3>
