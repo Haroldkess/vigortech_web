@@ -87,7 +87,9 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center w-full  ">
-                <p className="mt-3 font-semibold text-sm md:pl-[2vw]">Education</p>
+                <p className="mt-3 font-semibold text-sm md:pl-[2vw]">
+                  Education
+                </p>
                 <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
                   Knowledge is power, and access matters. We&apos;re helping
                   people and orgs not just keep up, but lead in today&apos;s
@@ -108,11 +110,14 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center md:items-end w-full  ">
-              <p className="mt-3 font-semibold text-sm pr-2 md:pr-[11vw]">Finance</p>
-              <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
-                At Vigor Tech, finance is not just about numbers—it&apos;s about
-                empowering people to take control of their financial futures
-              </p>
+                <p className="mt-3 font-semibold text-sm pr-2 md:pr-[11vw]">
+                  Finance
+                </p>
+                <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
+                  At Vigor Tech, finance is not just about numbers—it&apos;s
+                  about empowering people to take control of their financial
+                  futures
+                </p>
               </section>
             </div>
           </div>

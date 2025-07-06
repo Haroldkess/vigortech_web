@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import FooterLink from "./FooterLinks";
 
 const Footer = () => {
@@ -28,8 +28,8 @@ const Footer = () => {
         isReady: true,
       },
       {
-        label: "Facebook",
-        href: "https://www.facebook.com/share/15kqtd4Kyc/?mibextid=wwXIfr",
+        label: "Linkedin",
+        href: "https://www.linkedin.com/company/vigor-tech-ltd-vt/",
         isReady: true,
       },
     ],
@@ -68,7 +68,7 @@ const Footer = () => {
             </section>
           </div>
 
-          <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300 z-50">
+          <div className="grid md:grid-cols-4 grid-cols-1 md:gap-x-24 md:gap-y-6 gap-y-10 text-sm text-gray-300 z-20">
             {Object.entries(footerLinks).map(([section, links]) => (
               <div key={section} className="space-y-3">
                 <h3 className="text-[#EAF5F4A6]">{section}</h3>
@@ -94,11 +94,11 @@ const Footer = () => {
           <p>©2021 Vigortech, Inc. All rights reserved</p>
           <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
             <a
-              aria-label="Facebook"
+              aria-label="Linkedin"
               className="hover:text-white"
-              href="https://www.facebook.com/share/15kqtd4Kyc/?mibextid=wwXIfr"
+              href="https://www.linkedin.com/company/vigor-tech-ltd-vt/"
             >
-              <FaFacebookF />
+              <FaLinkedin />
             </a>
             <a
               aria-label="Instagram"

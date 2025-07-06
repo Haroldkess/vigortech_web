@@ -11,7 +11,7 @@ const AboutStats = () => {
   });
 
   return (
-    <section className="md:max-w-7xl w-full px-4 md:mx-auto  md:px-6 md:py-16 flex flex-col  items-center md:flex-row md:justify-center md:items-center gap-12 md:gap-0">
+    <section className="md:max-w-7xl w-full px-4 md:mx-auto  md:px-6  flex flex-col  items-center md:flex-row md:justify-center md:items-center gap-12 md:gap-0">
       <div
         className="grid md:grid-cols-4 grid-cols-2  md:gap-x-40 justify-center items-center gap-y-8 md:max-w-md gap-x-20"
         ref={ref}

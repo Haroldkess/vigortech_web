@@ -160,7 +160,7 @@ export default function NavBar() {
             className="relative left-10 top-[-0.5em]  "
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <section className="hidden lg:block w-[35vw] text-white/65 px-6 py-4 border shadow-2xl border-[#868686D9] rounded-2xl z-50 bg-transparent bg-[rgba(23, 22, 21, 0.75)] drop-shadow-xl  backdrop-blur-sm z-50 rounded-xl  border shadow-2xl border-[#868686D9]  ">
+            <section className="hidden lg:block w-[30vw] text-white/65 px-6 py-4 border shadow-2xl border-[#868686D9] rounded-2xl z-50 bg-transparent bg-[rgba(23, 22, 21, 0.75)] drop-shadow-xl  backdrop-blur-sm z-50 rounded-xl  border shadow-2xl border-[#868686D9]  ">
               <section>
                 <ul className="flex flex-col gap-y-4 text-base text-white">
                   <li className="hover:outline hover:bg-green-600/5  hover:outline-offset-[-1px] hover:outline-green-500/5 rounded-xl">
@@ -170,7 +170,7 @@ export default function NavBar() {
                           <div className="  text-white font-inter text-[16px] font-[600] leading-[24px] tracking-[0.08px]">
                             About Us
                           </div>
-                          <div className="  text-white/65 font-inter text-[14px] font-[400] leading-[20px] tracking-[0.014px]">
+                          <div className="  text-white/65 font-inter text-[14px] font-[400] leading-[20px] tracking-[0.014px] flex flex-wrap">
                             Get to know everything about us
                           </div>
                         </div>
@@ -191,7 +191,7 @@ export default function NavBar() {
                           <div className="  text-white font-inter text-[16px] font-[600] leading-[24px] tracking-[0.08px]">
                             Blog
                           </div>
-                          <div className="  text-white/65 font-inter text-[14px] font-[400] leading-[20px] tracking-[0.014px]">
+                          <div className="  text-white/65 font-inter text-[14px] font-[400] leading-[20px] tracking-[0.014px] flex flex-wrap">
                             Get to know latest news in the in tech space
                           </div>
                         </div>
@@ -206,7 +206,7 @@ export default function NavBar() {
                           <div className="  text-white font-inter text-[16px] font-[600] leading-[24px] tracking-[0.08px]">
                             Career
                           </div>
-                          <div className="  text-white/65 font-inter text-[14px] font-[400] leading-[20px] tracking-[0.014px]">
+                          <div className="  text-white/65 font-inter text-[14px] font-[400] leading-[20px] tracking-[0.014px] flex flex-wrap">
                             What to the join our team? Find out about openings
                           </div>
                         </div>

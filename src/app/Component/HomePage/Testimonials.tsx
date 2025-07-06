@@ -68,7 +68,8 @@ const Testimonials = () => {
             <p className="text-[#EAF5F4A6] text-base  font-normal md:text-[18px] text-left mb-6 md:leading-relaxed">
               {testimonial.quote}
             </p>
-            {testimonial.name.includes("Adaobi") ? (
+            {testimonial.name.includes("Adaobi") ||
+            testimonial.name.includes("Yoma") ? (
               <hr className=" border-[#868686A6]  mt-13 pb-4 " />
             ) : (
               <hr className=" border-[#868686A6] my-4 " />
