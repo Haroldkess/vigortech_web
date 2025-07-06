@@ -39,7 +39,7 @@ export default function OurFocus() {
                 height={70}
               />
             </div>
-            <div className="w-[30%]  border-t border-[#2ecc71]"></div>
+            <div className="w-[33%]  border-t border-[#2ecc71]"></div>
 
             <div className=" rounded-full w-20 h-20 flex items-center justify-center  text-lg ">
               <Image
@@ -87,7 +87,7 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center w-full  ">
-                <p className="mt-3 font-semibold text-sm md:pl-[2vw]">
+                <p className="mt-3 font-semibold text-sm md:pl-[0.3vw]">
                   Education
                 </p>
                 <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
@@ -110,7 +110,7 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center md:items-end w-full  ">
-                <p className="mt-3 font-semibold text-sm pr-2 md:pr-[11vw]">
+                <p className="mt-3 font-semibold text-sm pr-2 md:pr-[10vw]">
                   Finance
                 </p>
                 <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
