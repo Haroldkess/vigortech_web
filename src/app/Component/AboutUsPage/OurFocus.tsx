@@ -64,10 +64,10 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center md:items-start w-full  ">
-                <p className="mt-3 font-semibold text-sm  md:pr-0 md:pl-[9vw]">
+                <p className="mt-3 font-medium text-xl  md:pr-0 md:pl-[7vw]">
                   Technology
                 </p>
-                <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
+                <p className="mt-1 text-sm font-normal w-80 text-[#EAF5F4A6] text-center ">
                   We don&apos;t just build tech for the sake of it; everything
                   we make is intentional. From platforms to tools, we focus on
                   solving real problems.
@@ -87,10 +87,10 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center w-full  ">
-                <p className="mt-3 font-semibold text-sm md:pl-[0.3vw]">
+                <p className="mt-3 font-medium text-xl md:pl-[0.3vw]">
                   Education
                 </p>
-                <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
+                <p className="mt-1 text-sm font-normal w-80 text-[#EAF5F4A6] text-center ">
                   Knowledge is power, and access matters. We&apos;re helping
                   people and orgs not just keep up, but lead in today&apos;s
                   fast-moving digital world.
@@ -110,10 +110,10 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center md:items-end w-full  ">
-                <p className="mt-3 font-semibold text-sm pr-2 md:pr-[10vw]">
+                <p className="mt-3 font-medium text-xl pr-2 md:pr-[9vw]">
                   Finance
                 </p>
-                <p className="mt-1 text-md w-80 text-[#EAF5F4A6] font-light text-center ">
+                <p className="mt-1 text-sm font-normal w-80 text-[#EAF5F4A6] text-center ">
                   At Vigor Tech, finance is not just about numbers—it&apos;s
                   about empowering people to take control of their financial
                   futures
