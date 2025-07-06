@@ -20,13 +20,13 @@ const AboutStats = () => {
           <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1">
             {inView ? <CountUp start={0} end={5} duration={4} /> : "0"}+
           </h3>
-          <p className="text-[#EAF5F4A6] mt-1 text-sm">Projects</p>
+          <p className="text-[#EAF5F4A6] mt-1 text-base font-normal">Projects</p>
         </div>
         <div className="md:w-[8vw] ">
           <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1">
             {inView ? <CountUp start={0} end={200} duration={4} /> : "0"}+
           </h3>
-          <p className="text-[#EAF5F4A6] mt-1  md:text-[12px] text-sm">
+          <p className="text-[#EAF5F4A6] mt-1  md:text-[12px] text-base font-normal">
             Learners trained
           </p>
         </div>
@@ -39,10 +39,10 @@ const AboutStats = () => {
             )}
             %
           </h3>
-          <p className="text-[#EAF5F4A6] mt-1 text-sm hidden md:block">
+          <p className="text-[#EAF5F4A6] mt-1 text-base font-normal hidden md:block">
             Satisfied Board
           </p>
-          <p className="text-[#EAF5F4A6] mt-1 text-sm md:hidden ">
+          <p className="text-[#EAF5F4A6] mt-1 text-base font-normal md:hidden ">
             Satisfaction
           </p>
         </div>
@@ -50,7 +50,7 @@ const AboutStats = () => {
           <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1">
             10+
           </h3>
-          <p className="text-[#EAF5F4A6] mt-1 text-sm">Integrations</p>
+          <p className="text-[#EAF5F4A6] mt-1 text-base font-normal">Integrations</p>
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ export default function AboutUs() {
           <SectionTitle title="About us" />
 
           <section className=" ">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+            <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
               We’re Building Africa’s
               <br />
               tomorrow, today!
@@ -39,7 +39,7 @@ export default function AboutUs() {
             </section>
 
             <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full ">
-              <p className="text-[#EAF5F4A6] text-md py-2 md:text-lg font-medium text-center ">
+              <p className="text-[#EAF5F4A6] text-md py-2 text-base  font-medium text-center ">
                 Where purpose meets real impact.
               </p>
               <GetInTouch />
@@ -47,7 +47,7 @@ export default function AboutUs() {
           </section>
         </section>
       </HeroGeneral>
-      
+
       <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20  border-[#262020a6] w-full">
         <AboutStats />
         <OurStory />
