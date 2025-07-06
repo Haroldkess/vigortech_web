@@ -29,9 +29,11 @@ export default function TeamCard({ imageSrc, name, role }: TeamCardProps) {
               {name}
             </h3>
             <p
-              className={`bg-clip-text text-transparent font-semibold text-center w-full ${
-                role === "CTO" && " relative left-[-4em]"
-              }`}
+              className={`bg-clip-text relative text-transparent text-center font-semibold left-1  w-full  
+                ${role === "CTO" && "  left-[-4em]"}
+              ${role === "Co-Founder" && "left-[-0.5rem]"}
+              ${role === "QA Engineer" && "left-2"}
+              `}
               style={{
                 backgroundImage:
                   "linear-gradient(to right, #48B96B, #48B96B, #CCDC35, #6CC788)",
