@@ -17,7 +17,7 @@ export default function ContactUs() {
               Contact Vigortech
             </h1>
             <section className="flex flex-col items-center gap-4  justify-center w-full">
-              <p className="text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4 md:w-[40vw]">
+              <p className="text-[#EAF5F4A6] text-md text-md py-4 text-base font-medium text-center mt-4 md:w-[40vw]">
                 We&apos;re here to answer your questions and help you leverage
                 technology for your business growth.
               </p>

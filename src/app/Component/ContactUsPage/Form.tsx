@@ -8,11 +8,10 @@ const ContactForm = () => {
     <main className=" w-full rounded-2xl p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 md:gap-16">
       {/* Contact Info Section */}
       <section className="space-y-6 max-w-md">
-        <h2 className="text-xl md:text-3xl font-semibold">Get in touch</h2>
-        <p
-          className="text-[#EAF5F4A6] font-normal text-base leading-normal
-tracking-tight"
-        >
+        <h2 className="text-[22px] leading-[28px] md:text-[32px] md:leading-[52px] font-bold">
+          Get in touch
+        </h2>
+        <p className="text-[#EAF5F4A6] font-normal text-base leading-normal tracking-tight">
           Have a question, need a consultation, or want to learn more about our
           services? Fill out the form and our team will get back to you
           promptly.
@@ -35,7 +34,7 @@ tracking-tight"
 
       {/* Form Section */}
       <section className="pt-20 md:pt-0 w-full ">
-        <h2 className="md:text-3xl text-xl font-semibold mb-6">
+        <h2 className="text-[22px] leading-[28px] md:text-[32px] md:leading-[52px] font-bold mb-6">
           Send us a message
         </h2>
         <form className="md:space-y-6 space-y-8">
@@ -44,7 +43,7 @@ tracking-tight"
             <div>
               <label
                 htmlFor="firstName"
-                className="block text-base font-medium mb-1"
+                className="block text-base font-medium mb-1 leading-[20px]"
               >
                 First name
               </label>
@@ -59,7 +58,7 @@ tracking-tight"
             <div>
               <label
                 htmlFor="lastName"
-                className="block text-base font-medium mb-1"
+                className="block text-base font-medium mb-1 leading-[20px]"
               >
                 Last name
               </label>
@@ -75,7 +74,10 @@ tracking-tight"
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-base font-medium mb-1">
+            <label
+              htmlFor="email"
+              className="block text-base font-medium mb-1 leading-[20px]"
+            >
               Email
             </label>
             <input
@@ -91,7 +93,7 @@ tracking-tight"
           <div>
             <label
               htmlFor="message"
-              className="block text-base font-medium mb-1"
+              className="block text-base font-medium mb-1 leading-[20px]"
             >
               Message
             </label>
@@ -120,7 +122,7 @@ tracking-tight"
               <div className="flex flex-col">
                 <label
                   htmlFor="subscribe"
-                  className=" text-white text-base md:text-lg font-medium leading-tight"
+                  className=" block text-base font-medium  leading-[20px] text-white"
                 >
                   Subscribe to newsletter
                 </label>
