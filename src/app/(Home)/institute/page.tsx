@@ -15,8 +15,7 @@ export default function InstitutePage() {
         <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20">
           <SectionTitle title="Courses" />
           <section className=" ">
-            <h1 className="text-white text-3xl md:text-6xl font-bold text-center leading-[64px]">
-              {" "}
+            <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
               Our Institute{" "}
             </h1>
             <section className="flex flex-col items-center gap-4  justify-center w-full md:w-[60vw] ">

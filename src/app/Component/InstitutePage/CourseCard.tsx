@@ -48,7 +48,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           <h3 className="text-[#FFFFFF] font-medium text-[16px] leading-[18.36px] md:w-[18vw]">
             {cardTitle}
           </h3>
-          <p className="text-[12px] self-stretch justify-start text-emerald-50/60  font-normal  leading-[12px] ">
+          <p className="text-[12px] self-stretch justify-start text-emerald-50/60  font-normal w-[234.5px] leading-[12px] ">
             {description}
           </p>
 
