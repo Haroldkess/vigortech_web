@@ -40,7 +40,7 @@ const JobBoard = () => {
       <div className="mb-8 max-w-3xl">
         <SectionTitle title="Open positions" />
 
-        <h1 className="text-3xl md:text-5xl font-semibold py-4 leading-tight mb-2">
+        <h1 className="text-[32px] md:text-[54px] font-semibold py-4 leading-[40px] md:leading-[64px] mb-2 ">
           Want to join team Vigor?
         </h1>
         <p className="text-[#EAF5F4A6] text-base font-normal max-w-xl">
@@ -63,9 +63,7 @@ const JobBoard = () => {
           >
             <div className="flex justify-between items-start">
               <div>
-                <h2
-                  className="text-white font-medium leading-normal tracking-tight  md:text-xl md:leading-tight"
-                >
+                <h2 className="text-white font-medium leading-[28px] tracking-tight  text-[22px] ">
                   {job.title}
                 </h2>
                 <div className="flex items-center gap-2 mt-1 text-[#EAF5F4A6] font-medium text-sm">
@@ -75,14 +73,16 @@ const JobBoard = () => {
                     width={20}
                     height={20}
                   />
-                  <span>{job.department}</span>
+                  <span className="md:leading-[20px] md:text-[14px] text-[12px] leading-[16px]">
+                    {job.department}
+                  </span>
                 </div>
               </div>
               <span className="text-[#EAF5F4A6] text-xs whitespace-nowrap">
                 {job.type}
               </span>
             </div>
-            <p className="text-[#EAF5F4A6] text-base font-normal leading-relaxed">
+            <p className="text-[#EAF5F4A6] text-[16px] font-normal leading-[24px] flex-wrap">
               {job.description}
             </p>
             <div className="flex  flex-col md:flex-row  items-start md:items-center gap-2 text-[#EAF5F4A6] font-medium text-sm">
