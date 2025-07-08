@@ -1,7 +1,6 @@
 import React from 'react'
-
-import AboutCard from '../HomePage/AboutCard';
 import Image from 'next/image';
+import { DisplayCard } from '../General/DisplayCard';
 
 export default function OurServices() {
 
@@ -46,7 +45,7 @@ export default function OurServices() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
                     {services.map((card, index) => (
-                        <AboutCard
+                        <DisplayCard
                             key={index}
                             title={card.title}
                             description={card.description}

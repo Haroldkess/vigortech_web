@@ -2,8 +2,11 @@ import React from 'react'
 import SectionTitle from '../General/SectionTitle'
 import Image from 'next/image'
 import { MdOutlineArrowOutward } from 'react-icons/md'
-import AboutCard from '../HomePage/AboutCard';
 import Link from 'next/link';
+import { DisplayCard } from '../General/DisplayCard';
+
+
+
 
 export default function OurCourses() {
 
@@ -98,7 +101,7 @@ export default function OurCourses() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
             {services.map((card, index) => (
-              <AboutCard
+              <DisplayCard
                 key={index}
                 title={card.title}
                 description={card.description}
