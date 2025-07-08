@@ -46,11 +46,11 @@ export default function OurCourses() {
             <section className="flex flex-col justify-start items-start">
               <SectionTitle title="Education" />
 
-              <h2 className="text-start text-white pt-4 font-extrabold text-2xl md:text-4xl mb-3 leading-tight">
+              <h2 className="text-[32px] md:text-[45px] font-bold leading-[40px] md:font-semibold md:leading-[52px] w-[40vw]">
                 Empowering talent through comprehensive education
               </h2>
             </section>
-            <section className="text-[#EAF5F4A6] text-md  font-light text-start flex flex-col gap-y-4  mt-4 max-w-lg">
+            <section className="text-[#EAF5F4A6] text-md  font-normal text-start  flex flex-col gap-y-10  mt-4 md:max-w-2xl">
               <p>
                 At Vigor Tech, we believe that access to knowledge is the
                 foundation for independence, innovation, and long-term success.
@@ -85,13 +85,13 @@ export default function OurCourses() {
               How we make this happen
             </h2>
 
-            <section className="absolute left-[57%] top-7 ">
+            <section className="absolute left-[55%] top-7 ">
               <Image
                 src="/newsLine.svg"
                 alt="Newsletter Icon"
                 width={200}
                 height={100}
-                className="h-4  "
+                className="h-5  "
               />
             </section>
           </section>

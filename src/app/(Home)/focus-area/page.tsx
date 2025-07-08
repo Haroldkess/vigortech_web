@@ -22,12 +22,12 @@ export default function FocusArea() {
 
           <section className=" space-y-4 ">
             {/* <h1 className='text-white text-3xl md:text-5xl font-bold text-center'>Our Focus Area</h1> */}
-            <h1 className="text-white text-3xl md:text-5xl font-semibold text-center">
+            <h1 className="text-white text-3xl md:text-6xl font-bold text-center leading-[64px]">
               Our Focus Area
             </h1>
 
             <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full ">
-              <p className="text-[#EAF5F4A6] text-md py-2 md:text-lg font-medium text-center w-[90vw] md:w-[50vw]">
+              <p className="text-[#EAF5F4A6] text-md py-2 text-base font-medium text-center w-[90vw] md:w-[50vw]">
                 Our focus is to co-create accessible digital solutions with
                 local partners across Africa, empowering businesses and
                 communities to thrive in the digital economy

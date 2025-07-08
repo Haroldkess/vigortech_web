@@ -10,7 +10,7 @@ export default function TechSection() {
             <section className="flex flex-col justify-start items-start gap-y-6 md:gap-y-10">
               <SectionTitle title="Technology" />
 
-              <h2 className=" text-white text-3xl md:text-5xl font-bold">
+              <h2 className="text-[32px] md:text-[45px] font-bold leading-[40px] md:font-semibold md:leading-[52px]">
                 Cutting-edge Technology
               </h2>
             </section>

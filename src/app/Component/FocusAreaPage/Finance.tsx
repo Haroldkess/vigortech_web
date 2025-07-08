@@ -10,7 +10,7 @@ export default function Finance() {
           <section className="flex flex-col justify-start items-start">
             <SectionTitle title="Finance" />
 
-            <h2 className="text-center text-white pt-4 font-extrabold text-2xl md:text-4xl mb-3 leading-tight">
+            <h2 className="text-[32px] md:text-[45px] font-bold leading-[40px] md:font-semibold md:leading-[52px]">
               Strategic financing
             </h2>
           </section>
