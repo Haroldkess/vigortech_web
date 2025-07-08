@@ -61,8 +61,8 @@ export default function OurCourses() {
                 that&apos;s open to everyone.
               </p>
 
-              <Link href={"/institute"} className=" w-[90vw] md:w-[20vw] ">
-                <button className=" group border border-[#48B96B]  px-8 w-full py-2 font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
+              <Link href={"/institute"} className=" w-[90vw] md:w-[196px] ">
+                <button className=" group border border-[#48B96B] h-[48px]  w-full py-2 font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
                   View courses
                   <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
                 </button>

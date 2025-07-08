@@ -14,7 +14,7 @@ export default function Finance() {
               Strategic financing
             </h2>
           </section>
-          <section className="text-[#EAF5F4A6] text-sm  font-light text-start flex flex-col gap-y-4  mt-2 max-w-lg">
+          <section className="text-[#EAF5F4A6] text-[16px] leading-[24px]  font-normal text-start flex flex-col gap-y-4  mt-2 max-w-lg">
             <p>
               We believe finance should feel less like a barrier and more like a
               bridge. At Vigor Tech, we think differently about money—not as a
