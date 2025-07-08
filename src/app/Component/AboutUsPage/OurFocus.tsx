@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
+
+
+
 export default function OurFocus() {
+
+ 
   return (
     <div className=" text-white min-h-[70vh] ">
       <div className="w-full px-4 md:px-6 py-12">
@@ -70,7 +75,7 @@ export default function OurFocus() {
                 <p className="mt-3 font-medium text-[22px]  md:pr-0 md:pl-[7vw] leading-7">
                   Technology
                 </p>
-                <p className="mt-1 md:text-[14px] text-[16px] font-normal w-80 text-[#EAF5F4A6] text-center leading-normal tracking-tight ">
+                <p className="mt-1 md:text-[14px] text-[16px] font-normal h-[72px] w-[311px] text-[#EAF5F4A6] text-center leading-[24px] tracking-tight ">
                   We don&apos;t just build tech for the sake of it; everything
                   we make is intentional. From platforms to tools, we focus on
                   solving real problems.
@@ -93,7 +98,7 @@ export default function OurFocus() {
                 <p className="mt-3 font-medium text-xl md:pl-[0.3vw]">
                   Education
                 </p>
-                <p className="mt-1 md:text-[14px] text-[16px] font-normal w-80 text-[#EAF5F4A6] text-center leading-normal tracking-tight ">
+                <p className="mt-1 md:text-[14px] text-[16px] font-normal h-[72px] w-[311px] text-[#EAF5F4A6] text-center leading-[24px] tracking-tight ">
                   Knowledge is power, and access matters. We&apos;re helping
                   people and orgs not just keep up, but lead in today&apos;s
                   fast-moving digital world.
@@ -113,10 +118,10 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center md:items-end w-full  ">
-                <p className="mt-3 font-medium text-xl pr-2 md:pr-[9vw]">
+                <p className="mt-3 font-medium text-xl pr-2 md:pr-[8.5vw]">
                   Finance
                 </p>
-                <p className="mt-1 md:text-[14px] text-[16px] font-normal w-80 text-[#EAF5F4A6] text-center leading-normal tracking-tight ">
+                <p className="mt-1 md:text-[14px] h-[72px] text-[16px] font-normal px-4 w-[311px] text-[#EAF5F4A6] text-center leading-[24px] tracking-tight ">
                   At Vigor Tech, finance is not just about numbers—it&apos;s
                   about empowering people to take control of their financial
                   futures
