@@ -8,7 +8,9 @@ export default function OurStory() {
           <section className="pt-10">
             <section className="flex md:gap-x-4 mb-4">
               <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
-              <h2 className="text-3xl md:text-6xl font-semibold">Our Story</h2>
+              <h2 className="text-[32px] md:text-[57px] font-bold leading-10 md:font-semibold md:leading-[64px]">
+                Our Story
+              </h2>
             </section>
             <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-2xl">
               <p className="px-4 md:px-8">

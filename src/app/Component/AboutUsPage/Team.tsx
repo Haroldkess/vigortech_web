@@ -17,7 +17,7 @@ export default function Team() {
           <div className="flex justify-center mb-6">
             <SectionTitle title="The team" />
           </div>
-          <h2 className="text-center text-white font-semibold text-3xl md:text-6xl mb-3 leading-tight">
+          <h2 className="text-[32px] md:text-[57px] font-bold leading-10 md:font-semibold md:leading-[64px]">
             Meet the team
           </h2>
           <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-base leading-relaxed">

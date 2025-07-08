@@ -27,8 +27,10 @@ const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
             icon
           )}
         </div>
-        <h3 className="font-semibold text-white text-lg mb-2">{title}</h3>
-        <p className="text-[#EAF5F4A6] text-sm mb-6 leading-relaxed ">
+        <h3 className="font-semibold text-white text-[16px] mb-2 leading-[20.98px]">
+          {title}
+        </h3>
+        <p className="text-[rgba(234, 245, 244, 0.65)] font-normal text-[12px] mb-6 leading-[17.98px] ">
           {description}
         </p>
         {link && (

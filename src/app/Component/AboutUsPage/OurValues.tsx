@@ -48,10 +48,10 @@ export default function OurValues() {
         <div className="flex justify-center mb-6">
           <SectionTitle title="Values" />
         </div>
-        <h2 className="text-center text-white font-semibold text-3xl md:text-6xl mb-3 leading-tight">
+        <h2 className="text-[32px] md:text-[57px] font-bold leading-10 md:font-semibold md:leading-[64px] text-center">
           Our Values
         </h2>
-        <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
+        <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-[16px] leading-relaxed">
           The principles that guide our decisions and define our culture
         </p>
         <div className="grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-y-4 lg:gap-8">

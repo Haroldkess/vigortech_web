@@ -7,7 +7,10 @@ export default function OurFocus() {
       <div className="w-full px-4 md:px-6 py-12">
         <section className="flex md:gap-x-4 mb-4">
           <span className="border-s-4 px-2 lg:px-2 border-[#48B96B] "></span>
-          <h2 className="text-3xl md:text-6xl font-semibold"> Our Focus</h2>
+          <h2 className="text-[32px] md:text-[57px] font-bold leading-10 md:font-semibold md:leading-[64px]">
+            {" "}
+            Our Focus
+          </h2>
         </section>
         <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-xl">
           <p className="px-4 md:px-8">
@@ -64,10 +67,10 @@ export default function OurFocus() {
               </div>
 
               <section className="flex flex-col items-center md:items-start w-full  ">
-                <p className="mt-3 font-medium text-xl  md:pr-0 md:pl-[7vw]">
+                <p className="mt-3 font-medium text-[22px]  md:pr-0 md:pl-[7vw] leading-7">
                   Technology
                 </p>
-                <p className="mt-1 text-sm font-normal w-80 text-[#EAF5F4A6] text-center ">
+                <p className="mt-1 md:text-[14px] text-[16px] font-normal w-80 text-[#EAF5F4A6] text-center leading-normal tracking-tight ">
                   We don&apos;t just build tech for the sake of it; everything
                   we make is intentional. From platforms to tools, we focus on
                   solving real problems.
@@ -90,7 +93,7 @@ export default function OurFocus() {
                 <p className="mt-3 font-medium text-xl md:pl-[0.3vw]">
                   Education
                 </p>
-                <p className="mt-1 text-sm font-normal w-80 text-[#EAF5F4A6] text-center ">
+                <p className="mt-1 md:text-[14px] text-[16px] font-normal w-80 text-[#EAF5F4A6] text-center leading-normal tracking-tight ">
                   Knowledge is power, and access matters. We&apos;re helping
                   people and orgs not just keep up, but lead in today&apos;s
                   fast-moving digital world.
@@ -113,7 +116,7 @@ export default function OurFocus() {
                 <p className="mt-3 font-medium text-xl pr-2 md:pr-[9vw]">
                   Finance
                 </p>
-                <p className="mt-1 text-sm font-normal w-80 text-[#EAF5F4A6] text-center ">
+                <p className="mt-1 md:text-[14px] text-[16px] font-normal w-80 text-[#EAF5F4A6] text-center leading-normal tracking-tight ">
                   At Vigor Tech, finance is not just about numbers—it&apos;s
                   about empowering people to take control of their financial
                   futures
