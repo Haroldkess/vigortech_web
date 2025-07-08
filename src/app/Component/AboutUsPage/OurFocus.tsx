@@ -33,8 +33,8 @@ export default function OurFocus() {
               <Image
                 src="/tech_circle.svg"
                 alt="Technology Icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
             </div>
 
@@ -46,8 +46,8 @@ export default function OurFocus() {
               <Image
                 src="/education_circle.svg"
                 alt="Education Icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
             </div>
 
@@ -59,8 +59,8 @@ export default function OurFocus() {
               <Image
                 src="/finance_circle.svg"
                 alt="Finance Icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
             </div>
           </section>
@@ -78,10 +78,10 @@ export default function OurFocus() {
                   height={40}
                 />
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-white text-center">
+              <h3 className="mt-4 text-[22px] leading-[28px] font-semibold text-white text-center">
                 Technology
               </h3>
-              <p className="mt-2 text-[#EAF5F4A6] text-base leading-6 max-w-xs text-center">
+              <p className="mt-2 text-[#EAF5F4A6] text-[14px] leading-6 max-w-xs text-center">
                 We don’t just build tech for the sake of it; everything we make
                 is intentional. From platforms to tools, we focus on solving
                 real problems.
@@ -99,10 +99,10 @@ export default function OurFocus() {
                   height={40}
                 />
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-white text-center">
+              <h3 className="mt-4 text-[22px] leading-[28px] font-semibold text-white text-center">
                 Education
               </h3>
-              <p className="mt-2 text-[#EAF5F4A6] text-base leading-6 max-w-xs text-center">
+              <p className="mt-2 text-[#EAF5F4A6] text-[14px] leading-6 max-w-xs text-center">
                 Knowledge is power, and access matters. We’re helping people and
                 orgs not just keep up, but lead in today’s fast-moving digital
                 world.
@@ -120,10 +120,10 @@ export default function OurFocus() {
                   height={40}
                 />
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-white text-center">
+              <h3 className="mt-4 text-[22px] leading-[28px] font-semibold text-white text-center">
                 Finance
               </h3>
-              <p className="mt-2 text-[#EAF5F4A6] text-base leading-6 max-w-xs text-center">
+              <p className="mt-2 text-[#EAF5F4A6] text-[14px] leading-6 max-w-xs text-center">
                 At Vigor Tech, finance is not just about numbers—it’s about
                 empowering people to take control of their financial futures.
               </p>
