@@ -15,12 +15,12 @@ export default function InstitutePage() {
         <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20">
           <SectionTitle title="Courses" />
           <section className=" ">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+            <h1 className="text-white text-3xl md:text-6xl font-bold text-center leading-[64px]">
               {" "}
               Our Institute{" "}
             </h1>
             <section className="flex flex-col items-center gap-4  justify-center w-full md:w-[60vw] ">
-              <p className="text-[#EAF5F4A6] text-md py-4 md:text-lg font-normal text-center mt-4 md:w-[50vw]">
+              <p className="text-[#EAF5F4A6] text-md py-4 text-base font-medium text-center mt-4 md:w-[50vw]">
                 Explore our comprehensive range of technology courses designed
                 to enhance your skills and accelerate your career growth.
               </p>

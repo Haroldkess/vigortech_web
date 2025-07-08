@@ -55,7 +55,7 @@ export default function Courses() {
     <section className='md:px-6 px-4 w-full md:pt-10'>
 
         <section className='py-10 flex flex-col md:flex-row w-full justify-between items-center'>
-              <h3 className='text-white font-semibold text-3xl'>Available Courses</h3>
+              <h3 className='text-white font-semibold text-[22px] leading-[28px] md:text-[32px] md:leading-[52px]'>Available Courses</h3>
 
               <p className='text-[#EAF5F4A6] text-base'>5 Courses</p>
         </section>
