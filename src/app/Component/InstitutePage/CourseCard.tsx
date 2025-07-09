@@ -16,7 +16,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
 
   return (
     <section
-      className="rounded-xl font-Inter border flex flex-col justify-between  border-[#86868659] text-[#EAF5F4A6]  "
+      className="rounded-xl font-Inter border flex flex-col justify-between border-[#86868659] text-[#EAF5F4A6] h-full"
       style={{
         background:
           "linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))",
@@ -32,7 +32,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           className="object-cover w-full h-72 rounded-t-xl"
         />
       </section>
-      <section className="px-4 py-6 flex flex-col gap-y-10 relative">
+      <section className="px-4 py-6 flex flex-col gap-y-10 relative flex-1">
         {isFlag && (
           <section className="absolute top-[-0.8rem] left-0">
             <Image
@@ -45,7 +45,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           </section>
         )}
         <section className="flex flex-col gap-2">
-          <h3 className="text-[#FFFFFF] font-semibold text-[16px] leading-[18.36px] md:w-[18vw]">
+          <h3 className="text-[#FFFFFF] font-semibold text-[16px] leading-[18.36px] ">
             {cardTitle}
           </h3>
           <p className="text-[12px] self-stretch justify-start text-emerald-50/60  font-normal  md:leading-[16px] leading-[12px] ">
