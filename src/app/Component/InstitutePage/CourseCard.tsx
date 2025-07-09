@@ -53,7 +53,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
             {description}
           </p>
 
-          <section className={`flex gap-4 ${id === 1 && ("pt-4")}`}>
+          <section className={`flex gap-4 ${id === 1 && ("md:pt-4")}`}>
             <div className="flex text-[10px] gap-2">
               <Image
                 src={"/Institute/school.svg"}
@@ -80,8 +80,8 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
 
         <section
           className={`flex justify-between items-center w-full ${
-            id === 1 && "absolute bottom-6 px-4 left-0"
-          }  ${id === 4 && "absolute bottom-6 px-4 left-0"}`}
+            id === 1 && "md:absolute bottom-6 md:px-4 left-0"
+          }  ${id === 4 && "md:absolute bottom-6 md:px-4 left-0"}`}
         >
           <div className="flex text-[10px] gap-2">
             <Image
