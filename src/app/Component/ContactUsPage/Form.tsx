@@ -4,11 +4,31 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
+
+  function startResize(e: React.MouseEvent) {
+    const textarea = document.getElementById("message") as HTMLTextAreaElement;
+    const startY = e.clientY;
+    const startHeight = textarea.offsetHeight;
+
+    function onMouseMove(e: MouseEvent) {
+      const newHeight = startHeight + (e.clientY - startY);
+      textarea.style.height = `${newHeight}px`;
+    }
+
+    function onMouseUp() {
+      document.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("mouseup", onMouseUp);
+    }
+
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
+  }
+  
   return (
     <main className=" w-full rounded-2xl p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 md:gap-16">
       {/* Contact Info Section */}
       <section className="space-y-6 max-w-md">
-        <h2 className="text-[22px] leading-[28px] md:text-[32px] md:leading-[52px] font-bold">
+        <h2 className="text-[22px] leading-[28px] md:text-[32px] md:leading-[52px] font-semibold">
           Get in touch
         </h2>
         <p className="text-[#EAF5F4A6] font-normal text-base leading-normal tracking-tight">
@@ -34,7 +54,7 @@ const ContactForm = () => {
 
       {/* Form Section */}
       <section className="pt-20 md:pt-0 w-full ">
-        <h2 className="text-[22px] leading-[28px] md:text-[32px] md:leading-[52px] font-bold mb-6">
+        <h2 className="text-[22px] leading-[28px] md:text-[32px] md:leading-[52px] font-semibold mb-6">
           Send us a message
         </h2>
         <form className="md:space-y-6 space-y-8">
@@ -97,13 +117,27 @@ const ContactForm = () => {
             >
               Message
             </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={8}
-              placeholder="Please provide details about your inquiry"
-              className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440]  focus:outline-none focus:ring-2 focus:ring-[#48B96B]"
-            ></textarea>
+            <div className="relative w-full">
+              <textarea
+                id="message"
+                name="message"
+                rows={8}
+                placeholder="Please provide details about your inquiry"
+                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-200 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B] resize-none"
+              ></textarea>
+
+              <div
+                className="absolute bottom-5 right-5 w-[16.2px] h-[16.2px] cursor-se-resize"
+                onMouseEnter={(e) => startResize(e)}
+              >
+                <Image
+                  src="/icons/resizer.svg"
+                  alt="resizer"
+                  width={20}
+                  height={20}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Newsletter Checkbox */}
@@ -122,7 +156,7 @@ const ContactForm = () => {
               <div className="flex flex-col">
                 <label
                   htmlFor="subscribe"
-                  className=" block text-base font-medium  leading-[20px] text-white"
+                  className=" block text-[18px] font-medium  leading-[20px] text-white"
                 >
                   Subscribe to newsletter
                 </label>
