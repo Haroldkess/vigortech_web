@@ -17,7 +17,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
 
   return (
     <section
-      className="rounded-xl w-full md:w-[298px] font-Inter border flex flex-col justify-between border-[#86868659] text-[#EAF5F4A6] h-full"
+      className="rounded-xl  font-Inter border flex flex-col justify-between border-[#86868659] text-[#EAF5F4A6] h-full"
       style={{
         background:
           "linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))",
@@ -30,7 +30,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           quality={100}
           width={300}
           height={300}
-          className="object-cover w-full md:w-[298px] h-[186.8px] rounded-t-xl"
+          className="object-cover w-full  h-[186.8px] rounded-t-xl"
         />
       </section>
       <section className="px-4 py-6 flex flex-col gap-y-10 relative flex-1">
