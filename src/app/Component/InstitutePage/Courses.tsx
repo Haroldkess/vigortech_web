@@ -60,7 +60,7 @@ export default function Courses() {
               <p className='text-[#EAF5F4A6] text-base'>5 Courses</p>
         </section>
 
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-8 gap-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-4 gap-y-10">
                   {contentCards.map((card) => (
                       <CourseCard
                           key={card.id}
