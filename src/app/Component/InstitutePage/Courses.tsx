@@ -52,7 +52,7 @@ export default function Courses() {
     ];
 
   return (
-    <section className='md:px-6 px-4 w-full md:pt-10'>
+    <section className='md:px-6 px-4 w-full md:pt-10 mb-10'>
 
         <section className='py-10 flex flex-col md:flex-row w-full justify-between items-center'>
               <h3 className='text-white font-semibold text-[22px] leading-[28px] md:text-[32px] md:leading-[52px]'>Available Courses</h3>
@@ -60,7 +60,7 @@ export default function Courses() {
               <p className='text-[#EAF5F4A6] text-base'>5 Courses</p>
         </section>
 
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-4 gap-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-6 gap-y-10">
                   {contentCards.map((card) => (
                       <CourseCard
                           key={card.id}
