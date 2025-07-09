@@ -16,7 +16,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
 
   return (
     <section
-      className="rounded-xl font-Inter border  border-[#86868659] text-[#EAF5F4A6] pb-12 "
+      className="rounded-xl font-Inter border flex flex-col justify-between  border-[#86868659] text-[#EAF5F4A6]  "
       style={{
         background:
           "linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))",
@@ -45,10 +45,10 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           </section>
         )}
         <section className="flex flex-col gap-2">
-          <h3 className="text-[#FFFFFF] font-medium text-[16px] leading-[18.36px] md:w-[18vw]">
+          <h3 className="text-[#FFFFFF] font-semibold text-[16px] leading-[18.36px] md:w-[18vw]">
             {cardTitle}
           </h3>
-          <p className="text-[12px] self-stretch justify-start text-emerald-50/60  font-normal w-[234.5px] leading-[12px] ">
+          <p className="text-[12px] self-stretch justify-start text-emerald-50/60  font-normal  md:leading-[16px] leading-[12px] ">
             {description}
           </p>
 
@@ -77,7 +77,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           </section>
         </section>
 
-        <section className="flex justify-between items-center w-full absolute bottom-[-4vh] left-0 right-0 px-4 ">
+        <section className="flex justify-between items-center w-full  ">
           <div className="flex text-[10px] gap-2">
             <Image
               src={"/Institute/students.svg"}
