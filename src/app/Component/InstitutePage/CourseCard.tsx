@@ -53,7 +53,8 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
             {description}
           </p>
 
-          <section className={`flex gap-4 ${id === 1 && ("md:pt-4")}`}>
+          {/* <section className={`flex gap-4 ${id === 1 && ("md:pt-4")}`}> */}
+          <section className={`flex gap-4 absolute top-[16vh]`}>
             <div className="flex text-[10px] gap-2">
               <Image
                 src={"/Institute/school.svg"}
