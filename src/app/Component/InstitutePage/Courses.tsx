@@ -70,6 +70,7 @@ export default function Courses() {
             imageUrl={card.image}
             studentLevel={card.level}
             isFlag={card.isFlag}
+            id={card.id}
           />
         ))}
       </div>

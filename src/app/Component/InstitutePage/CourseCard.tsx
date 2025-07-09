@@ -8,10 +8,11 @@ interface Card {
   description: string,
   studentLevel: string,
   isFlag: boolean
+  id:number
 }
 
 
-export default function CourseCard({ imageUrl, cardTitle, description, studentLevel, isFlag }: Card) {
+export default function CourseCard({ imageUrl, cardTitle, description, studentLevel, isFlag,id }: Card) {
 
 
   return (
@@ -45,7 +46,7 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           </section>
         )}
         <section className="flex flex-col gap-2">
-          <h3 className="text-[#FFFFFF] font-semibold text-[16px] leading-[18.36px] ">
+          <h3 className="text-[#FFFFFF] font-semibold text-[16px] leading-[18.36px] md:w-[18vw] ">
             {cardTitle}
           </h3>
           <p className="text-[12px] self-stretch justify-start text-emerald-50/60  font-normal  md:leading-[16px] leading-[12px] ">
@@ -77,7 +78,11 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
           </section>
         </section>
 
-        <section className="flex justify-between items-center w-full  ">
+        <section
+          className={`flex justify-between items-center w-full ${
+            id === 1 && "absolute bottom-6 px-4 left-0"
+          }  ${id === 4 && "absolute bottom-6 px-4 left-0"}`}
+        >
           <div className="flex text-[10px] gap-2">
             <Image
               src={"/Institute/students.svg"}
