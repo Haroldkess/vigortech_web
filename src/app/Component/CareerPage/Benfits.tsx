@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../General/SectionTitle";
-import AboutCard from "../HomePage/AboutCard";
+import { DisplayCard } from "../General/DisplayCard";
 
 export default function Benfits() {
   const All_benefits = [
@@ -54,15 +54,15 @@ export default function Benfits() {
         <div className="flex justify-center mb-6">
           <SectionTitle title="Benefits" />
         </div>
-        <h2 className="text-center text-white font-extrabold text-3xl md:text-6xl mb-3 leading-tight">
+        <h2 className="text-center text-white font-semibold text-3xl md:text-[57px] mb-3 leading-[64px]">
           Why work with us?
         </h2>
-        <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
+        <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-[16px] leading-[24px]">
           The principles that guide our decisions and define our culture
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-8">
           {All_benefits.map((card, index) => (
-            <AboutCard
+            <DisplayCard
               key={index}
               title={card.title}
               description={card.description}

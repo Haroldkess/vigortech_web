@@ -40,7 +40,7 @@ const JobBoard = () => {
       <div className="mb-8 max-w-3xl">
         <SectionTitle title="Open positions" />
 
-        <h1 className="text-[32px] md:text-[54px] font-semibold py-4 leading-[40px] md:leading-[64px] mb-2 ">
+        <h1 className="text-[32px] md:text-[45px] font-semibold py-4 leading-[40px] md:leading-[64px] mb-2 ">
           Want to join team Vigor?
         </h1>
         <p className="text-[#EAF5F4A6] text-base font-normal max-w-xl">
@@ -54,7 +54,7 @@ const JobBoard = () => {
         {jobs.map((job) => (
           <article
             key={job.id}
-            className=" rounded-xl p-8 border border-[#2A2A2A]  space-y-8"
+            className=" rounded-xl p-8 border hover:border-2 border-[#2A2A2A]  hover:border-[#86868640] hover:shadow-4xl  space-y-8 hover:bg-gradient-to-t hover:from-[#33333300] hover:to-[#171615]"
             style={{
               background:
                 "linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))",
