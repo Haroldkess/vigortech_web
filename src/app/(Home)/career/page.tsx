@@ -33,7 +33,7 @@ export default function Career() {
             </section>
 
             <section className="flex flex-col items-center gap-4  justify-center w-full md:w-[60vw] ">
-              <p className="text-[#EAF5F4A6] text-md py-4 text-base font-base text-center mt-4 md:w-[50vw]">
+              <p className="text-[#EAF5F4A6] text-md text-base font-medium text-center  md:w-[50vw]">
                 Build your career at vigorTech and be part of a team that
                 &apos;s shaping the future through innovation, education, and
                 strategic investments.

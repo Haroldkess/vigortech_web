@@ -50,18 +50,18 @@ const JobBoard = () => {
       </div>
 
       {/* Job Listings */}
-      <section className="md:space-y-8 space-y-10 w-full">
+      <section className="md:space-y-8 space-y-10 w-full ">
         {jobs.map((job) => (
           <article
             key={job.id}
-            className=" rounded-xl p-8 border hover:border-2 border-[#2A2A2A]  hover:border-[#86868640] hover:shadow-4xl  space-y-8 hover:bg-gradient-to-t hover:from-[#33333300] hover:to-[#171615]"
+            className="  rounded-xl p-8 border hover:border-2 border-[#2A2A2A]  hover:border-[#86868640] hover:shadow-4xl  space-y-8 hover:bg-gradient-to-t hover:from-[#33333300] hover:to-[#171615] group"
             style={{
               background:
                 "linear-gradient(rgba(23, 22, 21, 80), rgba(51, 51, 51, 0.20))",
             }}
             aria-label={`${job.title} job listing`}
           >
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start ">
               <div>
                 <h2 className="text-white font-medium leading-[28px] tracking-tight  text-[22px] ">
                   {job.title}
@@ -78,7 +78,7 @@ const JobBoard = () => {
                   </span>
                 </div>
               </div>
-              <span className="text-[#EAF5F4A6] text-xs whitespace-nowrap">
+              <span className="text-[#EAF5F4A6] text-xs whitespace-nowrap group-hover:text-[#48B96B]">
                 {job.type}
               </span>
             </div>
@@ -100,9 +100,9 @@ const JobBoard = () => {
                 </div>
               </div>
 
-              <div className="group md:ml-auto flex items-center gap-1 cursor-pointer text-[#EAF5F4A6] hover:text-white ">
+              <div className="group/button md:ml-auto flex items-center gap-1 cursor-pointer text-[#EAF5F4A6] hover:text-white ">
                 <span className="text-xs font-medium">View details</span>
-                <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 " />
+                <MdOutlineArrowOutward className="transition-transform duration-100 group-hover/button:rotate-45 " />
               </div>
             </div>
           </article>

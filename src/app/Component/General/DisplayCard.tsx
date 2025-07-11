@@ -25,7 +25,7 @@ export const DisplayCard = ({ title, description, icon, link }: DisplayCardProps
           icon
         )}
       </div>
-      <h3 className="font-semibold text-white text-[16px] leading-[20.98px] md:text-[22px] mb-2 md:leading-[28px]">
+      <h3 className="font-medium text-white text-[16px] leading-[20.98px] md:text-[22px] mb-2 md:leading-[28px]">
         {title}
       </h3>
       <p className="text-[#EAF5F4A6] text-[14px] leading-[17.98px] tracking-[0.5%] md:text-[16px] mb-6 md:leading-[24px] ">
