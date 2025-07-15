@@ -46,7 +46,10 @@ export default function HeroSection() {
                   <Link href="/focus-area">Explore our products</Link>
                 </button>
                 <button className="group border border-[#48B96B]  py-[12px] md:w-[185px]  md:h-[48px] font-normal justify-center rounded-md flex items-center gap-2 transition-colors duration-100 hover:bg-[#6CC78840]  hover:text-white">
-                  <Link href={"/contact-us"} className="flex items-center gap-2">
+                  <Link
+                    href={"/contact-us"}
+                    className="flex items-center gap-2"
+                  >
                     Get in touch
                     <MdOutlineArrowOutward className="transition-transform duration-100 group-hover:rotate-45 text-[24px]" />
                   </Link>
@@ -64,16 +67,19 @@ export default function HeroSection() {
                   className=" w-[120.02px] h-[36.23px]
                md:w-[103.94px] md:h-[26.33px]
               lg:w-[124.16px] lg:h-[31.45px]text-white/65"
+              onClick={()=> alert('Coming soon')}
                 />
-                <Image
-                  src={"/nervus.svg"}
-                  alt="adam"
-                  width={200}
-                  height={200}
-                  className=" w-[150.76px] h-[32.85px]
+                <Link href={"http://getnervus.com"}>
+                  <Image
+                    src={"/nervus.svg"}
+                    alt="adam"
+                    width={200}
+                    height={200}
+                    className=" w-[150.76px] h-[32.85px]
               md:w-[129.92px] md:h-[23.87px]
               lg:w-[155.19px] lg:h-[28.52px] text-white/65"
-                />
+                  />
+                </Link>
               </section>
             </section>
           </section>
