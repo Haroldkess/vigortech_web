@@ -35,7 +35,7 @@ const Testimonials = () => {
     <section className="w-full py-16">
       <div className="text-center mb-12 px-4">
         <SectionTitle title="Testimonials" />
-        <h2 className="text-white text-center text-3xl leading-[40px]   md:leading-[64px] md:tracking-[-0.142px] md:text-6xl font-semibold lg:leading-[64px] lg:tracking-[-0.142px] pt-10">
+        <h2 className="text-white text-center text-3xl md:text-[57px]  leading-[64px] md:tracking-[-0.142px] md:text-6xl font-semibold lg:leading-[64px] lg:tracking-[-0.142px] pt-10">
           What they say about us
         </h2>
         <p className="mt-3 text-[#EAF5F4A6] max-w-xl mx-auto text-base lg:font-normal lg:leading-normal lg:tracking-tight">
@@ -68,13 +68,15 @@ const Testimonials = () => {
             <p className="text-[#EAF5F4A6] text-base  font-normal md:text-[18px] text-left mb-6 md:leading-relaxed">
               {testimonial.quote}
             </p>
-            {testimonial.name.includes("Adaobi") ||
-            testimonial.name.includes("Yoma") ? (
-              <hr className=" border-[#868686A6]  mt-13 pb-4 " />
-            ) : (
-              <hr className=" border-[#868686A6] my-4 " />
-            )}
+            
 
+            <hr
+              className={`border-[#868686A6] my-4 ${
+                testimonial.name.includes("Yoma") && "mt-14  "
+              } 
+                ${testimonial.name.includes("Adaobi") && "mt-14  "} 
+                `}
+            />
             <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
               {testimonial.name}
             </span>

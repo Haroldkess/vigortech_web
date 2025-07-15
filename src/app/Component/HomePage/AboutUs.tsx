@@ -36,10 +36,10 @@ export default function AboutUs() {
         <div className="flex justify-center mb-6">
           <SectionTitle title="Focus" />
         </div>
-        <h2 className="text-center text-white font-semibold text-3xl md:text-6xl mb-3 leading-tight">
+        <h2 className="text-center text-white font-semibold text-3xl md:text-[57px] mb-3 leading-[64px]">
           Our Focus Area
         </h2>
-        <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-sm leading-relaxed">
+        <p className="text-center text-[#EAF5F4A6] max-w-xl mx-auto mb-12 text-[16px] leading-[24px]">
           We&apos;re committed to excellence in three key sectors that drive
           innovation and growth in today&apos;s digital economy.
         </p>

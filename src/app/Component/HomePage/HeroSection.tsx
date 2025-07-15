@@ -29,10 +29,10 @@ export default function HeroSection() {
 
               {/* <p className="md:w-[45vw] w-[90vw] text-[#EAF5F4A6] text-sm md:text-md"> */}
               <p
-                className="font-inter text-[16px] font-inter leading-[20px] tracking-[0.1%]
-              font-normal text-[#EAF5F4A6]
-              md:font-medium md:bg-transparent
-              lg:font-medium md:w-[45vw] w-[90vw]"
+                className="font-inter text-[16px] font-inter leading-[24px] tracking-[0.1%]
+               text-[#EAF5F4A6]
+              md:bg-transparent
+              font-medium md:w-[45vw] w-[90vw]"
               >
                 Innovative solutions that transform businesses through
                 cutting-edge technology, expert strategy, and seamless
