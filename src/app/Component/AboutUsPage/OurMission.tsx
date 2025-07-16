@@ -17,7 +17,7 @@ export default function OurMission() {
           <section className="text-[#EAF5F4A6] text-md  font-light text-start  flex flex-col gap-y-10  mt-4 md:max-w-2xl">
             <p className="px-4 md:px-8 md:w-[614px]">
               Our mission is to help everyday people take control, grow with
-              confidence, and lead the future—whether in tech, learning, or
+              confidence, and lead the future whether in tech, learning, or
               finance. Through innovation, collaboration, and a commitment to
               excellence, Vigor Tech transforms challenges into opportunities,
               building a brighter future for Africa

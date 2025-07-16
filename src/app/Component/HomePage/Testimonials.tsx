@@ -12,13 +12,13 @@ const testimonials = [
   },
   {
     quote:
-      "VigorTech’s end-to-end integration platform slashed our deployment time in half. Their team turned a tangled legacy system into a lightning-fast, cloud-native solution—no magic wand required!",
+      "VigorTech’s end-to-end integration platform slashed our deployment time in half. Their team turned a tangled legacy system into a lightning fast, cloud-native solution—no magic wand required!",
     name: "Chidi Okeke",
     role: "CTO, TransAfric Logistics",
   },
   {
     quote:
-      "I thought UI/UX was just wireframes—until VigorTech’s immersive design course showed me how to craft experiences that users actually love. My portfolio went from meh to WOW.",
+      "I thought UI/UX was just wireframes until VigorTech’s immersive design course showed me how to craft experiences that users actually love. My portfolio went from meh to WOW.",
     name: "Emmanuel Nwosu",
     role: "UX Designer, BrightWave Studios",
   },

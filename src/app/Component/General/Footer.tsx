@@ -55,7 +55,7 @@ const Footer = () => {
           className="mb-4 object-cover w-[100vw] md:w-[40vw] "
         />
       </section>
-      <footer className=" w-full  py-20 px-0  md:px-0 relative bg-[#171615A6]  overflow-x-hidden  ">
+      <footer className=" w-full py-20 px-0  md:px-0  bg-[#171615A6]  overflow-x-hidden  ">
         <div className="flex  flex-col lg:flex-row md:justify-between md:items-start gap-y-12 px-4 md:px-8 md:gap-0  py-12   ">
           <div className="max-w-xs ">
             <section className="">
@@ -90,12 +90,12 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
+      </footer>
+     
         <div className="md:px-8 px-4">
-          <hr className=" border-[#868686A6] my-8 " />
+          <hr className=" border-[#868686A6] my-4 " />
         </div>
-
-        <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-20 ">
+        <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-20 pb-10 md:pb-6  ">
           <p>©2021 Vigortech, Inc. All rights reserved</p>
           <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
             <Link
@@ -121,8 +121,8 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-      </footer>
-    </section>
+      </section>
+   
   );
 };
 

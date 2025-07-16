@@ -22,7 +22,7 @@ const AboutStats = () => {
           </h3>
           <p className="text-[#EAF5F4A6] mt-1 text-base font-normal">Projects</p>
         </div>
-        <div className="md:w-[10vw] ">
+        <div className="md:w-[8.8vw] ">
           <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1">
             {inView ? <CountUp start={0} end={200} duration={4} /> : "0"}+
           </h3>

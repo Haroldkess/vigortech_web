@@ -104,7 +104,7 @@ export default function OurFocus() {
               </h3>
               <p className="mt-2 text-[#EAF5F4A6] text-[14px] leading-6 max-w-xs text-center">
                 Knowledge is power, and access matters. We’re helping people and
-                orgs not just keep up, but lead in today’s fast-moving digital
+                orgs not just keep up, but lead in today’s fast moving digital
                 world.
               </p>
             </div>
@@ -124,7 +124,7 @@ export default function OurFocus() {
                 Finance
               </h3>
               <p className="mt-2 text-[#EAF5F4A6] text-[14px] leading-6 max-w-xs text-center">
-                At Vigor Tech, finance is not just about numbers—it’s about
+                At Vigor Tech, finance is not just about numbers it’s about
                 empowering people to take control of their financial futures.
               </p>
             </div>
