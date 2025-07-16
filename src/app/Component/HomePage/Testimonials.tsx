@@ -65,25 +65,19 @@ const Testimonials = () => {
               height={10}
             />
 
-            <p className="text-[#EAF5F4A6] text-base  font-normal md:text-[18px] text-left mb-6 md:leading-relaxed">
+            <p className="text-[#EAF5F4A6]  font-normal text-[16px] text-left mb-6 leading-[24px]">
               {testimonial.quote}
             </p>
 
-            {/* <hr
-              className={`border-[#868686A6] my-4 ${
-                testimonial.name.includes("Yoma") && "mt-14  "
-              } 
-                ${testimonial.name.includes("Adaobi") && "mt-14  "} 
-                `}
-            /> */}
+        
 
             <section className="absolute bottom-4 w-full ">
               <hr className={`border-[#868686A6] my-4 w-[90%]`} />
-              <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
+              <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-medium text-[14px] leading-[20px] ">
                 {testimonial.name}
               </span>
 
-              <p className="text-[#EAF5F4A6] text-sm">{testimonial.role}</p>
+              <p className="text-[#EAF5F4A6] text-[14px] leading-[24px] font-normal">{testimonial.role}</p>
             </section>
           </article>
         ))}

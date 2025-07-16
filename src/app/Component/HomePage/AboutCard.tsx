@@ -27,16 +27,16 @@ const AboutCard = ({ title, description, icon, link }: AboutCardProps) => {
             icon
           )}
         </div>
-        <h3 className="font-semibold text-white text-[16px] mb-2 leading-[20.98px]">
+        <h3 className="font-stretch-semi-expanded text-white text-[16.89px] leading-[21.5px] md:text-[22px] mb-2 md:leading-[28px]">
           {title}
         </h3>
-        <p className="text-[#EAF5F4A6] text-sm mb-6 leading-[17.98px;] ">
+        <p className="text-[#EAF5F4A6] font-normal md:text-[16px] mb-6 md:leading-[24px] text-[12.29px] leading-[18.43px]">
           {description}
         </p>
         {link && (
           <Link
             href={link}
-            className="group text-white font-semibold text-sm flex items-center gap-1 justify-start hover:text-[#48B96B] transition-colors duration-100 "
+            className="group text-white font-medium text-[12.29px] leading-[15.36px] md:text-[16px] md:leading-[20px] flex items-center gap-1 justify-start hover:text-[#48B96B] transition-colors duration-100 "
           >
             <p>Learn more </p>
             <span>

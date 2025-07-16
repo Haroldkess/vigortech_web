@@ -30,19 +30,19 @@ const OurStat = () => {
                     </h3>
                     <p className="text-[#EAF5F4A6] mt-1 text-[16px] leading-[24px]">Projects</p>
                 </div>
-                <div className="md:w-[10vw]">
+                <div className="">
                     <h3 className="text-2xl md:text-[45px] leading-[52px] font-semibold border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={200} duration={4} /> : '0'}+
                     </h3>
                     <p className="text-[#EAF5F4A6] mt-1  text-[16px] leading-[24px]">Learners trained</p>
                 </div>
-                <div className="md:w-[7.5vw] w-[25vw]">
+                <div className="md:w-[9vw] w-[25vw]">
                     <h3 className="text-2xl md:text-[45px] leading-[52px] font-semibold border-b border-gray-600 pb-1">
                         {inView ? <CountUp start={0} end={99.9} duration={4} decimals={1} /> : '0'}%
                     </h3>
                     <p className="text-[#EAF5F4A6] mt-1 text-[16px] leading-[24px]">Satisfaction</p>
                 </div>
-                <div className="md:w-[5.4vw] w-[16vw]">
+                <div className="md:w-[5.6vw] w-[16vw]">
                     <h3 className="text-2xl md:text-[45px] leading-[52px] font-semibold border-b border-gray-600 pb-1">10+</h3>
                     <p className="text-[#EAF5F4A6] mt-1 text-[16px] leading-[24px]">Integrations</p>
                 </div>

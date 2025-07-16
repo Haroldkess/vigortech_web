@@ -17,7 +17,7 @@ export default function NewsLetter() {
         <section className="absolute top-0 left-0 w-full h-full flex items-center justify-center rounded-t-2xl">
           <section className="flex flex-col w-full justify-center items-center gap-10">
             <section className=" w-full">
-              <h1 className="text-white text-lg md:text-4xl font-bold text-center">
+              <h1 className="text-white text-lg md:text-[36px] leading-[44px] font-bold text-center">
                 Want product news and update?
                 <br />
                 Sign up for our newsletter.
@@ -43,7 +43,7 @@ export default function NewsLetter() {
                 />
                 <button
                   type="submit"
-                  className="bg-[#48B96B] hover:bg-[#6CC788] text-black font-normal px-4 py-2 rounded-md"
+                  className="bg-[#48B96B] hover:bg-[#6CC788] text-black font-medium text-[18px] leading-[20px] px-4 py-2 rounded-md"
                 >
                   Subscribe
                 </button>
