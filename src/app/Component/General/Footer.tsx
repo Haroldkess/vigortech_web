@@ -1,8 +1,10 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import FooterLink from "./FooterLinks";
+import Link from "next/link";
 
 const Footer = () => {
   const footerLinks = {
@@ -38,6 +40,9 @@ const Footer = () => {
       { label: "Community", href: "#", isReady: false },
     ],
   };
+
+
+  
 
   return (
     <section className="relative  overflow-x-hidden overflow-y-hidden">
@@ -90,30 +95,30 @@ const Footer = () => {
           <hr className=" border-[#868686A6] my-8 " />
         </div>
 
-        <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-50">
+        <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-20 ">
           <p>©2021 Vigortech, Inc. All rights reserved</p>
           <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
-            <a
+            <Link
               aria-label="Linkedin"
               className="hover:text-white"
               href="https://www.linkedin.com/company/vigor-tech-ltd-vt/"
             >
               <FaLinkedin />
-            </a>
-            <a
+            </Link>
+            <Link
               aria-label="Instagram"
               className="hover:text-white"
               href="https://www.instagram.com/vigortechofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             >
               <FaInstagram />
-            </a>
-            <a
+            </Link>
+            <Link
               aria-label="X Twitter"
               className="hover:text-white"
               href="https://x.com/vigortech?s=21"
             >
               <FaXTwitter />
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

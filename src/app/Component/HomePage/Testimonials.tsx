@@ -48,7 +48,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <article
             key={index}
-            className="border border-[#86868640] rounded-[10.75px]  w-[306.39px] mx-4
+            className="border border-[#86868640] rounded-[10.75px]  w-[306.39px] mx-4 relative
         md:rounded-[14px] md:w-[433px] p-4  md:px-[20px] md:border
         lg:rounded-[14px] lg:w-[433px] lg:h-[342.48px] lg:max-h-[342.48px] lg:border
         shrink-0"
@@ -68,20 +68,23 @@ const Testimonials = () => {
             <p className="text-[#EAF5F4A6] text-base  font-normal md:text-[18px] text-left mb-6 md:leading-relaxed">
               {testimonial.quote}
             </p>
-            
 
-            <hr
+            {/* <hr
               className={`border-[#868686A6] my-4 ${
                 testimonial.name.includes("Yoma") && "mt-14  "
               } 
                 ${testimonial.name.includes("Adaobi") && "mt-14  "} 
                 `}
-            />
-            <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
-              {testimonial.name}
-            </span>
+            /> */}
 
-            <p className="text-[#EAF5F4A6] text-sm">{testimonial.role}</p>
+            <section className="absolute bottom-4 w-full ">
+              <hr className={`border-[#868686A6] my-4 w-[90%]`} />
+              <span className="bg-gradient-to-r from-[#48B96B] via-[#CCDC35] to-[#6CC788] bg-clip-text text-transparent font-bold">
+                {testimonial.name}
+              </span>
+
+              <p className="text-[#EAF5F4A6] text-sm">{testimonial.role}</p>
+            </section>
           </article>
         ))}
       </Marquee>
