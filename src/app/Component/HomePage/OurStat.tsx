@@ -20,7 +20,7 @@ const OurStat = () => {
             Our stats
           </h2>
           <p className="text-[#EAF5F4A6] max-w-md text-[16px] leading-[24px]">
-            We don’t just talk about change—we build it. These numbers show how
+            We don’t just talk about change we build it. These numbers show how
             far we’ve come, and where we’re headed.
           </p>
         </div>

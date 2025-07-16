@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "VigorTech’s end-to-end integration platform slashed our deployment time in half. Their team turned a tangled legacy system into a lightning fast, cloud-native solution—no magic wand required!",
+      "VigorTech’s end-to-end integration platform slashed our deployment time in half. Their team turned a tangled legacy system into a lightning fast, cloud native solution no magic wand required!",
     name: "Chidi Okeke",
     role: "CTO, TransAfric Logistics",
   },
