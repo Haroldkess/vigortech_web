@@ -130,11 +130,17 @@ export default function NavBar() {
                     )}
                   </section>
                   {dropProduct && (
-                    <section className="flex flex-col gap-4 mt-2 text-white">
-                      <p>Technology</p>
-                      <p>Education</p>
-                      <p>Finance</p>
-                    </section>
+                    <ul className="flex flex-col gap-4 mt-2 text-white">
+                      <li>
+                        <Link href="/focus-area#tech">Technology</Link>
+                      </li>
+                      <li>
+                        <Link href="/focus-area#education">Education</Link>
+                      </li>
+                      <li>
+                        <Link href="/focus-area#finance">Finance</Link>
+                      </li>
+                    </ul>
                   )}
                 </li>
                 <li>
@@ -154,6 +160,9 @@ export default function NavBar() {
           </section>
         )}
 
+        {/* mobile menu end */}
+
+        {/* desktop menu drop down */}
         {/* company */}
         {activeDropdown === "company" && (
           <section

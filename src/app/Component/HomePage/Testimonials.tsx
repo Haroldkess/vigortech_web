@@ -50,7 +50,7 @@ const Testimonials = () => {
             key={index}
             className="border border-[#86868640] rounded-[10.75px]  w-[306.39px] mx-4 relative
         md:rounded-[14px] md:w-[433px] p-4  md:px-[20px] md:border
-        lg:rounded-[14px] lg:w-[433px] lg:h-[342.48px] lg:max-h-[342.48px] lg:border
+        lg:rounded-[14px] lg:w-[433px] h-[342.48px] max-h-[342.48px] lg:border
         shrink-0"
             style={{
               background:
