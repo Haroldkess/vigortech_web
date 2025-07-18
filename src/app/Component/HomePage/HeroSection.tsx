@@ -160,11 +160,11 @@ export default function HeroSection() {
                   alt="earth"
                   width={200}
                   height={200}
-                  className=" w-[100vw] object-cover absolute blur-md -z-20 bottom-[4em] right-[-10em] lg:right-[-20em] lg:bottom-[-20em]  "
+                  className=" w-[1800px] object-cover absolute blur-md -z-20 bottom-[4em] right-[-10em] lg:right-[-18em] lg:bottom-[-23em]  "
                 />
               </section>
 
-              <section className="absolute right-[-2em] top-[-6vh] lg:top-[-10vh] ">
+              <section className="absolute right-[-4em] top-[-6vh] lg:top-[-10vh] ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1378 768"
