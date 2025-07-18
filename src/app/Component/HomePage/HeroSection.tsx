@@ -4,11 +4,9 @@ import Link from "next/link";
 
 // import React, { useState } from "react";
 
-
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function HeroSection() {
-
   return (
     <header className=" lg:mb-[30vh] mb-40  font-inter pb-40 lg:pb-40  ">
       <section className="relative z-10 top-[2em] md:top-[10em] h-[70vh] md:h-[50vh] w-full">
@@ -67,7 +65,7 @@ export default function HeroSection() {
                   className=" w-[120.02px] h-[36.23px]
                md:w-[103.94px] md:h-[26.33px]
               lg:w-[124.16px] lg:h-[31.45px]text-white/65"
-              onClick={()=> alert('Coming soon')}
+                  onClick={() => alert("Coming soon")}
                 />
                 <Link href={"http://getnervus.com"}>
                   <Image
@@ -82,103 +80,164 @@ export default function HeroSection() {
                 </Link>
               </section>
             </section>
+
+            <section className="flex justify-center flex-col md:hidden ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1378 768"
+                className="w-[90vw] h-auto"
+              >
+                {/* World Map Path */}
+                <image
+                  href="/Earth.png"
+                  x="0"
+                  y="0"
+                  width="1378"
+                  height="768"
+                />
+
+                {/* Glowing Pulse Circle at specific coordinates (e.g., Nigeria) */}
+                <g>
+                  <circle cx="680" cy="450" r="4" fill="#EAF5F4">
+                    <animate
+                      attributeName="r"
+                      values="4;12;4"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="1;0;1"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <circle cx="680" cy="450" r="8" fill="#ADFBC5" opacity="0.6">
+                    <animate
+                      attributeName="r"
+                      values="8;20;8"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0.6;0;0.6"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <circle
+                    cx="680"
+                    cy="450"
+                    r="14"
+                    fill="#60DA86"
+                    filter="blur(4px)"
+                  >
+                    <animate
+                      attributeName="r"
+                      values="14;30;14"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0.3;0;0.3"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                </g>
+              </svg>
+            </section>
           </section>
 
           {/* desktop image section */}
-          <section className=" hidden lg:block">
+          <section className=" hidden md:block">
             <section className=" flex justify-center flex-col  ">
-              <img
-                src={"/Earth.png"}
-                alt="earth"
-                width={1000}
-                height={1000}
-                className="z-50  w-[67vw] object-cover absolute right-0 md:right-[-9%] bottom-[-16%] md:bottom-0  md:top-[-6em]"
-              />
-
               <section className="">
                 <img
                   src={"/bgEarth.png"}
                   alt="earth"
                   width={200}
                   height={200}
-                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-[-20em] bottom-[-20em]  "
+                  className=" w-[100vw] object-cover absolute blur-md -z-20 bottom-[4em] right-[-10em] lg:right-[-20em] lg:bottom-[-20em]  "
                 />
               </section>
 
-              <section className="map-pulse ">
-                <div className="pulse-animation">
-                  <div className="layer blur"></div>
-                  <div className="layer outer"></div>
-                  <div className="layer middle"></div>
-                  <div className="layer inner"></div>
-                </div>
-              </section>
-            </section>
-          </section>
+              <section className="absolute right-[-2em] top-[-6vh] lg:top-[-10vh] ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1378 768"
+                  className="lg:w-[70vw] w-[80vw] h-auto"
+                >
+                  {/* World Map Path */}
 
-          {/* tablet mage section */}
+                  <image
+                    href="/Earth.png"
+                    x="0"
+                    y="0"
+                    width="1378"
+                    height="768"
+                  />
 
-          <section className=" hidden max-w-md md:block">
-            <section className=" flex justify-center flex-col  ">
-              <img
-                src={"/Earth.png"}
-                alt="earth"
-                width={1000}
-                height={1000}
-                className="z-50  w-[80vw] object-cover absolute right-[-8em] top-[-8vh] lg:hidden "
-              />
-
-              <section className="">
-                <img
-                  src={"/bgEarth.png"}
-                  alt="earth"
-                  width={200}
-                  height={200}
-                  className=" w-[150vw] object-cover absolute blur-md -z-20 right-[-20em] lg:hidden  "
-                />
-              </section>
-
-              <section className="absolute bottom-0 top-[14vh] right-[25vw] lg:hidden">
-                {/* <div className='glow-bicon w-4 h-4 rounded-full'> </div> */}
-                <div className="pulse-animation">
-                  <div className="layer blur"></div>
-                  <div className="layer outer"></div>
-                  <div className="layer middle"></div>
-                  <div className="layer inner"></div>
-                </div>
-              </section>
-            </section>
-          </section>
-
-          {/* mobile image section */}
-
-          <section className="block md:hidden ">
-            <section className=" flex justify-center flex-col  ">
-              <img
-                src={"/Earth.png"}
-                alt="earth"
-                width={1000}
-                height={1000}
-                className="z-50  w-[100vw] object-cover absolute right-0 left-0 top-[80vh]"
-              />
-
-              <section className="">
-                <img
-                  src={"/bgEarth.png"}
-                  alt="earth"
-                  width={200}
-                  height={200}
-                  className=" w-[94vw] object-cover absolute blur-md -z-20 right-0 top-[80vh]  "
-                />
-              </section>
-
-              <section className="absolute bottom-0 right-[48%] top-[95vh] ">
-                <div className="pulse-animation">
-                  <div className="layer blur"></div>
-                  <div className="layer outer"></div>
-                  <div className="layer middle"></div>
-                  <div className="layer inner"></div>
-                </div>
+                  {/* Glowing Pulse Circle at specific coordinates (e.g., Nigeria) */}
+                  <g>
+                    <circle cx="680" cy="450" r="4" fill="#EAF5F4">
+                      <animate
+                        attributeName="r"
+                        values="4;12;4"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="opacity"
+                        values="1;0;1"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle
+                      cx="680"
+                      cy="450"
+                      r="8"
+                      fill="#ADFBC5"
+                      opacity="0.6"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="8;20;8"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="opacity"
+                        values="0.6;0;0.6"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                    <circle
+                      cx="680"
+                      cy="450"
+                      r="14"
+                      fill="#60DA86"
+                      filter="blur(4px)"
+                    >
+                      <animate
+                        attributeName="r"
+                        values="14;30;14"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                      <animate
+                        attributeName="opacity"
+                        values="0.3;0;0.3"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                    </circle>
+                  </g>
+                </svg>
               </section>
             </section>
           </section>
