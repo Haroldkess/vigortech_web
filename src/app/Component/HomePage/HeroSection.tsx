@@ -67,7 +67,7 @@ export default function HeroSection() {
               lg:w-[124.16px] lg:h-[31.45px]text-white/65"
                   onClick={() => alert("Coming soon")}
                 />
-                <Link href={"http://getnervus.com"}>
+                <Link href={"http://getnervus.com"} target="_blank">
                   <Image
                     src={"/nervus.svg"}
                     alt="adam"
@@ -82,6 +82,15 @@ export default function HeroSection() {
             </section>
 
             <section className="flex justify-center flex-col md:hidden ">
+              <section>
+                <img
+                  src={"/bgEarth.png"}
+                  alt="earth"
+                  width={200}
+                  height={200}
+                  className=" w-[400px] object-cover absolute blur-md -z-20 bottom-[-4em] right-[-2em]   "
+                />
+              </section>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1378 768"

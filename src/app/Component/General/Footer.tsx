@@ -91,38 +91,40 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-     
-        <div className="md:px-8 px-4">
-          <hr className=" border-[#868686A6] my-4 " />
+
+      <div className="md:px-8 px-4">
+        <hr className=" border-[#868686A6] my-4 " />
+      </div>
+      <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-20 pb-10 md:pb-6  ">
+        <p>©2021 Vigortech, Inc. All rights reserved</p>
+        <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
+          <Link
+            target="_blank"
+            aria-label="Linkedin"
+            className="hover:text-white"
+            href="https://www.linkedin.com/company/vigor-tech-ltd-vt/"
+          >
+            <FaLinkedin />
+          </Link>
+          <Link
+            target="_blank"
+            aria-label="Instagram"
+            className="hover:text-white"
+            href="https://www.instagram.com/vigortechofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          >
+            <FaInstagram />
+          </Link>
+          <Link
+            target="_blank"
+            aria-label="X Twitter"
+            className="hover:text-white"
+            href="https://x.com/vigortech?s=21"
+          >
+            <FaXTwitter />
+          </Link>
         </div>
-        <div className="flex flex-col sm:flex-row md:justify-between md:items-center text-[#EAF5F4A6] text-sm px-4 md:px-10 gap-4 z-20 pb-10 md:pb-6  ">
-          <p>©2021 Vigortech, Inc. All rights reserved</p>
-          <div className="flex space-x-6 text-[#EAF5F4A6] text-lg">
-            <Link
-              aria-label="Linkedin"
-              className="hover:text-white"
-              href="https://www.linkedin.com/company/vigor-tech-ltd-vt/"
-            >
-              <FaLinkedin />
-            </Link>
-            <Link
-              aria-label="Instagram"
-              className="hover:text-white"
-              href="https://www.instagram.com/vigortechofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            >
-              <FaInstagram />
-            </Link>
-            <Link
-              aria-label="X Twitter"
-              className="hover:text-white"
-              href="https://x.com/vigortech?s=21"
-            >
-              <FaXTwitter />
-            </Link>
-          </div>
-        </div>
-      </section>
-   
+      </div>
+    </section>
   );
 };
 
