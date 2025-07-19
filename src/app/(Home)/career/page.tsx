@@ -14,7 +14,7 @@ export default function Career() {
       <NavBar />
 
       <HeroGeneral>
-         <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20 md:mt-24">
+         <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20 ">
           <SectionTitle title="Career" />
 
           <section className=" ">
