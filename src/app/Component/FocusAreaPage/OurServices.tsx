@@ -30,31 +30,35 @@ export default function OurServices() {
     ];
 
     return (
-        <section className="   py-16 rounded-t-3xl  bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
-            <section className=' md:px-6 px-4'>
+      <section className="   py-16 rounded-t-3xl  bg-[rgba(23, 22, 21, 0.65)] backdrop-blur-2xl  ">
+        <section className=" md:px-6 px-4">
+          <section className="relative">
+            <h2 className="text-center text-white font-semibold text-3xl md:text-4xl mb-3 pb-20 leading-tight">
+              What we do
+            </h2>
 
-                <section className='relative'>
-                    <h2 className="text-center text-white font-semibold text-3xl md:text-4xl mb-3 pb-20 leading-tight">
-                        What we do
-                    </h2>
-
-                    <section className='absolute left-[35%] md:left-[46%] top-7 '><Image src="/newsLine.svg" alt="Newsletter Icon" width={200} height={100} className=' h-4  ' /></section>
-
-                    
-                </section>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-                    {services.map((card, index) => (
-                        <DisplayCard
-                            key={index}
-                            title={card.title}
-                            description={card.description}
-                            icon={card.icon}
-
-                        />
-                    ))}
-                </div>
+            <section className="absolute left-[35%] md:left-[49.5%] top-7 md:top-2 ">
+              <Image
+                src="/newsLine.svg"
+                alt="Newsletter Icon"
+                width={200}
+                height={100}
+                className=" h-4 md:h-14 md:w-[33%] "
+              />
             </section>
+          </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
+            {services.map((card, index) => (
+              <DisplayCard
+                key={index}
+                title={card.title}
+                description={card.description}
+                icon={card.icon}
+              />
+            ))}
+          </div>
         </section>
-    )
+      </section>
+    );
 }

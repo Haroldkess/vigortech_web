@@ -46,7 +46,7 @@ export default function OurCourses() {
       <section id="education">
         <section className="grid grid-cols-1 md:grid-cols-2  justify-between w-full md:py-20 px-4 md:px-6 relative gap-10">
           <section className="pt-10">
-            <section className="flex flex-col justify-start items-start">
+            <section className="flex flex-col justify-start items-start gap-y-6 md:gap-y-10">
               <SectionTitle title="Education" />
 
               <h2 className="text-[32px] md:text-[45px] font-bold leading-[40px] md:font-semibold md:leading-[52px] w-[40vw]">
@@ -57,7 +57,7 @@ export default function OurCourses() {
               <p>
                 At Vigor Tech, we believe that access to knowledge is the
                 foundation for independence, innovation, and long-term success.
-                Education shouldn&apos;t be a privilege—it should be a pathway
+                Education shouldn&apos;t be a privilege it should be a pathway
                 that&apos;s open to everyone.
               </p>
 

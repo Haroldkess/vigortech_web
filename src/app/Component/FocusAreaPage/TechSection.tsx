@@ -26,7 +26,7 @@ export default function TechSection() {
                 From the ground up, our solutions are designed to create access
                 where there was none, streamline systems that were once broken,
                 and empower users who&apos;ve often been overlooked. We&apos;re
-                not in the business of trends—we&apos;re in the business of
+                not in the business of trends we&apos;re in the business of
                 transformation.
               </p>
             </section>
