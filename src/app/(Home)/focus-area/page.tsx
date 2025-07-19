@@ -17,7 +17,7 @@ export default function FocusArea() {
     <section>
       <NavBar />
       <HeroGeneral>
-        <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20">
+        <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20 md:mt-28">
           <SectionTitle title="Our focus" />
 
           <section className=" space-y-4 ">
