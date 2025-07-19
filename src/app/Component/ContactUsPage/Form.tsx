@@ -1,28 +1,33 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
 
-  function startResize(e: React.MouseEvent) {
-    const textarea = document.getElementById("message") as HTMLTextAreaElement;
-    const startY = e.clientY;
-    const startHeight = textarea.offsetHeight;
+  const [message, setMessage] = React.useState("");
 
-    function onMouseMove(e: MouseEvent) {
-      const newHeight = startHeight + (e.clientY - startY);
-      textarea.style.height = `${newHeight}px`;
-    }
+  // function startResize(e: React.MouseEvent) {
+  //   const textarea = document.getElementById("message") as HTMLTextAreaElement;
+  //   const startY = e.clientY;
+  //   const startHeight = textarea.offsetHeight;
 
-    function onMouseUp() {
-      document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mouseup", onMouseUp);
-    }
+  //   function onMouseMove(e: MouseEvent) {
+  //     const newHeight = startHeight + (e.clientY - startY);
+  //     textarea.style.height = `${newHeight}px`;
+  //   }
 
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("mouseup", onMouseUp);
-  }
+  //   function onMouseUp() {
+  //     document.removeEventListener("mousemove", onMouseMove);
+  //     document.removeEventListener("mouseup", onMouseUp);
+  //   }
+
+  //   document.addEventListener("mousemove", onMouseMove);
+  //   document.addEventListener("mouseup", onMouseUp);
+  // }
+
+
+ if (message.length >= 200) alert("Message cannot exceed 200 characters.")
   
   return (
     <main className=" w-full rounded-2xl p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 md:gap-16">
@@ -121,14 +126,17 @@ const ContactForm = () => {
               <textarea
                 id="message"
                 name="message"
-                rows={8}
+                maxLength={200}
+                minLength={10}
+                rows={6}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="Please provide details about your inquiry"
                 className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-200 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B] resize-none"
               ></textarea>
 
               <div
                 className="absolute bottom-5 right-5 w-[16.2px] h-[16.2px] cursor-se-resize"
-                onMouseEnter={(e) => startResize(e)}
+              
               >
                 <Image
                   src="/icons/resizer.svg"
