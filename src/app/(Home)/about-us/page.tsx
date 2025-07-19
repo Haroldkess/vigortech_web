@@ -34,7 +34,7 @@ export default function AboutUs() {
                 alt="Newsletter Icon"
                 width={200}
                 height={100}
-                className="h-4 md:h-10 md:w-[26%]"
+                className="h-4 md:h-10 md:w-[28%]"
               />
             </section>
 
