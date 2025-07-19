@@ -12,7 +12,7 @@ export default function InstitutePage() {
       <NavBar />
 
       <HeroGeneral>
-        <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20">
+        <section className="flex flex-col justify-center items-center gap-6 w-full h-full relative z-10 mt-20 md:mt-28">
           <SectionTitle title="Courses" />
           <section className=" ">
             <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
