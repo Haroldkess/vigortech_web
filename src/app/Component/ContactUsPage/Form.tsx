@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { FaCheck } from "react-icons/fa";
 
 const ContactForm = () => {
