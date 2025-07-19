@@ -28,13 +28,13 @@ export default function AboutUs() {
               tomorrow, today!
             </h1>
 
-            <section className="relative left-[42%] md:left-[53%] top-[-1rem] ">
+            <section className="relative left-[42%] md:left-[55%] top-[-1rem] ">
               <Image
                 src="/newsLine.svg"
                 alt="Newsletter Icon"
                 width={200}
                 height={100}
-                className="h-4 md:h-10"
+                className="h-4 md:h-10 md:w-[26%]"
               />
             </section>
 
@@ -48,7 +48,7 @@ export default function AboutUs() {
         </section>
       </HeroGeneral>
 
-      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20  border-[#262020a6] w-full">
+      <section className="shadow-2xl  bg-[#171615A6] rounded-t-2xl   border-[#262020a6] w-full">
         <AboutStats />
         <OurStory />
         <OurFocus />
