@@ -77,7 +77,7 @@ const ContactForm = () => {
                 id="firstName"
                 name="firstName"
                 placeholder="Enter first name"
-                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B]"
+                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B] "
               />
             </div>
             <div>
