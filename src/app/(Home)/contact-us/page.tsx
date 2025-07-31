@@ -27,7 +27,7 @@ export default function ContactUs() {
         </section>
       </HeroGeneral>
 
-      <section className="absolute left-0 top-[-20em] md:top-[25vw] -translate-x-[55%] z-20">
+      <section className="absolute left-0  md:top-[20vw] top-[15em] -translate-x-[95vw] md:-translate-x-[55%] z-20">
         <Image
           src={"/bgEarth.png"}
           alt="Background Earth Left"
@@ -37,7 +37,8 @@ export default function ContactUs() {
           priority
         />
       </section>
-      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30 border-black/5  rounded-t-3xl  w-full mt-[-4em] ">
+
+      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-10em] md:mt-[-4em] ">
         <section className="flex w-full justify-center items-center flex-col  md:pt-10">
           <ContactForm />
         </section>

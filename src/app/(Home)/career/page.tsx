@@ -43,7 +43,18 @@ export default function Career() {
         </section>
       </HeroGeneral>
 
-      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20  border-[#262020a6] w-full">
+      <section className="absolute left-0  md:top-[20vw] top-[15em] -translate-x-[95vw] md:-translate-x-[55%] z-20">
+        <Image
+          src={"/bgEarth.png"}
+          alt="Background Earth Left"
+          width={1000}
+          height={1000}
+          className="w-[600px] object-cover md:w-[75vw] max-w-none z-50"
+          priority
+        />
+      </section>
+
+      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-8em] md:mt-[-4em] ">
         <Location />
 
         <section className="relative top-[-10em] md:top-0 w-full ">
