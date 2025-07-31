@@ -77,7 +77,7 @@ const ContactForm = () => {
                 id="firstName"
                 name="firstName"
                 placeholder="Enter first name"
-                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B] "
+                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus-within:border-[#48B96B] "
               />
             </div>
             <div>
@@ -92,7 +92,7 @@ const ContactForm = () => {
                 id="lastName"
                 name="lastName"
                 placeholder="Enter last name"
-                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B]"
+                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus-within:border-[#48B96B]"
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               placeholder="Enter email address"
-              className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B]"
+              className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-500 placeholder:text-[#EAF5F440] focus:outline-none focus-within:border-[#48B96B]"
             />
           </div>
 
@@ -131,13 +131,10 @@ const ContactForm = () => {
                 rows={6}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Please provide details about your inquiry"
-                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-200 placeholder:text-[#EAF5F440] focus:outline-none focus:ring-2 focus:ring-[#48B96B] resize-none"
+                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-200 placeholder:text-[#EAF5F440] focus:outline-none focus-within:border-[#48B96B] resize-none"
               ></textarea>
 
-              <div
-                className="absolute bottom-5 right-5 w-[16.2px] h-[16.2px] cursor-se-resize"
-              
-              >
+              <div className="absolute bottom-5 right-5 w-[16.2px] h-[16.2px] cursor-se-resize">
                 <Image
                   src="/icons/resizer.svg"
                   alt="resizer"
