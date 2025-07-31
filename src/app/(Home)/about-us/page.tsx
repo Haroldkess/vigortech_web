@@ -15,82 +15,91 @@ import GetInTouch from "@/app/Component/AboutUsPage/GetInTouch";
 
 export default function AboutUs() {
   return (
-    <>
-      <section className="">
-        <NavBar />
-        <HeroGeneral>
-          <section className="flex flex-col justify-center items-center gap-6 w-full h-full   my-20  ">
-            <SectionTitle title="About us" />
+    <section className=" text-white font-inter">
+      <NavBar />
+      <HeroGeneral>
+        <section className="flex flex-col justify-center items-center gap-6 w-full h-full z-10   my-20 overflow-x-hidden  ">
+          <SectionTitle title="About us" />
 
-            <section className=" ">
-              <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
-                We’re Building Africa’s
-                <br />
-                tomorrow, today!
-              </h1>
+          <section className=" ">
+            <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
+              We’re Building Africa’s
+              <br />
+              tomorrow, today!
+            </h1>
 
-              <section className="relative left-[42%] md:left-[55%] top-[-1rem] ">
-                <Image
-                  src="/newsLine.svg"
-                  alt="Newsletter Icon"
-                  width={200}
-                  height={100}
-                  className="h-4 md:h-10 md:w-[28%]"
-                />
-              </section>
+            <section className="relative left-[42%] md:left-[55%] top-[-1rem] ">
+              <Image
+                src="/newsLine.svg"
+                alt="Newsletter Icon"
+                width={200}
+                height={100}
+                className="h-4 md:h-10 md:w-[28%]"
+              />
+            </section>
 
-              <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full ">
-                <p className="text-[#EAF5F4A6] text-md py-2 text-base  font-medium text-center ">
-                  Where purpose meets real impact.
-                </p>
-                <GetInTouch />
-              </section>
+            <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full ">
+              <p className="text-[#EAF5F4A6] text-md py-2 text-base  font-medium text-center ">
+                Where purpose meets real impact.
+              </p>
+              <GetInTouch />
             </section>
           </section>
-        </HeroGeneral>
-
-        <section className="pt-[100px] bg-[#171615A6] gap-y-3 flex flex-col rounded-t-2xl  z-20 border-t border-black/5 w-full relative top-[-10rem] md:top-[-15rem]">
-          <AboutStats />
-          <OurStory />
-          <OurFocus />
-          <section className="flex justify-center items-center w-full py-4">
-            <Image
-              src={"/line.svg"}
-              alt="line"
-              width={100}
-              height={10}
-              className="h-4 w-[100vw]"
-            />
-          </section>
-
-          <OurMission />
-
-          <section className="flex justify-center items-center w-full py-4">
-            <Image
-              src={"/line.svg"}
-              alt="line"
-              width={100}
-              height={10}
-              className="h-4 w-[100vw]"
-            />
-          </section>
-
-          <OurValues />
-
-          <section className="flex justify-center items-center w-full py-4">
-            <Image
-              src={"/line.svg"}
-              alt="line"
-              width={100}
-              height={10}
-              className="h-4 w-[100vw]"
-            />
-          </section>
-
-          <Team />
         </section>
+      </HeroGeneral>
+
+      {/* bg image 1 */}
+      <section className="absolute left-0 top-[-20em] md:top-[24vw] -translate-x-[55%] z-20">
+        <Image
+          src={"/bgEarth.png"}
+          alt="Background Earth Left"
+          width={1000}
+          height={1000}
+          className="w-[600px] object-cover md:w-[75vw] max-w-none z-50"
+          priority
+        />
       </section>
-      <Footer />
-    </>
+      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-4em] ">
+        <AboutStats />
+        <OurStory />
+        <OurFocus />
+        <section className="flex justify-center items-center w-full py-4">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={100}
+            height={10}
+            className="h-4 w-[100vw]"
+          />
+        </section>
+
+        <OurMission />
+
+        <section className="flex justify-center items-center w-full py-4">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={100}
+            height={10}
+            className="h-4 w-[100vw]"
+          />
+        </section>
+
+        <OurValues />
+
+        <section className="flex justify-center items-center w-full py-4">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={100}
+            height={10}
+            className="h-4 w-[100vw]"
+          />
+        </section>
+
+        <Team />
+        <Footer />
+      </section>
+    </section>
   );
 }

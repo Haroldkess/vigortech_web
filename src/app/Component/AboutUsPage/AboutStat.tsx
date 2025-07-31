@@ -11,14 +11,14 @@ const AboutStats = () => {
   });
 
   return (
-    <section className=" w-full px-4 md:mx-auto  md:px-6  flex flex-col  items-center md:flex-row md:justify-center md:items-center gap-12 md:gap-0">
+    <section className="w-full px-4 md:mx-auto  md:px-6  flex flex-col  items-center md:flex-row md:justify-center md:items-center gap-12 md:gap-0">
       <div
-        className="flex justify-center items-center gap-y-8  gap-x-20"
+        className="flex justify-center items-center gap-y-8  gap-x-20 "
         ref={ref}
       >
-        <section className="flex flex-col md:flex-row justify-center items-center gap-x-20">
-          <div className="md:w-[4vw] w-[12vw]">
-            <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1 md:w-[4vw] w-[12vw]">
+        <section className="flex flex-col md:flex-row md:justify-center justify-between  items-center gap-x-20 gap-y-10 ">
+          <div className="md:w-[4vw] w-[32vw]">
+            <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1 md:w-[4vw] w-[16vw]">
               {inView ? <CountUp start={0} end={5} duration={4} /> : "0"}+
             </h3>
             <p className="text-[#EAF5F4A6] mt-1 text-base font-normal">
@@ -35,7 +35,7 @@ const AboutStats = () => {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row justify-center items-center gap-x-20">
+        <section className="flex flex-col md:flex-row justify-center items-center gap-x-20 gap-y-10">
           <div className="md:w-[10vw]">
             <h3 className="text-3xl md:text-5xl font-semibold border-b border-gray-600 pb-1 md:w-[10vw]">
               {inView ? (
