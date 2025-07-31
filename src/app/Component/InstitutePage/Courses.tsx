@@ -1,5 +1,6 @@
 import React from 'react'
 import CourseCard from './CourseCard'
+import Image from 'next/image';
 
 export default function Courses() {
 
@@ -61,7 +62,9 @@ export default function Courses() {
         <p className="text-[#EAF5F4A6] text-base">5 Courses</p>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-8 gap-y-10 h-full">
+
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-8 gap-y-10 h-full z-20">
         {contentCards.map((card) => (
           <CourseCard
             key={card.id}
@@ -74,6 +77,17 @@ export default function Courses() {
           />
         ))}
       </div>
+
+       <section className="absolute left-0 top-[-20em] md:top-[30vw] translate-x-[80vw] z-5">
+                  <Image
+                    src={"/bgEarth.png"}
+                    alt="Background Earth Left"
+                    width={1000}
+                    height={1000}
+                    className="w-[600px] object-cover md:w-[50vw] max-w-none z-50"
+                    priority
+                  />
+                </section>
     </section>
   );
 }
