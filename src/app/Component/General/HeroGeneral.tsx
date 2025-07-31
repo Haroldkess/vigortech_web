@@ -22,13 +22,13 @@ export default function HeroGeneral({ children }: PropsWithChildren) {
           <section className="z-20 md:mt-[2vh]">{children}</section>
 
           {/* bg image 2 */}
-          <section className="absolute right-0 top-[2em] md:top-[-4em] translate-x-[50%]">
+          <section className="absolute right-0 top-[2em] md:top-[-6em] translate-x-[55%]">
             <Image
               src={"/bgEarth.png"}
               alt="Background Earth Right"
               width={1000}
               height={1000}
-              className="w-[600px] object-cover md:w-[80vw] max-w-none"
+              className="w-[600px] object-cover md:w-[75vw] max-w-none"
               priority
             />
           </section>

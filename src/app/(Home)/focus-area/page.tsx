@@ -47,8 +47,18 @@ export default function FocusArea() {
             </section>
           </section>
         </HeroGeneral>
-
-        <section className="pt-[100px] bg-[#171615A6] gap-y-10 flex flex-col rounded-t-2xl  z-20 border-t border-black/5 w-full relative top-[-16rem] md:top-[-15rem]">
+ {/* bg image 1 */}
+      <section className="absolute left-0 top-[-20em] md:top-[20vw] -translate-x-[55%] z-20">
+        <Image
+          src={"/bgEarth.png"}
+          alt="Background Earth Left"
+          width={1000}
+          height={1000}
+          className="w-[600px] object-cover md:w-[75vw] max-w-none z-50"
+          priority
+        />
+      </section>
+      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30 border-black/5  rounded-t-3xl  w-full mt-[-4em] ">
           <TechSection />
 
           <OurServices />
