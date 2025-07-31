@@ -28,13 +28,13 @@ export default function AboutUs() {
               tomorrow, today!
             </h1>
 
-            <section className="relative left-[42%] md:left-[55%] top-[-1rem] ">
+            <section className="relative left-[50vw] md:left-[55%] top-[-1rem] ">
               <Image
                 src="/newsLine.svg"
                 alt="Newsletter Icon"
                 width={200}
                 height={100}
-                className="h-4 md:h-10 md:w-[28%]"
+                className="h-4 w-[30%] md:h-10 md:w-[28%]"
               />
             </section>
 
@@ -48,8 +48,7 @@ export default function AboutUs() {
         </section>
       </HeroGeneral>
 
-      {/* bg image 1 */}
-      <section className="absolute left-0 top-[-20em] md:top-[24vw] -translate-x-[55%] z-20">
+      <section className="absolute left-0 top-[15em] -translate-x-[95vw]  md:top-[24vw] md:-translate-x-[55%] z-20">
         <Image
           src={"/bgEarth.png"}
           alt="Background Earth Left"
@@ -59,7 +58,8 @@ export default function AboutUs() {
           priority
         />
       </section>
-      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-4em] ">
+
+      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-10em] md:mt-[-4em] ">
         <AboutStats />
         <OurStory />
         <OurFocus />

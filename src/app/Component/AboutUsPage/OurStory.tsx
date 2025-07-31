@@ -31,25 +31,6 @@ export default function OurStory() {
             </section>
 
             <section className="relative">
-              {/* <section className="md:absolute md:-bottom-[10em] left-10">
-                <Image
-                  src={"/Earth.png"}
-                  alt="sise image 1"
-                  width={670}
-                  height={670}
-                  className=""
-                />
-              </section>
-              <section className="bottom-[-4em] left-[-6em] md:bottom-[-15em] md:left-[-20em] md:absolute hidden md:flex   -z-[4em] blur-2xl">
-                <Image
-                  src={"/bgEarth.png"}
-                  alt="sise image 1"
-                  width={700}
-                  height={700}
-                  className=""
-                />
-              </section> */}
-
               <section className=" flex justify-center flex-col  ">
                 <section className="">
                   <img
@@ -77,70 +58,23 @@ export default function OurStory() {
                       height="768"
                     />
 
-                    {/* Glowing Pulse Circle at specific coordinates (e.g., Nigeria) */}
-                    <g>
-                      <circle cx="680" cy="450" r="4" fill="#EAF5F4">
-                        <animate
-                          attributeName="r"
-                          values="4;12;4"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                        <animate
-                          attributeName="opacity"
-                          values="1;0;1"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                      </circle>
-                      <circle
-                        cx="680"
-                        cy="450"
-                        r="8"
-                        fill="#ADFBC5"
-                        opacity="0.6"
-                      >
-                        <animate
-                          attributeName="r"
-                          values="8;20;8"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                        <animate
-                          attributeName="opacity"
-                          values="0.6;0;0.6"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                      </circle>
-                      <circle
-                        cx="680"
-                        cy="450"
-                        r="14"
-                        fill="#60DA86"
-                        filter="blur(4px)"
-                      >
-                        <animate
-                          attributeName="r"
-                          values="14;30;14"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                        <animate
-                          attributeName="opacity"
-                          values="0.3;0;0.3"
-                          dur="2s"
-                          repeatCount="indefinite"
-                        />
-                      </circle>
-                    </g>
+                    <foreignObject x="668" y="440" width="40" height="40">
+                      <div className="pulse-animation">
+                        <div className="layer blur"></div>
+                        <div className="layer outer"></div>
+                        <div className="layer middle"></div>
+                        <div className="layer inner"></div>
+                      </div>
+                    </foreignObject>
+
+                 
                   </svg>
                 </section>
               </section>
             </section>
           </section>
 
-          <section className=''>
+          <section className="">
             <Image
               src="/elderly_man.png"
               alt="Our Story Image"
