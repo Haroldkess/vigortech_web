@@ -14,8 +14,8 @@ import Link from "next/link";
 
 export default function FocusArea() {
   return (
-    <>
-      <section className="overflow-x-hidden">
+    
+      <section className="overflow-x-hidden w-full">
         <NavBar />
         <HeroGeneral>
           <section className="flex flex-col justify-center items-center gap-6 w-full h-full   my-20  ">
@@ -47,18 +47,18 @@ export default function FocusArea() {
             </section>
           </section>
         </HeroGeneral>
- {/* bg image 1 */}
-      <section className="absolute left-0 top-[-20em] md:top-[20vw] -translate-x-[55%] z-20">
-        <Image
-          src={"/bgEarth.png"}
-          alt="Background Earth Left"
-          width={1000}
-          height={1000}
-          className="w-[600px] object-cover md:w-[75vw] max-w-none z-50"
-          priority
-        />
-      </section>
-      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30 border-black/5  rounded-t-3xl  w-full mt-[-4em] ">
+        {/* bg image 1 */}
+        <section className="absolute left-0  md:top-[20vw] top-[15em] -translate-x-[95vw] md:-translate-x-[55%] z-20">
+          <Image
+            src={"/bgEarth.png"}
+            alt="Background Earth Left"
+            width={1000}
+            height={1000}
+            className="w-[600px] object-cover md:w-[75vw] max-w-none z-50"
+            priority
+          />
+        </section>
+        <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-8em] md:mt-[-4em] ">
           <TechSection />
 
           <OurServices />
@@ -87,8 +87,8 @@ export default function FocusArea() {
 
           <Finance />
         </section>
-      </section>
       <Footer />
-    </>
+      </section>
+    
   );
 }
