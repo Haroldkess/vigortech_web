@@ -131,7 +131,7 @@ const ContactForm = () => {
                 rows={6}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Please provide details about your inquiry"
-                className="w-full rounded-md border border-[#88888840] bg-[#171615A6] px-4 py-2 text-gray-200 placeholder:text-[#EAF5F440] focus:outline-none focus-within:border-[#48B96B] resize-none"
+                className="w-full rounded-md text-gray-500 border border-[#88888840] bg-[#171615A6] px-4 py-2  placeholder:text-[#EAF5F440] focus:outline-none focus-within:border-[#48B96B] resize-none"
               ></textarea>
 
               <div className="absolute bottom-5 right-5 w-[16.2px] h-[16.2px] cursor-se-resize">
