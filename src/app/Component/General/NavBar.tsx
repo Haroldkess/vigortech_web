@@ -144,10 +144,10 @@ export default function NavBar() {
                   )}
                 </li>
                 <li>
-                  <Link href="/courses">Courses</Link>
+                  <Link href="/institute">Courses</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Contact</Link>
+                  <Link href="/contact-us">Contact</Link>
                 </li>
               </ul>
             </section>

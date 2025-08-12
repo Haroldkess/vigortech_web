@@ -1,5 +1,5 @@
 import Benfits from "@/app/Component/CareerPage/Benfits";
-import JobBoard from "@/app/Component/CareerPage/JobBoard";
+// import JobBoard from "@/app/Component/CareerPage/JobBoard";
 import Location from "@/app/Component/CareerPage/Location";
 import Footer from "@/app/Component/General/Footer";
 import HeroGeneral from "@/app/Component/General/HeroGeneral";
@@ -58,7 +58,7 @@ export default function Career() {
         <Location />
 
         <section className="relative top-[-10em] md:top-0 w-full ">
-          <section className="flex justify-center items-center w-full py-4">
+          {/* <section className="flex justify-center items-center w-full py-4">
             <Image
               src={"/line.svg"}
               alt="line"
@@ -66,9 +66,9 @@ export default function Career() {
               height={10}
               className="h-6 md:h-4 w-[100vw]"
             />
-          </section>
+          </section> */}
 
-          <JobBoard />
+          {/* <JobBoard /> */}
 
           <section className="flex justify-center items-center w-full py-4">
             <Image
