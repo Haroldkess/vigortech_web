@@ -43,7 +43,7 @@ export default function OurStory() {
                 </section>
 
                 <section className="absolute md:right-[-4em] top-[2vh] lg:top-[-20vh] ">
-                  {/* <svg
+                   {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1378 768"
                     className="lg:w-[50vw] w-[100vw] h-auto"
@@ -68,13 +68,13 @@ export default function OurStory() {
                     </foreignObject>
 
                  
-                  </svg> */}
+                  </svg>  */}
 
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1378 768"
-                    className="lg:w-[70vw] w-[80vw] h-auto"
+                    className="lg:w-[50vw] w-[100vw] h-auto"
                   >
                     {/* World Map Image */}
                     <image href="/Earth.png" x="0" y="0" width="1378" height="768" />
