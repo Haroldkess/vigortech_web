@@ -1,0 +1,105 @@
+import AboutStats from "@/app/Component/AboutUsPage/AboutStat";
+// import HeroAbout from '@/app/Component/AboutUsPage/HeroAbout'
+import OurFocus from "@/app/Component/AboutUsPage/OurFocus";
+import OurMission from "@/app/Component/AboutUsPage/OurMission";
+import OurStory from "@/app/Component/AboutUsPage/OurStory";
+import OurValues from "@/app/Component/AboutUsPage/OurValues";
+import Team from "@/app/Component/AboutUsPage/Team";
+import Footer from "@/app/Component/General/Footer";
+import HeroGeneral from "@/app/Component/General/HeroGeneral";
+import SectionTitle from "@/app/Component/General/SectionTitle";
+import NavBar from "@/app/Component/General/NavBar";
+import Image from "next/image";
+import React from "react";
+import GetInTouch from "@/app/Component/AboutUsPage/GetInTouch";
+
+export default function AboutUs() {
+  return (
+    <section className=" text-white font-inter">
+      <NavBar />
+      <HeroGeneral>
+        <section className="flex flex-col justify-center items-center gap-6 w-full h-full z-10   my-20 overflow-x-hidden  ">
+          <SectionTitle title="About us" />
+
+          <section className=" ">
+            <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
+              We’re Building Africa’s
+              <br />
+              tomorrow, today!
+            </h1>
+
+            <section className="relative left-[50vw] md:left-[55%] top-[-1rem] ">
+              <Image
+                src="/newsLine.svg"
+                alt="Newsletter Icon"
+                width={200}
+                height={100}
+                className="h-4 w-[30%] md:h-10 md:w-[28%]"
+              />
+            </section>
+
+            <section className="flex flex-col items-center gap-4  justify-center w-[90vw] md:w-full ">
+              <p className="text-[#EAF5F4A6] text-md py-2 text-base  font-medium text-center ">
+                Where purpose meets real impact.
+              </p>
+              <GetInTouch />
+            </section>
+          </section>
+        </section>
+      </HeroGeneral>
+
+      <section className="absolute left-0 top-[15em] -translate-x-[95vw]  md:top-[24vw] md:-translate-x-[55%] z-20">
+        <Image
+          src={"/bgEarth.png"}
+          alt="Background Earth Left"
+          width={1000}
+          height={1000}
+          className="w-[600px] object-cover md:w-[75vw] max-w-none z-50"
+          priority
+        />
+      </section>
+
+      <section className=" pt-20 relative backdrop-blur-2xl  gap-y-10 flex flex-col  z-30  w-full mt-[-10em] md:mt-[-4em] ">
+        <AboutStats />
+        <OurStory />
+        <OurFocus />
+        <section className="flex justify-center items-center w-full py-4">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={100}
+            height={10}
+            className="h-4 w-[100vw]"
+          />
+        </section>
+
+        <OurMission />
+
+        <section className="flex justify-center items-center w-full py-4">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={100}
+            height={10}
+            className="h-4 w-[100vw]"
+          />
+        </section>
+
+        <OurValues />
+
+        <section className="flex justify-center items-center w-full py-4">
+          <Image
+            src={"/line.svg"}
+            alt="line"
+            width={100}
+            height={10}
+            className="h-4 w-[100vw]"
+          />
+        </section>
+
+        <Team />
+        <Footer />
+      </section>
+    </section>
+  );
+}
