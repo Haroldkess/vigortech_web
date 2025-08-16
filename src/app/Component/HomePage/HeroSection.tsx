@@ -91,12 +91,12 @@ export default function HeroSection() {
                   className=" w-[400px] object-cover absolute blur-md -z-20 bottom-[-4em] right-[-2em]   "
                 />
               </section>
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1378 768"
                 className="w-[90vw] h-auto"
               >
-                {/* World Map Path */}
+             
                 <image
                   href="/Earth.png"
                   x="0"
@@ -114,7 +114,81 @@ export default function HeroSection() {
                     <div className="layer inner"></div>
                   </div>
                 </foreignObject>
+              </svg> */}
+
+           
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1378 768"
+                className="w-full h-auto max-w-[100vw]"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                {/* World Map */}
+                <image href="/Earth.png" x="0" y="0" width="1378" height="768" />
+
+                {/* Pulse Animation */}
+                <g transform="translate(689, 460)">
+                  {/* BLUR layer */}
+                  <circle r="6" fill="#60DA86" opacity="0.3">
+                    <animate
+                      attributeName="r"
+                      values="1;20;1"
+                      dur="3s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0.3;0;0.3"
+                      dur="3s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+
+                  {/* OUTER layer */}
+                  <circle r="5" fill="#4CCC73" opacity="0.6">
+                    <animate
+                      attributeName="r"
+                      values="1;15;1"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      begin="0.3s"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0.6;0.2;0.6"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      begin="0.3s"
+                    />
+                  </circle>
+
+                  {/* MIDDLE layer */}
+                  <circle r="4" fill="#ADFBC5" opacity="0.7">
+                    <animate
+                      attributeName="r"
+                      values="1;10;1"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      begin="0.6s"
+                    />
+                    <animate
+                      attributeName="opacity"
+                      values="0.7;0.3;0.7"
+                      dur="3s"
+                      repeatCount="indefinite"
+                      begin="0.6s"
+                    />
+                  </circle>
+
+                  {/* INNER layer (static core) */}
+                  <circle r="3" fill="#EAF5F4" />
+                </g>
               </svg>
+
+
+
+       
+
             </section>
           </section>
 
@@ -132,12 +206,12 @@ export default function HeroSection() {
               </section>
 
               <section className="absolute right-[-4em] top-[-6vh] lg:top-[-10vh] ">
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1378 768"
                   className="lg:w-[70vw] w-[80vw] h-auto"
                 >
-                  {/* World Map Path */}
+           
 
                   <image
                     href="/Earth.png"
@@ -156,7 +230,46 @@ export default function HeroSection() {
                       <div className="layer inner"></div>
                     </div>
                   </foreignObject>
+                </svg> */}
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1378 768"
+                  className="lg:w-[70vw] w-[80vw] h-auto"
+                >
+                  {/* World Map Image */}
+                  <image href="/Earth.png" x="0" y="0" width="1378" height="768" />
+
+                  {/* Pulsing Marker (max 20px) */}
+                  <g>
+                    {/* Blur Glow */}
+                    <circle cx="688" cy="460" r="1" fill="#60DA86">
+                      <animate attributeName="r" values="1;10;1" dur="2.5s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+
+                    {/* Outer */}
+                    <circle cx="688" cy="460" r="1" fill="#4CCC73">
+                      <animate attributeName="r" values="1;8;1" dur="2.5s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+
+                    {/* Middle */}
+                    <circle cx="688" cy="460" r="1" fill="#ADFBC5">
+                      <animate attributeName="r" values="1;6;1" dur="2.5s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+
+                    {/* Inner Core */}
+                    <circle cx="688" cy="460" r="1" fill="#EAF5F4">
+                      <animate attributeName="r" values="1;4;1" dur="2.5s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+                  </g>
                 </svg>
+
+
+
               </section>
             </section>
           </section>
