@@ -43,12 +43,12 @@ export default function OurStory() {
                 </section>
 
                 <section className="absolute md:right-[-4em] top-[2vh] lg:top-[-20vh] ">
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1378 768"
                     className="lg:w-[50vw] w-[100vw] h-auto"
                   >
-                    {/* World Map Path */}
+                
 
                     <image
                       href="/Earth.png"
@@ -68,6 +68,43 @@ export default function OurStory() {
                     </foreignObject>
 
                  
+                  </svg> */}
+
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1378 768"
+                    className="lg:w-[70vw] w-[80vw] h-auto"
+                  >
+                    {/* World Map Image */}
+                    <image href="/Earth.png" x="0" y="0" width="1378" height="768" />
+
+                    {/* Pulsing Marker (max 20px) */}
+                    <g>
+                      {/* Blur Glow */}
+                      <circle cx="688" cy="460" r="1" fill="#60DA86">
+                        <animate attributeName="r" values="1;10;1" dur="2.5s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                      </circle>
+
+                      {/* Outer */}
+                      <circle cx="688" cy="460" r="1" fill="#4CCC73">
+                        <animate attributeName="r" values="1;8;1" dur="2.5s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                      </circle>
+
+                      {/* Middle */}
+                      <circle cx="688" cy="460" r="1" fill="#ADFBC5">
+                        <animate attributeName="r" values="1;6;1" dur="2.5s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                      </circle>
+
+                      {/* Inner Core */}
+                      <circle cx="688" cy="460" r="1" fill="#EAF5F4">
+                        <animate attributeName="r" values="1;4;1" dur="2.5s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+                      </circle>
+                    </g>
                   </svg>
                 </section>
               </section>
