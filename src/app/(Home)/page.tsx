@@ -7,41 +7,53 @@ import NavBar from "../Component/General/NavBar";
 import Footer from "../Component/General/Footer";
 import NewsLetter from "../Component/HomePage/NewsLetter";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main className="bg-[#171615] text-white font-inter overflow-hidden">
-      <NavBar />
-      <HeroSection />
 
-      <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20 border-t border-black/5 w-full">
-        <AboutUs />
+    <>
+      <Head>
+        <link rel="preload" as="image" href="/Teams/co-founder.svg" />
+        <link rel="preload" as="image" href="/Teams/VA.svg" />
+        <link rel="preload" as="image" href="/Teams/cto.svg" />
+        <link rel="preload" as="image" href="/Teams/QA.svg" />
+        <link rel="preload" as="image" href="/Teams/PD.svg" />
+      </Head>
+      
+      <main className="bg-[#171615] text-white font-inter overflow-hidden">
+        <NavBar />
+        <HeroSection />
 
-        <section className="flex justify-center items-center w-full ">
-          <Image
-            src={"/line.svg"}
-            alt="line"
-            width={200}
-            height={10}
-            className="h-10 w-[100vw]"
-          />
+        <section className="shadow-2xl bg-[#171615A6] rounded-t-2xl z-20 border-t border-black/5 w-full">
+          <AboutUs />
+
+          <section className="flex justify-center items-center w-full ">
+            <Image
+              src={"/line.svg"}
+              alt="line"
+              width={200}
+              height={10}
+              className="h-10 w-[100vw]"
+            />
+          </section>
+
+          <OurStat />
+
+          <section className="flex justify-center items-center w-full ">
+            <Image
+              src={"/line.svg"}
+              alt="line"
+              width={200}
+              height={10}
+              className="h-10 w-[100vw]"
+            />
+          </section>
+          <Testimonials />
+          <NewsLetter />
+          <Footer />
         </section>
-
-        <OurStat />
-
-        <section className="flex justify-center items-center w-full ">
-          <Image
-            src={"/line.svg"}
-            alt="line"
-            width={200}
-            height={10}
-            className="h-10 w-[100vw]"
-          />
-        </section>
-        <Testimonials />
-        <NewsLetter />
-        <Footer />
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
