@@ -50,7 +50,7 @@ export default function Team() {
             role="QA Engineer"
           />
           <TeamCard
-            imageSrc="/Teams/PD.svg"
+            imageSrc="/Teams/cole.svg"
             name="Coleman Osuji"
             role="Product Designer"
           />
