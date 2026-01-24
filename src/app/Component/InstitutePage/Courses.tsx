@@ -8,7 +8,7 @@ export default function Courses() {
         {
             id: 1,
             image: "/Institute/img1.svg",
-            title: "Full-Stack Flutter and Dart Development (Live training)",
+            title: "Full-Stack Flutter and Dart Development",
             description:
                 "We bring it all together: clean UI, solid business logic, robust backend, and smooth deployment.",
             level: "Intermediate",
