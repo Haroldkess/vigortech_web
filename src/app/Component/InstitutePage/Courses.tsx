@@ -8,48 +8,52 @@ export default function Courses() {
         {
             id: 1,
             image: "/Institute/img1.svg",
-            title: "Full-Stack Flutter and Dart Development",
+            title: "Full-Stack Flutter and Dart Development (Live training)",
             description:
                 "We bring it all together: clean UI, solid business logic, robust backend, and smooth deployment.",
             level: "Intermediate",
-            isFlag:true
+            isFlag:true,
+            duration: "10 weeks",
+            link: "https://paystack.shop/pay/wf4-idxeis"
         },
-        {
-            id: 2,
-            image: "/Institute/img2.svg",
-            title: "Introduction to Dart Programming Language",
-            description:
-                "Learn the language that powers flutter. If you want to build fast, modern applications, Dart is your starting point.",
-            level: "Beginner",
-            isFlag: false
-        },
+        // {
+        //     id: 2,
+        //     image: "/Institute/img2.svg",
+        //     title: "Introduction to Dart Programming Language",
+        //     description:
+        //         "Learn the language that powers flutter. If you want to build fast, modern applications, Dart is your starting point.",
+        //     level: "",
+        //     isFlag: false
+        // },
         {
             id: 3,
             image: "/Institute/img3.svg",
-            title: "Flutter for Beginners: Cross-Platform App Development",
+            title: "Full-Stack Flutter and Dart Mentorship",
             description:
-                "Launch your first application without years of experience. In this course, we’ll Walk you through building your first app.",
-            level: "Beginner",
-            isFlag: false
+                "Learn from beginner to expert. Get direct internship placement (Build your cv & portfolio) and land your first job/client",
+            level: "All Levels",
+            isFlag: false,
+            duration: "40 weeks",
+            link: "https://paystack.shop/pay/cex43tpw55"
         },
-        {
-            id: 4,
-            image: "/Institute/img2.svg",
-            title: "Building Backend Systems with Dart",
-            description:
-                "With this course, you’ll master backend development using Dart, create fast APIs, handle data, and app end-to-end.",
-            level: "Beginner",
-            isFlag: false
-        },
-        {
-            id: 5,
-            image: "/Institute/img3.svg",
-            title: "Advanced Cross-Platform Development",
-            description:
-                "We cover state management, API integration, and building scalable architecture. This is that next leap",
-            level: "Intermediate",
-            isFlag: false
-        },
+        // {
+        //     id: 4,
+        //     image: "/Institute/img2.svg",
+        //     title: "Building Backend Systems with Dart",
+        //     description:
+        //         "With this course, you’ll master backend development using Dart, create fast APIs, handle data, and app end-to-end.",
+        //     level: "Beginner",
+        //     isFlag: false
+        // },
+        // {
+        //     id: 5,
+        //     image: "/Institute/img3.svg",
+        //     title: "Advanced Cross-Platform Development",
+        //     description:
+        //         "We cover state management, API integration, and building scalable architecture. This is that next leap",
+        //     level: "Intermediate",
+        //     isFlag: false
+        // },
     ];
 
   return (
@@ -59,7 +63,7 @@ export default function Courses() {
           Available Courses
         </h3>
 
-        <p className="text-[#EAF5F4A6] text-base">5 Courses</p>
+        <p className="text-[#EAF5F4A6] text-base">2 Courses</p>
       </section>
 
 
@@ -74,6 +78,8 @@ export default function Courses() {
             studentLevel={card.level}
             isFlag={card.isFlag}
             id={card.id}
+            duration={card.duration}
+            link={card.link}
           />
         ))}
       </div>

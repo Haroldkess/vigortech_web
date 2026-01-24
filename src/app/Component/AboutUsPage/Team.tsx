@@ -27,7 +27,7 @@ export default function Team() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl md:mx-auto mb-12 ">
           <TeamCard
-            imageSrc="/Teams/co-founder.svg"
+            imageSrc="/Teams/ceo.svg"
             name="Harold Osuji"
             role="Co-Founder"
           />

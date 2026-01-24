@@ -57,20 +57,40 @@ export default function HeroSection() {
 
             <section className="relative ">
               <section className="flex  absolute md:top-20 gap-10 opacity-50 justify-center md:justify-start items-center ">
-                <Image
-                  src={"/adam.svg"}
-                  alt="adam"
-                  width={200}
-                  height={200}
-                  className=" w-[120.02px] h-[36.23px]
-               md:w-[103.94px] md:h-[26.33px]
-              lg:w-[124.16px] lg:h-[31.45px]text-white/65"
-                  onClick={() => alert("Coming soon")}
-                />
+                {/* <div
+                  className="relative w-[150.76px] h-[32.85px]
+              md:w-[129.92px] md:h-[23.87px]
+              lg:w-[155.19px] lg:h-[28.52px]"
+                >
+                  <Image
+                    src={"/aplus.svg"}
+                    alt="aplus"
+                   // fill
+                    width={200}
+                    height={200}
+                   // sizes="(min-width: 1024px) 155px, (min-width: 768px) 130px, 151px"
+                   className=" w-[250.76px] h-[42.85px]
+                   md:w-[129.92px] md:h-[33.87px]
+                   lg:w-[155.19px] lg:h-[38.52px] text-white/65"
+                    onClick={() => alert("Coming soon")}
+                  />
+                </div> */}
+
+                <Link href={"http://aplusplaybook.com"} target="_blank">
+                  <Image
+                    src={"/aplus.svg"}
+                    alt="aplus"
+                    width={200}
+                    height={200}
+                    className=" w-[250.76px] h-[32.85px]
+              md:w-[129.92px] md:h-[33.87px]
+              lg:w-[155.19px] lg:h-[38.52px] text-white/65"
+                  />
+                </Link>
                 <Link href={"http://getnervus.com"} target="_blank">
                   <Image
                     src={"/nervus.svg"}
-                    alt="adam"
+                    alt="nervus"
                     width={200}
                     height={200}
                     className=" w-[150.76px] h-[32.85px]

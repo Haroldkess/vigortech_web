@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 interface Card {
@@ -8,11 +9,14 @@ interface Card {
   description: string,
   studentLevel: string,
   isFlag: boolean
-  id:number
+  id: number,
+  link: string,
+  duration: string
 }
 
 
-export default function CourseCard({ imageUrl, cardTitle, description, studentLevel, isFlag,id }: Card) {
+export default function CourseCard({ imageUrl, cardTitle, description, studentLevel, isFlag, id, link, duration }: Card) {
+  const href = link?.startsWith('http://') || link?.startsWith('https://') ? link : `https://${link}`
 
 
   return (
@@ -74,15 +78,14 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
                 height={15}
                 className=""
               />
-              <span>12 weeks</span>
+              <span>{duration}</span>
             </div>
           </section>
         </section>
 
         <section
-          className={`flex justify-between items-center w-full ${
-            id === 1 && "md:absolute bottom-6 md:px-4 left-0"
-          }  ${id === 4 && "md:absolute bottom-6 md:px-4 left-0"}`}
+          className={`flex justify-between items-center w-full ${id === 1 && "md:absolute bottom-6 md:px-4 left-0"
+            }  ${id === 4 && "md:absolute bottom-6 md:px-4 left-0"}`}
         >
           <div className="flex text-[10px] gap-2">
             <Image
@@ -92,13 +95,16 @@ export default function CourseCard({ imageUrl, cardTitle, description, studentLe
               height={40}
               className=""
             />
-            <span>200+ Enrolled</span>
+            <span>limited slots left</span>
           </div>
 
           <div>
-            <button className="bg-[#48B96B] hover:bg-[#6CC788] text-[#171615] px-4 py-1 text-[11.8px] font-semibold rounded-sm">
+            <Link
+              href={href}
+              className="bg-[#48B96B] hover:bg-[#6CC788] text-[#171615] px-4 py-1 text-[11.8px] font-semibold rounded-sm inline-block"
+            >
               Enroll Now
-            </button>
+            </Link>
           </div>
         </section>
       </section>
