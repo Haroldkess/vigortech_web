@@ -8,29 +8,21 @@ export default function Courses() {
         {
             id: 1,
             image: "/Institute/img1.svg",
-            title: "Full-Stack Flutter and Dart Development",
+            title: "Modern App Engineering: Flutter, Dart, Firebase & AI",
             description:
-                "We bring it all together: clean UI, solid business logic, robust backend, and smooth deployment.",
+                "Master the skills to build and deploy modern, AI-powered mobile apps using Flutter and Firebase & app monetization.",
             level: "Intermediate",
             isFlag:true,
             duration: "10 weeks",
             link: "https://paystack.shop/pay/wf4-idxeis"
         },
-        // {
-        //     id: 2,
-        //     image: "/Institute/img2.svg",
-        //     title: "Introduction to Dart Programming Language",
-        //     description:
-        //         "Learn the language that powers flutter. If you want to build fast, modern applications, Dart is your starting point.",
-        //     level: "",
-        //     isFlag: false
-        // },
+    
         {
             id: 3,
             image: "/Institute/img3.svg",
-            title: "Full-Stack Flutter and Dart Mentorship",
+            title: "Job-Ready Developer Mentorship: Flutter + AI Stack",
             description:
-                "Learn from beginner to expert. Get direct internship placement (Build your cv & portfolio) and land your first job/client",
+                "Go from beginner to expert with hands-on mentorship. Build a portfolio, learn AI integration, earn internship placement, and monetize your apps or land your first job/client.",
             level: "All Levels",
             isFlag: false,
             duration: "40 weeks",
